@@ -1,0 +1,8 @@
+transformers
+torch
+sentencepiece
+tqdm
+pandas
+numpy
+accelerate
+safetensors

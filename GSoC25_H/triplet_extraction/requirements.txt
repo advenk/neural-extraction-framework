@@ -1,0 +1,10 @@
+mlx>=0.0.8
+transformers>=4.38.1
+numpy>=1.24.0
+huggingface_hub>=0.20.3
+jsonlines>=4.0.0
+torch>=2.2.0  # For tensor conversions only
+tqdm>=4.67.1
+accelerate>=0.27.0
+bitsandbytes>=0.42.0
+safetensors>=0.4.1
