@@ -1,0 +1,153 @@
+1	शक्तिरूपी माया	होती है	जगत
+2	** अखिल भारतीय पुलिस डेटूटी 2. **Subject Type:** Organization (Sangathan) 3. **Evidence for Subject:** "अखिल भारतीय पुलिस डेटूटी" 4. **Relation:** आयोजित करना (Organized) 5. **Evidence for	** "में अंगुलि चिह्न विज्ञान प्रतियोगिता आयोजित करना" 6. **Object:** अंगुलि चिह्न विज्ञान प्रतियोगिता 7. **Object Type:** Event (Tith) 8. **Evidence for	** "अंगुलि चिह्न विज्ञान प्रतियोगिता" 9. **Final Triplet:** (अखिल भारतीय पुल
+3	केनद्रीय सरकार के विभागों	एवं	भारत सरकार के उपक्रमों
+3	** केनद्रीय सरकार के विभागों (Central Government Departments) 2. **Subject Type:** Organization 3. **Evidence for Subject:** "केनद्रीय सरकार के विभागों" 4. **Relation:** एवं (and) 5. **Evidence for	** "एवं" 6. **Object:** भारत सरकार के उपक्रमों (Government initiatives of India) 7. **Object Type:** Organization 8. **Evidence for	** "भारत सरकार के उपक्रमों" 9. **Final Triplet:** (केनद्रीय सरकार के विभागों
+4	** 007 के गुप्त नाम से प्रसिद्ध यह एजेंट 2. **Subject Type:** Person (Individual) 3. **Evidence for Subject:** "007 के गुप्त नाम से प्रसिद्ध यह एजेंट" 4. **Relation:** मौजूद है 5. **Evidence for	** "मौजूद है" 6. **Object:** फ़्लेमिंग की बारह पुस्तकों व दो लघुकथाओं 7. **Object Type:** Collection (Thing) 8. **Evidence for	** "फ़्लेमिंग की बारह पुस्तकों व दो लघुकथाओं" 9. **Final Triplet:** (007 के गुप्त न
+5	** 01 अगस्त 1907 1. **विषय:** 01 अगस्त 1907 2. **विषय का प्रकार:** समय (Time) 3. **सबूत:** "01 अगस्त 1907" * **	** शुरू की 4. **सबूत:** "शुरू की" * **	** अपनी एक पत्रिका ' साधु ' 5. **कर्म:** अपनी एक पत्रिका ' साधु ' 6. **कर्म का प्रकार:** वस्तु (Thing) / पत्रिका (Newspaper) 7. **सबूत:** "अपनी एक पत्रिका ' साधु '" **अंतिम त्रिपद:** (01
+6	कंपनी	लागू किया गया है	नवीनतम वेतनमानों को
+7	गोधरा ट्रेन कांड	शुरू हुई	अहमदाबाद के साबरमती केंद्रीय जेल
+7	** गोधरा ट्रेन कांड 2. **Subject Type:** Event (Happening) 3. **Evidence for Subject:** "गोधरा ट्रेन कांड" 4. **Relation:** शुरू हुई 5. **Evidence for	** "शुरू हुई" 6. **Object:** अहमदाबाद के साबरमती केंद्रीय जेल 7. **Object Type:** Location (Place) 8. **Evidence for	** "अहमदाबाद के साबरमती केंद्रीय जेल" 9. **Final Triplet:** (गोधरा ट्रेन कांड
+8	वे	नियुक्त हुई	सर्वोच्च न्यायालय की न्यायाधीश
+9	06 प्रतिशत ऐसे लोग		जिनका कोई विशेष धर्म नहीं था
+9	** 06 प्रतिशत ऐसे लोग 2. **Subject Type:** संख्या (Number) / संगठन (Organization) 3. **Evidence for Subject:** "06 प्रतिशत ऐसे लोग" 4. **Relation:** थे 5. **Evidence for	** "थे" 6. **Object:** जिनका कोई विशेष धर्म नहीं था 7. **Object Type:** संगठन (Organization) / प्रकार (Class) 8. **Evidence for	** "जिनका कोई विशेष धर्म नहीं था" 9. **Final Triplet:** (06 प्रतिशत ऐसे लोग
+10	द्वारा पहला डाक टिकट जारी किया गया	किया गया	इम्पीरियल पोस्टल सर्विस
+11	1 अक्टूबर 1953 को आंध्र		कर्नूल
+12	1 अक्टूबर 2008	किया गया	दूसरा सीज़न
+12	** 1 अक्टूबर 2008 2. **Subject Type:** Location (Date) 3. **Evidence for Subject:** "1 अक्टूबर 2008" 4. **Relation:** किया गया 5. **Evidence for	** "ज़ारी किया गया" 6. **Object:** दूसरा सीज़न 7. **Object Type:** Event 8. **Evidence for	** "दूसरा सीज़न" 9. **Final Triplet:** (1 अक्टूबर 2008
+13	Robart Aigar	लिया	Michael Aijaner's position
+14	This country	Became independent from	The British rule
+15	चन्द्रसिंह	दिया गया	Angrezon ke saath Ghadhwali Sainikon
+16	स्वायत्तशासी प्रान्त	गोयिया किया गया गया	1 अप्रैल 1946
+16	** स्वायत्तशासी प्रान्त (Self-governed country) 2. **Subject Type:** Location (Country) 3. **Evidence for Subject:** "स्वायत्तशासी प्रान्त" 4. **Relation:** गोयिया किया गया गया 5. **Evidence for	** "गोयिया किया गया गया" 6. **Object:** 1 अप्रैल 1946 (April 1	Type:** Date 8. **Evidence for Object:** "1 अप्रैल 1946" 9. **Final Triplet:** (स्वायत्तशासी प्रान्त
+17	Hindi Prachar Sabha		जो आन्दोलन थी
+18	बाल्यकाल से ही कर्मा	दिखाई पड़ती थी	एक अनूठी आभा
+18	** बाल्यकाल से ही कर्मा 2. **Subject Type:** वस्तु (Thing) 3. **Evidence for Subject:** "बाल्यकाल से ही कर्मा" 4. **Relation:** दिखाई पड़ती थी 5. **Evidence for	** "दिखाई पड़ती थी" 6. **Object:** एक अनूठी आभा 7. **Object Type:** वस्तु (Thing) 8. **Evidence for	** "एक अनूठी आभा" 9. **Final Triplet:** (बाल्यकाल से ही कर्मा
+19	सोनू	बन चुके हैं	एक प्रमुख हस्ती
+20	कोप्पेन मौसम वर्गीकरण		सबसे अधिक प्रयोगनीय मौसम वर्गीकरण
+20	** कोप्पेन मौसम वर्गीकरण 2. **Subject Type:** Thing (Instrument) 3. **Evidence for Subject:** "कोप्पेन मौसम वर्गीकरण" 4. **Relation:** है 5. **Evidence for	** "है" 6. **Object:** सबसे अधिक प्रयोगनीय मौसम वर्गीकरण 7. **Object Type:** Thing (Quality) 8. **Evidence for	** "सबसे अधिक प्रयोगनीय मौसम वर्गीकरण" 9. **Final Triplet:** (कोप्पेन मौसम वर्गीकरण
+21	बर्लिन पर क़ब्ज़ा करने के बाद	ने	चेकोस्लोवाकिया की राजधानी प्राग को
+22	वे	हैं	पद्म श्री सम्मान प्राप्त करने वाले
+23	सभी बच्चों	दी जाती है	वित्तीय सहायता
+23	** सभी बच्चों 2. **Subject Type:** लोक (People) 3. **Evidence for Subject:** "सभी बच्चों" 4. **Relation:** दी जाती है 5. **Evidence for	** "दी जाती है" 6. **Object:** वित्तीय सहायता 7. **Object Type:** सेवा (Service) 8. **Evidence for	** "वित्तीय सहायता" 9. **Final Triplet:** (सभी बच्चों
+24	यह स्थान क्षेत्र के लोगों के लिए		दर्शनीय केन्द्र
+26	** मैं 2. **Subject Type:** Person 3. **Evidence for Subject:** "मैं" 4. **Relation:** करता हूं 5. **Evidence for	** "करता हूं" 6. **Object:** शब्द की आत्मा समझकर ही इस श्रेष्ठ तत्त्व की उपासना करता 7. **Object Type:** Action (Verb Phrase) 8. **Evidence for	** "शब्द की आत्मा समझकर ही इस श्रेष्ठ तत्त्व की उपासना करता" 9. **Final Triplet:** (मैं
+27	हिमाचल प्रदेश में बहने वाली पांच नदियों	मिलता है	ऋग्वेद में
+28	उन्होंने	कर दिया	बच्चे को
+28	** उन्होंने (They) 2. **Subject Type:** Person or Group (Since the subject is in plural form	** कर दिया (Denied) 5. **Evidence for Relation:** "कर दिया" 6. **Object:** बच्चे को (Children) 7. **Object Type:** Person or Group (Since the object is 'children	** "बच्चे को" 9. **Final Triplet:** (उन्होंने
+29	** शिक्षा का तुलनात्मक अध्यayan 2. **Subject Type:** वस्तु (Thing) 3. **Evidence for Subject:** "शिक्षा का तुलनात्मक अध्यayan" 4. **Relation:** जुड़ा है 5. **Evidence for	** "जुड़ा है" 6. **Object:** सभी सामाजिक विज्ञानों 7. **Object Type:** संगठन (Organization) / विज्ञान (Science) 8. **Evidence for	** "सभी सामाजिक विज्ञानों" 9. **Final Triplet:** (शिक्षा का तुलनात्मक अध्यayan
+30	Gujarat Queen Express 9110	Is controlled by	Indian Railways
+31	वर्तमान में यह शहर है		पश्चिम बंगाल का प्रमुख हिल स्टेशन
+32	एक गाँव		पिथोरागढ जिले
+32	** एक गाँव (A village) 2. **Subject Type:** योजना (Place) 3. **Evidence for Subject:** "एक गाँव" 4. **Relation:** है 5. **Evidence for	** ". . . है" 6. **Object:** पिथोरागढ जिले (Pithoragarh district) 7. **Object Type:** योजना (Place) 8. **Evidence for	** "पिथोरागढ जिले" 9. **Final Triplet:** (एक गाँव
+33	एयर लाइन के तकनीकी केंद्र	स्थानापन्न करना है	तिरुवनंतपुरम
+34	चीफ कोर्ट के मुख्य न्यायाधीश सर लुइस शर्ट	पेश हुए	दोनों मामले
+35	बाशो की मृत्यु	हो गई	28 नवम्बर 1694
+36	कोई	नहीं हुआ	मतैक्य
+37	शाही सेना		पंचायती सेना
+38	Marlagond	is located in	A village in Adilabad district of Andhra Pradesh state of India
+39	बाद में व्याकरण के दर्शन पक्ष पर	लिखे गये	अनेक ग्रन्थ
+40	नवनिर्मित मेहता अनुसंधान संस्थान	बने	निदेशक
+40	** नवनिर्मित मेहता अनुसंधान संस्थान 2. **Subject Type:** संगठन (Organization) 3. **Evidence for Subject:** "नवनिर्मित मेहता अनुसंधान संस्थान" 4. **Relation:** बने 5. **Evidence for	** "बने" 6. **Object:** निदेशक 7. **Object Type:** रोLE (Role) 8. **Evidence for	** "निदेशक" 9. **Final Triplet:** (नवनिर्मित मेहता अनुसंधान संस्थान
+41	उनके नाम पर	रखा गया	इस जगह का नाम
+42	Some people	prefer	staying home
+42	** Some people 2. **Subject Type:** Person (implied	** prefer 5. **Evidence for Relation:** "पसंद करते हैं" 6. **Object:** staying home 7. **Object Type:** Activity (implied	** "अपने घर पर ही रहना" 9. **Final Triplet:** (Some people
+42	** This distance 2. **Subject Type:** Quantity (implied	** keep away from 5. **Evidence for Relation:** "दूर रहना" (implicit in the context	** this place 7. **Object Type:** Location (implied
+43	अमरीका के अट्ठाइसवें रक्षा सचिव	हुई	उनकी वापसी
+43	** अमरीका के अट्ठाइसवें रक्षा सचिव 2. **Subject Type:** Organization 3. **Evidence for Subject:** "अमरीका के अट्ठाइसवें रक्षा सचिव" 4. **Relation:** हुई 5. **Evidence for	** "हुई" 6. **Object:** उनकी वापसी 7. **Object Type:** Event 8. **Evidence for	** "उनकी वापसी" 9. **Final Triplet:** (अमरीका के अट्ठाइसवें रक्षा सचिव
+44	इसकी रचना		आधारशिला 3 मार्च 1884 को
+45	वह	संपर्क में है	इस तकनीक के लिए
+45	** वह (He) 2. **Subject Type:** Person 3. **Evidence for Subject:** "वह" 4. **Relation:** संपर्क में है 5. **Evidence for	** "संपर्क में है" 6. **Object:** इस तकनीक के लिए (For this technology) 7. **Object Type:** Thing 8. **Evidence for	** "इस तकनीक के लिए" 9. **Final Triplet:** (वह
+46	त्रिदेवनाथ बैनर्जी	किया गया था	पद्म भूषण
+46	** त्रिदेवनाथ बैनर्जी 2. **Subject Type:** Person 3. **Evidence for Subject:** "त्रिदेवनाथ बैनर्जी" 4. **Relation:** किया गया था (Honored) 5. **Evidence for	** "किया गया था" 6. **Object:** पद्म भूषण 7. **Object Type:** Prize / Thing 8. **Evidence for	** "पद्м भूषण" 9. **Final Triplet:** (त्रिदेवनाथ बैनर्जी
+47	मराठी के अतिरिक्त उन्होने		हिन्दी फिल्मों के लिए भी संगीत रचना
+48	Adjective	Noun	Verb etc.
+48	काइटिन	किया जाता है	अनेक प्रक्रियाओं
+49	हिंदूओं और मुस्लिमों के		सभी पर्व मिलजुल कर मनाए जाते हैं
+50	**संबंध 1:** 1. **विषय:** द डार्क नाईट राइसेस 2. **विषय का प्रकार:** शहर (Location) 3. **सबूत:** "द डार्क नाईट राइसेस" 4. **संबंध:** किया गया 5. **सबूत:** "किया गया" 6. **कर्म:** अमेरिका	संयुक्त राजशाही व कनाडा 7. **कर्म का प्रकार:** देश (Country) 8. **सबूत:** "अमेरिका	संयुक्त राजशाही व कनाडा" 9. **अंतिम त्रिपद:** (द डार्क नाईट राइसेस
+50	द डार्क नाईट राइसेस	किया गया	अमेरिका , संयुक्त राजशाही व कनाडा
+51	यह हर साल जर्मनी के फ्रैंकफर्ट शहर मे लगाया जाता है	होना	फ्रैंकफर्ट शहर
+52	द्रौपदी ने	कर दिया	आगे बढ़ कर अर्जुन के गले में वरमाला
+53	यह त्यौहार	मनाया जाता है	पूरे उत्तर भारत
+53	** यह त्यौहार (This gift) 2. **Subject Type:** वस्तु (Thing) 3. **Evidence for Subject:** "यह त्यौहार" 4. **Relation:** मनाया जाता है 5. **Evidence for	** "मनाया जाता है" 6. **Object:** पूरे उत्तर भारत (Whole North India) 7. **Object Type:** स्थान (Location) 8. **Evidence for	** "पूरे उत्तर भारत" 9. **Final Triplet:** (यह त्यौहार
+54	** Taatiy Karntaka ke bhojan mein 2. **Subject Type:** Location (Region) 3. **Evidence for Subject:** "तटीय कर्नाटक" 4. **Relation:** Contains 5. **Evidence for	** "में" 6. **Object:** Samudree bhojan	Type:** Thing (Food items) 8. **Evidence for Object:** "समुद्री भोजन
+55	कार्ल	सुधारा	उपेक्षित जीवविज्ञान उद्यान
+55	** कार्ल (Carl) 2. **Subject Type:** Person 3. **Evidence for Subject:** "कार्ल" 4. **Relation:** सुधारा 5. **Evidence for	** "सुधारा" 6. **Object:** उपेक्षित जीवविज्ञान उद्यान (Expected Life Science Garden) 7. **Object Type:** Location (Place) 8. **Evidence for	** "उपेक्षित जीवविज्ञान उद्यान" 9. **Final Triplet:** (कार्ल
+56	सिफियस चतुर्थ की श्रेणी के तारों को	कहते हैं	सिफीड
+57	प्राथमिक विधि अध्यारोप ' के नाम से		यह
+58	चीन तथा जापान	रहा	इस देश का अधिक संपर्क
+59	कश्यप	करके	तत्काल ज्योतिष गणना करके
+60	अभ्रक आदि की खानों		मोमबत्तियाँ
+61	In this context	figure' is used metaphorically to represent a speech or discourse	so it can be considered as a Location in this case
+61	In this context	they' refers to the speaker	which can be a person or a group of people
+61	इस शैली	कहानियाँ और	उन्होंने
+61	** इस शैली (This figure) 1. **Subject Type:** Location (In this context	** कहानियाँ और (told stories and) 1. **Evidence for Relation:** "कहानियाँ" * **Object:** उन्होंने (They) 1. **Object Type:** Person or Group (In this context	** "उन्होंने" * **Final Triplet:** (इस शैली
+62	वो हैं	हैं	दलित और पहले मलयाली मुख्य न्यायाधीश हैं
+63	उन्होंने	पेश किया	सरकार का वार्षिक बजट
+63	** उन्होंने 2. **Subject Type:** Person (Assuming 'unhone' is a third-person singular pronoun) 3. **Evidence for Subject:** "उन्होंने" 4. **Relation:** पेश किया 5. **Evidence for	** "पेश किया" 6. **Object:** सरकार का वार्षिक बजट 7. **Object Type:** Thing (Budget) 8. **Evidence for	** "सरकार का वार्षिक बजट" 9. **Final Triplet:** (उन्होंने
+64	स्थानीय आबादी	रहती है	चाय के व्यापार पर निर्भर रहती है
+65	इसे	लागू किया जाता है	आधारभूत प्रोफ़ाइल में
+66	उन्हें	जाना जाता है	उत्कल मणि के नाम से
+67	आजात शक्ति के लिए कृपया	कृपया	फ्रेंच फ्लेमिश
+68	इस नदी		ज्यादातर अंश
+68	** इस नदी 1. **सबूत:** "इस नदी" * **Relation:** का 1. **सबूत:** "का" * **Object:** ज्यादातर अंश 1. **सबूत:** "ज्यादातर अंश" **Final Triplet:** (इस नदी	2:** * **Subject:** इस नदी 1. **सबूत:** "इस नदी" * **Relation:** प्रवाहित होता है 1. **सबूत:** "प्रवाहित होता है" * **Object:** है 1. **सबूत:** "है" * **	Type:** संदर्भ (State) **Final Triplet:** (इस नदी
+69	matruuh muhafizzaah ka andarooni bhaag	is a part of	Libyaai registaaan ka hissaa hai
+70	राज्य की राजधानी बंगलुरु शहर		जो
+71	ये	हैं	अपनी रहस्यमयी और भयावह कहानियों के लिए प्रसिद्ध
+71	** ये 2. **Subject Type:** Person / Thing (Since the gender is not specified	** हैं 5. **Evidence for Relation:** "हैं" 6. **Object:** अपनी रहस्यमयी और भयावह कहानियों के लिए प्रसिद्ध 7. **Object Type:** Quality (Reputation) 8. **Evidence for	** "अपनी रहस्यमयी और भयावह कहानियों के लिए प्रसिद्ध" 9. **Final Triplet:** (ये
+72	Unka	हुए हैं	Ek kahani sangharsh aur do nibandh sangharsh
+72	** Unka (His/Her) 2. **Subject Type:** Person 3. **Evidence for Subject:** "उनका" 4. **Relation:** हुए हैं 5. **Evidence for	** "हुए हैं" 6. **Object:** Ek kahani sangharsh	Type:** Thing (Collection of stories) 8. **Evidence for Object:** "एक कहानी संग्रह और दो निबंध संग्रह" 9. **Final Triplet:** (Unka
+73	Padmnabh Datt	लिखा है	15 वीं शताब्दी
+73	** Padmnabh Datt 2. **Subject Type:** Person 3. **Evidence for Subject:** "Padmnabh Datt" 4. **Relation:** लिखा है 5. **Evidence for	** "लिखा है" 6. **Object:** (15 वीं शताब्दी) सुपद्य व्याकरण 7. **Object Type:** Thing (Text or Writing) 8. **Evidence for	** "(15 वीं शताब्दी) सुपद्य व्याकरण" 9. **Final Triplet:** (Padmnabh Datt
+74	इसके पश्चिम में अलबामा और दक्षिण में फ्लोरिडा राज्य	हैं	N/A
+75	यह क्रिकेट मैदान	स्थित है	ऑस्ट्रेलिया के होबार्ट शहर
+75	** यह क्रिकेट मैदान 2. **Subject Type:** स्थान (Location) 3. **Evidence for Subject:** "यह क्रिकेट मैदान" 4. **Relation:** स्थित है 5. **Evidence for	** "स्थित है" 6. **Object:** ऑस्ट्रेलिया के होबार्ट शहर 7. **Object Type:** देश (Country) / शहर (City) 8. **Evidence for	** "ऑस्ट्रेलिया के होबार्ट शहर" 9. **Final Triplet:** (यह क्रिकेट मैदान
+76	निम्नलिखित सूचना	एक सरलीकृत सारांश है	पूरी प्रतिलिपि नहीं है
+76	** निम्नलिखित सूचना 2. **Subject Type:** वस्तु (Thing) 3. **Evidence for Subject:** "निम्नलिखित सूचना" 4. **Relation:** एक सरलीकृत सारांश है 5. **Evidence for	** "एक सरलीकृत सारांश है" 6. **Object:** पूरी प्रतिलिपि नहीं है 7. **Object Type:** वस्तु (Thing) 8. **Evidence for	** "पूरी प्रतिलिपि नहीं है" 9. **Final Triplet:** (निम्नलिखित सूचना
+77	आत्यन्तिक प्रलय योगीजनों के ज्ञान	कहते हैं	ब्रह्म में लीन हो जाने को
+78	जंगलों की विशेषता की दृष्टि से कुछ लोगों ने	विभाजित किया है	इसे
+79	पर	देने लगी होंगी	प्रयोगशील प्रवृत्तियाँ
+81	Vishwamitra	द्वारा	वैदिक मन्त्रों के स्वरघोष के मध्य
+81	** Vishwamitra 2. **Subject Type:** Person 3. **Evidence for Subject:** "Vishwamitra" 4. **Relation:** द्वारा (By) 5. **Evidence for	** "द्वारा" 6. **Object:** Vedic mantras ke swaraghosh ke madhy 7. **Object Type:** Location (Place where the sound of vedic mantras is heard) 8. **Evidence for	** "वैदिक मन्त्रों के स्वरघोष के मध्य" 9. **Final Triplet:** (Vishwamitra
+82	विभिन्न स्रोत	इस तथ्य पर बटे हुए हैं	किस वर्ष में
+82	** विभिन्न स्रोत 2. **Subject Type:** संगठन (Organization) / समूह (Group) 3. **Evidence for Subject:** "विभिन्न स्रोत" 4. **Relation:** इस तथ्य पर बटे हुए हैं 5. **Evidence for	** "इस तथ्य पर बटे हुए हैं" 6. **Object:** किस वर्ष में 7. **Object Type:** समय (Time) 8. **Evidence for	** "किस वर्ष में" 9. **Final Triplet:** (विभिन्न स्रोत
+84	Elbum	जारी किया गया	Cut 2006 ke madhya mein
+84	** Elbum 2. **Subject Type:** Organization (or Thing	** जारी किया गया 5. **Evidence for Relation:** "जारी किया गया" 6. **Object:** Cut 2006 ke madhya mein 7. **Object Type:** Event (or Time	** "Cut 2006 ke madhya mein" 9. **Final Triplet:** (Elbum
+84	** Ek ekalo ke beech 2. **Subject Type:** Location (or Relationship	** के बाद 5. **Evidence for Relation:** "के बाद" 6. **	** Ek lambi antar
+85	उन	कामचलाऊ	व्यवस्था
+85	** उन (They) 2. **Subject Type:** Person or Organization (Cannot be determined from the given sentence	** कामचलाऊ 5. **Evidence for Relation:** "कामचलाऊ" 6. **Object:** व्यवस्था (Establishment or System) 7. **Object Type:** Thing 8. **Evidence for Object:** "व्यवस्था" 9. **Final Triplet:** (उन	** उन्
+86	1900 के आसपास बहुत से विकासों	दिया	परिणामों को बेहतर कर दिया
+87	आप		बहुत योगदान
+88	उदाहरणार्थ	किये गये हैं	लेखबद्ध किये गये हैं
+88	** उदाहरणार्थ 2. **Subject Type:** संगठन (Thing) / वस्तु (Object) 3. **Evidence for Subject:** "उदाहरणार्थ" 4. **Relation:** किये गये हैं 5. **Evidence for	** "किये गये हैं" 6. **Object:** लेखबद्ध किये गये हैं 7. **Object Type:** वाक्य (Sentence) 8. **Evidence for	** "लेखबद्ध किये गये हैं" 9. **Final Triplet:** (उदाहरणार्थ
+89	जहां		इश -- डू
+90	ये तीनों अक्ष	उस तल में	एकबिन्दुगामी भी होने चाहिये
+91	** विकासशील देशों (Developing countries) 2. **Subject Type:** Location (Geographical region) 3. **Evidence for Subject:** "विकासशील देशों" 4. **Relation:** में 5. **Evidence for	** "में" 6. **Object:** किसानों के दूध विपणन के पुराने तरीके तेजी से बदल रहे हैं 7. **Object Type:** Process (Change in traditional methods of dairy processing) 8. **Evidence for	** "किसानों के दूध विपणन के पुराने तरीके तेजी से बदल रहे हैं" 9. **Final Triplet:** (विकासशील देशों
+92	Assuming 'unhone' is a third-person plural pronoun referring to a group of people	but in this context	it can be considered as an Organization or Group
+92	Unhone	started	A speech
+92	Assuming 'unhone' is a third-person plural pronoun referring to a group of people	but in this context	it can be considered as an Organization or Group
+92	** Unhone (They) 2. **Subject Type:** Person (Assuming 'unhone' is a third-person plural pronoun referring to a group of people	** started 5. **Evidence for Relation:** "की शुरुआत एक" 6. **Object:** A speech (Assuming 'ek deewaana' refers to a speech) 7. **Object Type:** Event 8. **Evidence for	** "एक दीवाना" 9. **Final Triplet:** (Unhone
+93	** इस रोग के प्रतिषेधात्मक उपचार 2. **Subject Type:** वस्तु (Thing) / खदान (Consumable) 3. **Evidence for Subject:** "इस रोग के प्रतिषेधात्मक उपचार" 4. **Relation:** में 5. **Evidence for	** "में" 6. **Object:** मक्खियों से खाद्य एवं पेय पदार्थो 7. **Object Type:** खदान (Consumable) 8. **Evidence for	** "मक्खियों से खाद्य एवं पेय पदार्थो" 9. **Final Triplet:** (इस रोग के प्रतिषेधात्मक उपचार
+94	यह	संदर्भित करता है	प्रतिस्पर्धी टीम की राष्ト्रीयता
+94	** यह 2. **Subject Type:** Thing (Object) 3. **Evidence for Subject:** "यह" 4. **Relation:** संदर्भित करता है 5. **Evidence for	** "संदर्भित करता है" 6. **Object:** प्रतिस्पर्धी टीम की राष्ट्रीयता 7. **Object Type:** Quality (Property) 8. **Evidence for	** "प्रतिस्पर्धी टीम की राष्ट्रीयता" 9. **Final Triplet:** (यह
+95	** सड़क मार्ग रत्नागिरी 1. **विषय:** सड़क मार्ग रत्नागिरी 2. **विषय का प्रकार:** Location (Place) 3. **सबूत:** "सड़क मार्ग रत्नागिरी" * **	** है 1. **सबूत:** "है" * **	** मुंबई से सीधी बस सेवा 1. **कर्म:** मुंबई से सीधी बस सेवा 2. **कर्म का प्रकार:** Service (Service provided) 3. **सबूत:** "मुंबैयी से सीधी बस सेवा" **अंतिम त्रिपद:** (सड़क मार्ग रत्न
+96	लकड़ी के ब्लाकों	होता था	प्रयोग
+97	यह शब्द	बनाने	सरकारी इकाई के लिये प्रयोग
+97	** यह शब्द 2. **Subject Type:** Thing (Noun) 3. **Evidence for Subject:** "यह शब्द" 4. **Relation:** बनाने 5. **Evidence for	** "बनाने" 6. **Object:** सरकारी इकाई के लिये प्रयोग 7. **Object Type:** Action (Verb) 8. **Evidence for	** "सरकारी इकाई के लिये प्रयोग" 9. **Final Triplet:** (यह शब्द
+98	** यह उत्तर प्रदेश के बलिया जिले 2. **Subject Type:** वस्तु (Thing) / जगह (Place) 3. **Evidence for Subject:** "यह उत्तर प्रदेश के बलिया जिले" 4. **Relation:** स्थित है 5. **Evidence for	** "स्थित है" 6. **Object:** इसका अंतरिक्ष (This area) 7. **Object Type:** वस्तु (Thing) / जगह (Place) 8. **Evidence for	** "इसका अंतरिक्ष" (implied
+99	उसेक	नहीं करवाई	पिता की हत्या
+99	** उसेक (He/She) 2. **Subject Type:** Person 3. **Evidence for Subject:** "उसेक" 4. **Relation:** नहीं करवाई 5. **Evidence for	** "नहीं करवाई" 6. **Object:** पिता की हत्या (Father's murder) 7. **Object Type:** Action 8. **Evidence for	** "पिता की हत्या" 9. **Final Triplet:** (उसेक
+101	हाइपरयूरीसेमिया	होता है	वात रोग का मूल कारण
+102	केरल	अपनी	आयुर्वेदिक चिकित्सा शैली
+102	** केरल (Kerala) 2. **Subject Type:** Location 3. **Evidence for Subject:** "केरल" 4. **Relation:** अपनी 5. **Evidence for	** "अपनी" 6. **Object:** आयुर्वेदिक चिकित्सा शैली (Ayurvedic healthcare system) 7. **Object Type:** Thing (Vastu) 8. **Evidence for	** "आयुर्वेदिक चिकित्सा शैली" 9. **Final Triplet:** (केरल
+103	इसका उदगम स्थान		का ढलुवा भाग
+103	** इसका उदगम स्थान 2. **Subject Type:** Location 3. **Evidence for Subject:** "इसका उदगम स्थान" 4. **Relation:** है 5. **Evidence for	** "है" 6. **Object:** का ढलुवा भाग है 7. **Object Type:** Location 8. **Evidence for	** "का ढलुवा भाग है" 9. **Final Triplet:** (इसका उदगम स्थान
+104	दक्षिण भारत में	ही	प्राधान्य था
+105	ये कहानियाँ	किसी देश या समय की हो सकती हैं	-
+106	** कुछ निम्नलिखित 2. **Subject Type:** संगठन (Things listed) 3. **Evidence for Subject:** "कुछ निम्नलिखित" 4. **Relation:** हैं 5. **Evidence for	** "हैं" 6. **Object:** जोकि प्रकृति आधारित निर्माण को प्रोत्साहित करते हैं 7. **Object Type:** विषय (Action) 8. **Evidence for	** "जोकि प्रकृति आधारित निर्माण को प्रोत्साहित करते हैं" 9. **Final Triplet:** (कुछ निम्नलिखित
+107	दर्शन -- परिषद्	सम्पन्न हुआ	2010
+107	** 'दर्शन -- परिषद्' 2. **Subject Type:** Organization (Committee) 3. **Evidence for Subject:** "दर्शन -- परिषद्" 4. **Relation:** सम्पन्न हुआ 5. **Evidence for	** "सम्पन्न हुआ" 6. **Object:** '2010' 7. **Object Type:** Time (Year) 8. **Evidence for	** "2010" 9. **Final Triplet:** (दर्शन -- परिषद्
+108	उनका देहांत हो गया		पर सन 1533
+109	यह	कहा जाता है	इसे पाण्सिल्क
+109	** यह (This) 2. **Subject Type:** Thing 3. **Evidence for Subject:** "यह" 4. **Relation:** कहा जाता है 5. **Evidence for	** "क्योंकि" 6. **Object:** इसे पाण्सिल्क (This is also called Panasilk) 7. **Object Type:** Thing 8. **Evidence for	** "क्योंकि यह तालाब में अक्सर देखा जाता है" 9. **Final Triplet:** (यह
+110	वे तीसरे ब्रिटिश प्रबंधक	बने	एकाधिक अवसर पर यूरोपियन कप
+111	मॉस	रोक रखा जाता है	जल
