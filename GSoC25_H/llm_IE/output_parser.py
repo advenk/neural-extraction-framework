@@ -39,10 +39,28 @@ class OutputParser:
         """
         triplets = []
         
-        # Clean the response
-        cleaned_response = self._clean_response(response)
+        final_result_marker = "**अंतिम परिणाम:**"
+        reasoning_marker = "**तर्क-वितर्क:**"
+        triplet_line_marker = "**अंतिम त्रिपद:**"
+        relation_marker = "* **संबंध"
+
+        parsing_target = response
+
+        if final_result_marker in response:
+            parsing_target = response.split(final_result_marker)[-1]
+        elif relation_marker in response and triplet_line_marker in response:
+            # Handle cases where relation details are listed and then a final triplet is summarized
+            lines = response.split('\n')
+            triplet_lines = [line.split(triplet_line_marker)[-1].strip() for line in lines if triplet_line_marker in line]
+            parsing_target = ", ".join(triplet_lines)
+        elif reasoning_marker in response:
+            lines = response.split('\n')
+            triplet_lines = [line.split(triplet_line_marker)[-1].strip() for line in lines if triplet_line_marker in line]
+            parsing_target = ", ".join(triplet_lines)
+    
+        cleaned_response = self._clean_response(parsing_target)
+    
         
-        # Try JSON parsing first
         json_triplets = self._parse_json_response(cleaned_response)
         if json_triplets:
             triplets.extend(json_triplets)

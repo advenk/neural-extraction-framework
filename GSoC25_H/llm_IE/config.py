@@ -10,8 +10,8 @@ class ModelConfig:
     temperature: float = 0.7
     top_p: float = 0.95
     top_k: int = 50
-    max_tokens: int = 200
-    timeout: int = 60
+    max_tokens: int = 1024
+    timeout: int = 300
 
 @dataclass 
 class ExperimentConfig:
@@ -23,7 +23,6 @@ class ExperimentConfig:
     max_retries: int = 3
     random_seed: int = 42
 
-# Available model configurations
 AVAILABLE_MODELS = {
     "mistral:latest": ModelConfig(
         name="mistral:latest",
@@ -31,7 +30,7 @@ AVAILABLE_MODELS = {
         temperature=0.3,
         top_p=0.9,
         top_k=40,
-        max_tokens=300
+        max_tokens=1024
     ),
     "gemma3:4b": ModelConfig(
         name="gemma3:4b", 
@@ -39,7 +38,7 @@ AVAILABLE_MODELS = {
         temperature=0.3,
         top_p=0.9,
         top_k=40,
-        max_tokens=300
+        max_tokens=1024
     ),
     "gemma3:1b": ModelConfig(
         name="gemma3:1b",
@@ -47,7 +46,7 @@ AVAILABLE_MODELS = {
         temperature=0.3,
         top_p=0.9,
         top_k=40,
-        max_tokens=300
+        max_tokens=1024
     ),
     "gemma3:4b-it-fp16": ModelConfig(
         name="gemma3:4b-it-fp16", 
@@ -55,7 +54,7 @@ AVAILABLE_MODELS = {
         temperature=0.3,
         top_p=0.9,
         top_k=40,
-        max_tokens=300
+        max_tokens=1024
     ),
     "llama3.2:3b-instruct-fp16": ModelConfig(
         name="llama3.2:3b-instruct-fp16", 
@@ -63,11 +62,36 @@ AVAILABLE_MODELS = {
         temperature=0.3,
         top_p=0.9,
         top_k=40,
-        max_tokens=300
+        max_tokens=1024
+    ),
+    
+    "llama3.2:1b-text-fp16": ModelConfig(
+        name="llama3.2:1b-text-fp16", 
+        description="Llama 3.2 1B - fp16 text-tuned",
+        temperature=0.3,
+        top_p=0.9,
+        top_k=40,
+        max_tokens=1024
+    ),
+    "qwen3:4b-fp16": ModelConfig(
+        name="qwen3:4b-fp16",
+        description="Qwen 3 4B - fp16 precision",
+        temperature=0.3,
+        top_p=0.9,
+        top_k=40,
+        max_tokens=1024
+    ),
+    "gemma3:12b-it-qat": ModelConfig(
+        name="gemma3:12b-it-qat",
+        description="Google Gemma 3 12B - 4-bit Quantized (best performer yet - 33.7% F1)",
+        temperature=0.3,
+        top_p=0.9,
+        top_k=40,
+        max_tokens=1024,
+        timeout=300
     )
 }
 
-# Evaluation configuration
 EVALUATION_CONFIG = {
     "benchie_gold_file": "../hindi-benchie/hindi_benchie_gold.txt"
 }
@@ -79,10 +103,10 @@ class Config:
         self.models = AVAILABLE_MODELS
         self.evaluation = EVALUATION_CONFIG
         
-        # Default experiment configuration
         self.experiment = ExperimentConfig(
-            models=["gemma3:4b-it-fp16"],
-            prompt_strategies=["few_shot", "chain_of_thought_english_hindi", "chain_of_thought_ER","chain_of_thought_ER_english_hindi"],
+            # best performing model is gemma3:12b-it-qat
+            models=["gemma3:4b", "gemma3:12b-it-qat"], 
+            prompt_strategies=["chain_of_thought_ER_english_hindi"], 
             evaluation_sets=["hindi_benchie_gold.txt"]
         )
         

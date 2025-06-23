@@ -332,7 +332,9 @@ class ChainOfThoughtERTemplate(BasePromptTemplate):
 
 
 class PromptTemplateManager:
-    """Manager for different prompt templates"""
+    """
+    manager for different prompt templates. returns the correct prompt template based on the strategy name.
+    """
 
     def __init__(self):
         self.templates = {
@@ -354,18 +356,7 @@ class PromptTemplateManager:
             )
         return self.templates[template_name]
 
-    def list_templates(self) -> Dict[str, Dict[str, str]]:
-        """List all available templates"""
-        return {
-            name: template.get_template_info()
-            for name, template in self.templates.items()
-        }
-
     def generate_prompt(self, template_name: str, sentence: str, **kwargs) -> str:
         """Generate prompt using specified template"""
         template = self.get_template(template_name)
         return template.generate_prompt(sentence, **kwargs)
-
-    def add_custom_template(self, name: str, template: BasePromptTemplate):
-        """Add a custom template"""
-        self.templates[name] = template 

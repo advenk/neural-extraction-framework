@@ -59,6 +59,7 @@ def run_full_dataset_evaluation():
     print("Loading complete Hindi-Benchie dataset...")
     data_loader = BenchieDataLoader(golden_standard_path)
     sentences = data_loader.get_all_sentences()
+    # sentences = dict(list(data_loader.get_all_sentences().items())[:10]) # for testing
     print(f"Loaded {len(sentences)} sentences for evaluation.")
     
     template_manager = PromptTemplateManager()

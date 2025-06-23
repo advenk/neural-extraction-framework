@@ -1,0 +1,427 @@
+1	शक्तिरूपी माया	सििद्ध होती है	कार्यरूप जगत को देखकर ही
+1	Subject	Relation	Object
+1	is "शक्तिरूपी माया	is "सििद्ध होती है	is "कार्यरूप जगत को देखकर ही." But I need to check if "सििद्ध होती है" is the correct relation here. Alternatively
+2	अखिल भारतीय पुलिस डयूटी मीट	आयोजित करना	अंगुलि चिह्न विज्ञान प्रतियोगिता
+3	केन्द्रीय सरकार के विभागों एवं भारत सरकार के उपक्रमों द्वारा	परीक्षण करना	विवादित अंगुलि चिह्नों का
+3	is "केन्द्रीय सरकार के विभागों एवं भारत सरकार के उपक्रमों द्वारा	here is "परीक्षण करना" (to test) between the subject and the object. The subject is an organization (central government departments and Indian government projects	is a thing (controversial finger marks). Wait
+3	is the agent (the departments and projects) performing the action. However	is "परीक्षण करना" (to test). I need to make sure that the subject is correctly identified as an organization. "केन्द्रीय सरकार के विभागों" is departments of the central government	is "विवादित अंगुलि चिह्नों
+4	एजेंट	मौजूद है	फ़लेमिंग की बारह पुस्तकों व दो लघुकथाओं
+5	उन्होंने	शुरू की	एक पत्रिका ' साधु
+5	उन्होंने	शुरू की	एक पत्रिका ' साधु
+5	is "उन्होंने	is "शुरू की	is "एक पत्रिका ' साधु
+6	Subject	Relation	Object
+6	नवीनतम वेतनमानों	लागू किया गया है	कंपनी में
+6	नवीनतम वेतनमानों	लागू किया गया है	कंपनी में
+6	here is "नवीनतम वेतनमानों" (latest salary rates	here is "लागू किया गया है" which is the verb phrase. The object is "कंपनी में	type is "स्थान" (Location). Wait
+6	is the thing that was implemented	triplets	). So the subject is "नवीनतम वेतनमानों
+6	or object in the sentence. So perhaps it's not part of the triplet. So the main triplet is (नवीनतम वेतनमानों	is implemented	is the company. The date is part of the context but not part of the triplet. Wait
+7	trial	started in	jail
+7	Subject	Relation	Object
+7	गोधरा ट्रेन कांड की सुनवाई	शुरू हुई	अहमदाबाद के साबरमती केंद्रीय जेल के अंदर
+7	. The sentence starts with "01 जून" which is the date	. The verb here is "शुरू हुई" which means "started." So the relation would be "started" or "begun." The object is the location where the trial started	type is "Location." Wait
+7	and object types. Subject: "गोधरा ट्रेन कांड की सुनवाई" is the trial	is "started in" (शुरू हुई के अंदर). Object is "अहमदाबाद के साबरमती केंद्रीय जेल" which is a location. So the triplet would be (Subject	) as per the example. I think that's the only relation here. The date is just a time reference
+8	Subject	Relation	Object
+8	वे" (they	is "नियुक्त हुई" (were appointed). So the relation is "appointed as". Wait	). The subject is "वे
+9	06 प्रतिशत ऐसे लोग थे	जिनका कोई विशेष धर्म नहीं था	विशेष धर्म
+9	06 प्रतिशत ऐसे लोग थे	जिनका कोई विशेष धर्म नहीं था	विशेष धर्म
+10	इम्पीरियल पोस्टल सर्विस	जारी किया गया	पहला डाक टिकट
+10	इम्पीरियल पोस्टल सर्विस	जारी किया गया	पहला डाक टिकट
+10	इम्पीरियल पोस्टल सर्विस	जारी किया गया	पहला डाक टिकट
+10	is the organization that issued the stamp	s. The main relation here is "issued" (जारी किया गया). The subject is the organization	is the postage stamp
+10	is the organization	is "issued". So the triplet would be (इम्पीरियल पोस्टल सर्विस	is "पहला डाक टिकट
+11	आंध्र	राज्य का दर्जा पाया	कर्नूल
+11	आंध्र	राज्य का दर्जा पाया	कर्नूल को
+11	here. The subject type is likely an organization or a state	is "राज्य का दर्जा	here is "कर्नूल को
+11	] [Verb] [Object] [Relation]. The verb is "पाया	is "राज्य का दर्जा". So the triplet would be (आंध्र	is "कर्नूल". But the exact words from the sentence are "राज्य का दर्जा पाया". So the relation is "राज्य का दर्जा पाया
+12	दूसरा सीज़न	ज़ारी किया गया	न्यूजीलैंड और ऑस्ट्रेलिया में
+12	दूसरा सीज़न	ज़ारी किया गया	न्यूजीलैंड और ऑस्ट्रेलिया में
+12	is the action's receiver. The main verb here is "ज़ारी किया गया" which means "was started" or "was carried out." The subject of the sentence is "दूसरा सीज़न" (the second season	here is between the season and the location where it was started. The subject is "दूसरा सीज़न	is the location "न्यूजीलैंड और ऑस्ट्रेलिया में
+13	Robert Iger	as CEO	Michael Eisenberg's position
+13	रॉबर्ट आइगर ने	सीईओ के रूप में	माइकल आइजनर का स्थान
+13	Robert Iger	as CEO	Michael Eisenberg's position
+13	is "रॉबर्ट आइगर ने" (Robert Iger). The object is "माइकल आइजनर का स्थान" (Michael Eisenberg's position). The relation is "सीईओ के रूप में" (as CEO). So	here is taking over the position of CEO. The object is Michael Eisenberg's position	type is Position or Role. Wait
+13	is "रॉबर्ट आइगर ने" (Robert Iger took	is "सीईओ के रूप में" (as CEO). Yes	is a position
+14	यह देश	आजाद हुआ	इंग्लैंड के शासन से
+15	Subject	Relation	Object
+15	चन्द्रसिंह	भेज दिया गया	फ्रांस
+15	. The sentence starts with "1 अगस्त 1915 में चन्द्रसिंह को..." which translates to "On August 1	. The verb here is "भेज दिया गया" which means "was sent". So the relation is "भेज दिया गया" or "sent". The object would be "फ्रांस" (France). But wait	. So the subject is Chandrasinh
+15	is Chandrasinh	is "sent	is France. But the sentence also mentions "अंग्रेजों द्वारा" which is the agent (English). However
+15	is Chandrasinh	is "भेज दिया गया	is France. But the sentence also mentions "अंग्रेजों द्वारा" which is the agent
+15	is Chandrasinh	is "sent to	is France. But the exact words for the relation would be "भेज दिया गया". So the triplet would be (चन्द्रसिंह
+16	State	declared as	self-governing province
+16	State	declared as	self-governing province
+16	Govind Balbhaj Pant	became first chief minister	state
+16	is "इसे" (it	is "घोषित किया गया" (declared). The object would be "स्वायत्तशासी प्रान्त" (self-governing province). But wait	is the date. Wait
+16	is the state	is "declared as	is the province. But the exact words for the relation are "घोषित किया गया" which is "was declared". So the triplet would be (State
+16	? Hmm	triplet	is "self-governing province". But the date is part of the time when the declaration happened. However
+16	as "भारतीय टीम ने" and the object as "ऑस्ट्रेलिया को	are "घोषित किया गया	is "इसके" (its
+17	हिन्दी प्रचार सभा	आन्दोलन होना	आन्दोलन
+17	हिन्दी प्रचार सभा	आरम्भ होना	भारत के स्वतन्त्रता आन्दोलन
+17	हिन्दी प्रचार सभा	आन्दोलन होना	आन्दोलन
+17	हिन्दी प्रचार सभा	आरम्भ होना	भारत के स्वतन्त्रता आन्दोलन
+17	types are correct. "हिन्दी प्रचार सभा" is an event or organization	आन्दोलन होना" (being an agitation) would be the first triplet. Then the second relation is "आरम्भ होना" (started) with the object being the Indian independence agitation	is "आन्दोलन" (ag
+19	सोनू	बन चुके हैं	भारतीय संगीत जगत में
+19	सोनू	बन चुके हैं	भारतीय संगीत जगत में
+19	सोनू	बन चुके हैं	भारतीय संगीत जगत में
+19	सोनू	बन चुके हैं	भारतीय संगीत जगत में
+19	is "सोनू	is "become a major figure in	is "भारतीय संगीत जगत में". But the exact words for the relation are "बन चुके हैं
+20	कोप्पेन मौसम वर्गीकरण	used for	मौसम आकलन के लिए
+20	कोप्पेन मौसम वर्गीकरण	used for	मौसम आकलन के लिए
+20	is the Copenhagen classification	is used for	is weather assessment. So the final triplet would be (कोप्पेन मौसम वर्गीकरण
+21	सोवियत दस्तों ने	क़ब्ज़ा करने	बर्लिन
+21	सोवियत दस्तों ने	आज़ाद कराया	प्राग को
+21	is "सोवियत दस्तों ने" (the Soviet troops). The object is "प्राग को" (Prague). The relation here is "आज़ाद कराया". But wait	. The Soviet troops took control of Berlin	is "बर्लिन पर" (Berlin). Wait
+21	is "सोवियत दस्तों ने" (Soviet troops). So the first triplet would be (सोवियत दस्तों ने	is "बर्लिन	type would be Location (City). For the second relation
+22	वे	प्राप्त करने वाले	पद्म श्री सम्मान
+22	seems to be "वे प्रथम भारतीय हैं" which translates to "those first Indians." But wait	is "प्राप्त करने वाले" (those who have received). The object would be "पद्म श्री सम्मान" (Padma Shri award) from the President. But the example had the subject as the entity performing the action	is "पद्म श्री सम्मान" (Padma Shri award). Then
+22	is "वे प्रथम भारतीय हैं" (they are the first Indians	is "प्राप्त करने वाले" (have received	is "पद्म श्री सम्मान" (Padma Shri award). Then
+22	and the award is "प्राप्त करने वाले". But the example had two relations: one for "हराकर" (defeated) and another for "जीता" (won). So maybe here	प्राप्त करने वाले" (have received	is the award. Then
+22	is "वे" (they	is "प्राप्त करने वाले". So the triplet would be (वे	is "पद्म श्री सम्मान" (Padma Shri award). But the sentence also says "राष्ट
+23	. The subject here is "वित्तीय सहायता" (financial assistance	is "given to" or "provided to". The object would be "all children	is "all children
+23	. So maybe here	is "given to" (दी जाती है) with the object being "all children	being "completion of school education". Wait
+23	भारतीय टीम ने) with different relations (हराकर and जीता). So in this case	s would be "given to" (दी जाती है) and "provided until" (तक). But the sentence is passive	is "all children
+24	यह स्थान		दर्शनीय केन्द्र
+24	यह स्थान		दर्शनीय केन्द्र
+24	यह स्थान		दर्शनीय केन्द्र
+24	is "यह स्थान	is "है	is "दर्शनीय केन्द्र." But the "क्षेत्र के लोगों के लिए" is a prepositional phrase indicating for whom. So the main triplet would be (यह स्थान
+24	is "यह स्थान	is "है	is "दर्शनीय केन्द्र." The "क्षेत्र के लोगों के लिए" is a prepositional phrase modifying the object
+25	पाणिनीय व्याकरण	प्रतिनिधित्व करता है	वेदाङ्ग
+25	पाणिनीय व्याकरण	प्रतिनिधित्व करता है	वेदाङ्ग
+25	पाणिनीय व्याकरण	प्रतिनिधित्व करता है	वेदाङ्ग
+25	here is "पाणिनीय व्याकरण" (Pāṇinīya vyākaraṇa	is "प्रतिनिधित्व करता है" which means "represents" or "serves as a representative". The object is "वेदाङ्ग" (Vedāṅga	type would be a Concept or a Category
+25	was an Organization	is "represents" or "serves as a representative". So the triplet would be (पाणिनीय व्याकरण	is a Concept. The relation is "represents" or "serves as a representative". Wait
+26	मैं	उपासना करता हूं	इस श्रेष्ठ तत्त्व की उपासना
+26	मैं	समझकर	शब्द की आत्मा
+26	मैं	उपासना करता हूं	इस श्रेष्ठ तत्त्व की उपासना
+26	मैं	समझकर	शब्द की आत्मा
+26	is a person (मैं). The object of the first	is a thing (the worship of the superior principle). The	of the second relation is a concept (the soul of words). Yes
+27	चार का उल्लेख	मिलता है	ऋग्वेद में
+27	here is "चार का उल्लेख" (the mention of four). The verb is "मिलता है" (is found). The object would be "ऋग्वेद में" (in the Rigveda). But wait	here is between the four rivers and the Rigveda. But the subject is "चार का उल्लेख" (the mention of four	is "ऋग्वेद में" (in the Rigveda). But wait
+27	type here is "चार का उल्लेख" which is a mention of four rivers. The subject type would be "वस्तु" (Thing) or "पुरस्कार" (Prize)? Wait	is "मिलता है" (found in	is "ऋग्वेद में" (in the Rigveda). Alternatively
+27	is "चार" (four) and the relation is "उल्लेख" (mentioned	is "मिलता है" (is found	is "ऋग्वेद में" (in the Rigveda). So the triplet would be (चार का उल्लेख
+27	type here is "वस्तु" (Thing) because it's a reference to the rivers. The object is "ऋग्वेद में	is "मिलता है" (found in). The	is "ऋग्वेद में" (in the Rigveda). But the subject is "चार का उल्लेख" (the mention of four
+28	उन्होंने	इंकार कर दिया	बच्चे को
+29	शिक्षा का तुलनात्मक अध्ययन	जुड़ा है	सभी सामाजिक विज्ञानों
+30	गुजरात क्वीन एक्स्प्रेस 9110	संचालित	भारतीय रेल
+31	यह शहर		पश्चिम बंगाल का प्रमुख हिल स्टेशन
+31	यह शहर		पश्चिम बंगाल का प्रमुख हिल स्टेशन
+31	यह शहर		पश्चिम बंगाल का प्रमुख हिल स्टेशन
+31	here is "यह शहर" which translates to "this city." The verb is "है" meaning "is." The object or complement is "पश्चिम बंगाल का प्रमुख हिल स्टेशन" which is "the main hill station of West Bengal." So	is between the city and its status as a main hill station in West Bengal. The subject is "यह शहर" (this city	. The verb here is "है
+31	is the city	is "है	is the hill station. But maybe the relation is "प्रमुख हिल स्टेशन" as the relation. Wait
+31	is a Location (city). So the final triplet is (यह शहर	s. Maybe there's another relation here. Let me check again. The sentence is "यह शहर पश्चिम बंगाल का प्रमुख हिल स्टेशन है." So the main relation is "है	is the hill
+32	subject	relation	object
+32	Silkot	is a village	Gangolihat tehsil
+32	subject: Silkot	relation: is a village	object: village
+32	. So maybe here	is Silkot is a village	village) 2.
+33	technical center of the airline	relocate	Trivandrum
+33	. The subject here is "एयर लाइन के तकनीकी केंद्र को" which translates to "the technical center of the airline." But wait	here is that the technical center of the airline is to be relocated to Trivandrum. Therefore	is Trivandrum. But wait
+33	type would be "Technical Center" (Organization?	is "relocate technical center to Trivandrum." But the sentence is in passive voice	of the verb. So the structure is: [Subject] [verb] [object] [location]. But in Hindi
+34	दोनों मामले	पेश हुए	सर लुइस शर्ट और विशेष न्यायाधीश मोहम्मद रजा
+34	here seems to be "दोनों मामले" (both cases). The verb is "पेश हुए" (were presented). The people involved are the Chief Justice Sir Louis Shert and the Special Justice Mohammad Raza. So	is between the cases and the judges. The subject is the cases	is the judges. But wait
+35	Basho	died due to illness	28 November 1694
+35	Basho	died	28 November 1694
+35	Basho	died due to	illness
+35	Basho	died	28 November 1694
+35	. The subject here is "बाशो" (Basho). The sentence says "बाशो की मृत्यु" which translates to "the death of Basho". So the subject is Basho. The type of subject is a Person	. The relation here is "मृत्यु" (death). The sentence says "बाशो की मृत्यु... हो गई" which means "Basho's death occurred...". So the relation is death. The evidence is "मृत्यु". Then the object. Wait	might be the cause of the death
+35	. Alternatively	. But the original sentence has "किसी बीमारी की वजह से" which is the cause. So the two relations would be: 1. Subject: Basho (Person	28 November 1694 (Date) 2. Subject: Basho (Person
+36	विक्रम ने	सोचा	एक हल
+37	शाही सेना	मुकाबला	पंचायती सेना
+37	शाही सेना	मुकाबला	पंचायती सेना
+37	is likely "शाही सेना" because it's the one that's being compared. The relation here is "मुकाबला" which means "contest" or "battle". The object would be "पंचायती सेना". Wait	is between the two armies. But the user wants triplets. So the subject is "शाही सेना	is "पंचायती सेना". But I need to check the types. Subject type: Army (Organization?
+37	is "शाही सेना	is "मुकाबला" and the subject is "पंचायती सेना	is "शाही सेना". But that would be the same relation in reverse. However
+37	was "भारतीय टीम ने" and the object was "ऑस्ट्रेलिया को". So the direction is important. In the given sentence	is "मुकाबला	is "पंचायती सेना". Therefore
+38	here is "मर्लगोंड". The sentence says that Marlagond is a village (गाँव) in the district of Adilabad	. The sentence says "मर्लगोंड... का एक गाँव है	is "गाँव" (village). Wait
+38	is "मर्लगोंड	is "है	is "गाँव". However
+39	अनेक ग्रन्थ	लिखे गये	व्याकरण के दर्शन पक्ष पर
+39	अनेक ग्रन्थ	लिखे गये	व्याकरण के दर्शन पक्ष पर
+39	अनेक ग्रन्थ	लिखे गये	व्याकरण के दर्शन पक्ष पर
+39	of the sentence is "अनेक ग्रन्थ" (many books	here is "written on" or "written about." The subject is the books	type: Thing). The relation is "written on" (from the verb "लिखे गये" which is passive
+39	and object types. The subject is "अनेक ग्रन्थ" which is "many books	s. The subject is the books	is the topic. I think that's it. Let me make sure there's no other possible relations. The sentence is straightforward. The main action is writing
+40	. The sentence starts with "1975 में इलाहाबाद में नवनिर्मित मेहता अनुसंधान संस्थान में निदेशक बने ." Wait	is "निदेशक बने" (became director). But the sentence structure is a bit confusing. Let me parse it again. The sentence is: "In 1975	s "ऑस्ट्रेलिया को" and "विश्व कप". In this case
+41	इस जगह का नाम	रखा गया	रुस्तम खान
+41	इस जगह का नाम	रखा गया	रुस्तम खान
+41	इस जगह का नाम	रखा गया	रुस्तम खान
+41	here is "उनके नाम पर इस जगह का नाम	here is "रखा गया" (was given). The object would be "रुस्तम खान" (Rustam Khan). But I need to confirm the subject type. "इस जगह का नाम" is a name	is "रुस्तम खान
+41	is the place's name	is "रखा गया	is the name "रुस्तम खान". Alternatively
+41	is "इस जगह" (this place	is "नाम रखा गया" (named as). But the structure is "इस जगह का नाम रुस्तम खान रखा गया	is "रुस्तम खान" (Name). Alternatively
+41	is the place itself	would be "नाम रखा गया" (named as	is "रुस्तम खान
+41	to be "इस जगह" (this place	is "रखा गया	is the name. That seems correct. </think> **तर्क-वितर्क (Reasoning):** * **संबंध
+42	कुछ लोग	पसंद करते हैं	अपने घर पर ही रहना
+43	उनकी वापसी	हुई	अमरीका के अट्ठाइसवें रक्षा सचिव के रूप में
+43	Subject	Relation	Object
+43	Subject	Relation	Object
+43	is "उनकी वापसी	is "हुई	is "अमरीका के अट्ठाइ
+44	आधारशिला	रखी गयी थी	सर वाईकर
+44	आधारशिला	रखी गयी थी	सर वाईकर
+44	आधारशिला	रखी गयी थी	सर वाईकर
+44	of this verb is "आधारशिला" (foundation). The object would be the person who did the action	here is "रखी गयी थी" (was laid). The subject is "आधारशिला" (foundation	is "सर वाईकर" (Sir Wicker). But I need to check the types. Subject: "आधारशिला" is a noun
+44	is the foundation	could be "रखी गयी थी" (was laid	being Sir Wicker. But in the example given
+44	is "आधारशिला	is "रखी गयी थी	is "सर वाईकर
+45	वह	संपर्क में है	विभिन्न टेलीविजन कंपनियों
+46	त्रिदेवनाथ बैनर्जी	सम्मानित किया गया था	पद्म भूषण
+46	here is "त्रिदेवनाथ बैनर्जी को". The verb is "सम्मानित किया गया था	is between the person (त्रिदेवनाथ बैनर्जी) and the honor (Padma Bhushan). The relation here is "सम्मानित किया गया था" which translates to "was honored". The object is the Padma Bhushan	type is "पुरस्कार" (prize/award). Wait
+46	is "त्रिदेवनाथ बैनर्जी को	is "सम्मानित किया गया था	is "पद्म भूषण से". But the object type is "पुरस्कार" (prize). Alternatively
+47	उन्होने	संगीत रचना की	हिन्दी फिल्मों के लिए
+47	उन्होने	संगीत रचना की	हिन्दी फिल्मों के लिए
+47	as "भारतीय टीम ने" which is a noun phrase. Here	is "संगीत रचना की" (composed music). But the user's example had "हराकर" as the relation. So in this case	is "हिन्दी फिल्मों के लिए" (for Hindi films). So the triplet would be (उन्होने
+48	here is "काइटिन का" which translates to "of cotton" or "cotton's". But wait	here is "used in" or "used in processes". The subject is "काइटिन का	is "अनेक प्रक्रियाओं में
+49	सभी पर्व	मनाए जाते हैं	...
+49	सभी पर्व	मनाए जाते हैं	...
+49	सभी पर्व	मनाए जाते हैं	...
+49	सभी पर्व	मनाए जाते हैं	...
+49	is "सभी पर्व" (all festivals	here is "मिलजुल कर मनाए जाते हैं" which translates to "celebrated together." But the relation should be a verb that connects the subject to the object. However	might be the festivals themselves. Wait
+49	is "सभी पर्व	is "मनाए जाते हैं" (are celebrated	is the festivals. But the subject is the festivals
+49	is the festivals	is "मिलजुल कर" (together	is the festivals. But the subject is the festivals
+49	is "सभी पर्व" (all festivals	is "मनाए जाते हैं" (are celebrated	is the festivals. However
+50	Subject	Relation	Object
+50	of this verb is "द डार्क नाईट राइसेस" (The Dark Knight Rises). The object would be the countries where it was released: America	released in" with the countries as the object? But the sentence lists multiple countries. Hmm	is the list of countries. Alternatively
+50	. Let me check the example again. In the example	s: "हराकर" (defeated) and "जीता" (won). So each relation is a separate triplet. So here	is the countries where it was released. But the sentence lists three countries: America
+50	. So maybe in this case	is "released in" with the object being the list of countries. Alternatively	is each country. But the sentence structure is "released in America
+50	. So maybe here	is "released in" and the object is the list of countries. But the user might want each country as a separate triplet. However	. Alternatively
+50	. So maybe here	is "released in" with the object being the three countries. Alternatively	is the list of countries. But the user's example had a single object for each relation. So in this case
+51	यह	लगाया जाता है	जर्मनी के फ्रैंकफर्ट शहर मे
+51	यह	लगाया जाता है	जर्मनी के फ्रैंकफर्ट शहर मे
+51	is "यह" which means "this." The location is "जर्मनी के फ्रैंकफर्ट शहर मे" which is "in the city of Frankfurt	here is between "यह" (this) and "लगाया जाता है" (is done	type
+52	Draupadi	gave	garland
+52	Draupadi	moved forward	Arjuna's neck
+52	here is "द्रौपदी ने" which translates to "Draupadi did." The verb here is "डाल दिया" meaning "gave" or "placed." The object is "वरमाला" which is "vermala" (a garland). But wait	is "डाल दिया" (gave) between Draupadi and the garland. But there's also the action of moving forward	is "वरमाला." The recipient is "अर्जुन के गले में." So the first relation is "डाल दिया" (gave) with subject Draupadi
+52	. So maybe here	s are: - (Draupadi	is "वरमाला." Then
+53	यह त्यौहार	मनाया जाता है	पूरे उत्तर भारत में
+53	यह त्यौहार	राम नवमी के दौरान	राम नवमी
+53	is the same	is "राम नवमी के दौरान" (during Ram Navmi	is "राम नवमी" (Ram Navmi). The object here is an event or a festival. I need to make sure the subject type is correct. "यह त्यौहार" is a festival
+54	तटीय कर्नाटक के भोजन में	व्यापक उपयोग	समुद्री
+55	Carl	improved	garden
+55	is Carl	is "studied" with the object being "study" or "studying." But the exact words are "अध्ययन के साथ ही	is the garden. The "अध्ययन के साथ ही" is part of the action that Carl did. So the relation is "improved
+56	सिफियस चतुर्थ	कहते हैं	सिफीड
+56	सिफियस चतुर्थ	कहते हैं	सिफीड
+56	here seems to be "सिफियस चतुर्थ" which translates to "Sifius Fourth" or maybe "Fourth Sifius." But I'm not sure about the exact term. However	] [Object]. The subject is "सिफियस चतुर्थ" (Fourth Sifius	is "सिफीड" (Sifid
+56	is likely a star or a constellation (Organization or Location?	is "कहते हैं" which is a verb indicating a naming or classification. The object is the term "सिफीड	. The subject is the entity being referred to (Fourth Sifius
+56	is a star or constellation (Organization?	is the verb	is the term (Thing). Alternatively
+57	यह	प्रसिद्ध है	प्राथमिक विधि अध्यारोप
+58	इस देश	संपर्क	चीन तथा जापान
+59	कश्यप ने	पता लगाया	राजा की आयु में कुछ घड़ी शेष हैं
+59	कश्यप ने	पता लगाया	राजा की आयु में कुछ घड़ी शेष हैं
+59	कश्यप ने	पता लगाया	राजा की आयु में कुछ घड़ी शेष हैं
+59	is correctly identified. The subject is "कश्यप ने" which is a person (Person). The object is the information about the king's age	is "found out." Wait	is the content. The "तत्काल ज्योतिष गणना करके" is the method used
+59	s action. So the triplet would be (कश्यप ने	is "ज्योतिष गणना करके" (through astrology calculation	is a statement (Thing
+60	मोमबत्तियाँ	प्रयुक्त होती है	अभ्रक आदि की खानों
+60	मोमबत्तियाँ	प्रयुक्त होती है	अभ्रक आदि की खानों
+60	मोमबत्तियाँ	प्रयुक्त होती है	अभ्रक आदि की खानों
+60	here is "मोमबत्तियाँ" (matchsticks	here is "used in" or "used in mines of". The subject is "मोमबत्तियाँ" which is a thing (object	is "अभ्रक आदि की खानों" (mines of graphite and others
+61	उन्होंने	लिखे हैं	कहानियाँ और उपन्यास
+62	is "वो" (they	here is that the subject is the first Dalit and first Malayali Chief Justice. So	would be the titles "पहले दलित" and "पहले मलयाली मुख्य न्यायाधीश". Wait
+62	is "वो" (they	is that they are the first Dalit and first Malayali Chief Justice. Therefore	s being the two titles. But the user wants relation triplets. So each relation would be a subject (they
+62	is "वो" (they	s would be that they are the first Dalit Chief Justice and the first Malayali Chief Justice. Wait	being "पहले दलित और पहले मलयाली मुख्य न्यायाधीश". But the example had two relations
+62	is "वो" (they	is "हैं	is "पहले दलित और पहले मलयाली मुख्य न्यायाधीश". But the example had two relations
+63	. The subject here is "उन्होंने" which is "they". But in Hindi	was "हराकर" (defeated	was "ऑस्ट्रेलिया को" (Australia). So the subject was an organization. In this case
+63	is "उन्होंने	was "हराकर" (defeated	was "ऑस्ट्रेलिया को" (Australia). So the subject was an organization. In this case
+64	स्थानीय आबादी	निर्भर रहती है	चाय के व्यापार पर
+65	is "इसे	is "लागू किया जाता है	is "आधारभूत प्रोफ़ाइल में". Wait
+65	here is "इसे	is "लागू किया जाता है	is "आधारभूत प्रोफ़ाइल में". But the user might be expecting the subject to be "इसे" and the object to be "आधारभूत प्रोफ़ाइल में". The type of the subject is "इसे" which is a pronoun
+66	उन्हें	is known as	उत्कल मणि
+66	is "उन्हें	is "known as	being "उन्हें." Wait
+66	of the sentence is "उत्कल मणि	is "known as	being "उन्हें." But that doesn't make sense. Wait
+66	is "उत्कल मणि	is "is known as	is "उन्हें." But that's not right. Let me parse it again. The sentence is passive: "They are known as Utikal Mani." So the subject is "उत्कल मणि
+66	is "उत्कल मणि	is "is known as	is "उन्हें." But that's not correct. Alternatively
+66	is "उन्हें	is "is known as	being "उत्कल मणि." But that would be "They are known as Utikal Mani
+66	is "उत्कल मणि	is "is known as	being "उन्हें." Hmm
+66	]." So the verb is "जाना जाता है	is "is known as	being "उन्हें." But that doesn't fit. Alternatively
+66	is "उन्हें	is "is known as	being "उत्कल मणि." That makes more sense. Because "They are known as Utikal Mani." So the subject is "उन्हें
+66	type would be "Person" or "Organization	is "known as	is "उत्कल मणि." But "उत्कल मणि" is a proper noun
+66	is "उत्कल मणि	is "is known as	being "उन्हें." But that doesn't make sense. The correct structure
+67	would be "कृपया" which is "please	s	is "French Flemish." However
+67	was "भारतीय टीम ने" which is a noun phrase. In this case	is "see	. But the sentence structure is "For more information
+67	is "अधिक जानकारी" (more information	is "see	is "फ्रेंच फ्लेमिश." But I need to check the exact words. The sentence is "कृपया फ्रेंच फ्लेमिश को देखें." So the verb is "देखें" (see
+67	here is the person being addressed	is "see" between "अधिक जानकारी" and "फ्रेंच फ्लेमिश." But the structure is "For more information	is "French Flemish." But the example didn't include the subject as a named entity. Alternatively
+68	इस नदी का ज्यादातर अंश	प्रवाहित होता है	पाकिस्तान में
+68	Subject	Relation	Object
+68	इस नदी का ज्यादातर अंश	प्रवाहित होता है	पाकिस्तान में
+68	Subject	Relation	Object
+68	Subject	Relation	Object
+68	इस नदी का ज्यादातर अंश	प्रवाहित होता है	पाकिस्तान में
+68	Subject	Relation	Object
+68	Subject	Relation	Object
+68	Subject	Relation	Object
+68	here is "इस नदी का ज्यादातर अंश" which translates to "the majority of this river's part." The verb is "प्रवाहित होता है" meaning "flows." The object is "पाकिस्तान में" which is "in Pakistan." So	here is about the flow of the river's part into Pakistan. The subject is the river's part	is Pakistan
+68	is the river's majority part	is that it flows into Pakistan. So the triplet would be (इस नदी का ज्यादातर अंश	. The verb is "प्रवाहित होता है
+68	is the river's part	is flows	is Pakistan. So the final triplet would be (इस नदी का ज्यादातर अंश
+69	Subject	Relation	Object
+69	मत्रूह मुहाफ़ज़ाह का अंदरूनी भाग	हिस्सा है	लीबियाई रेगिस्तान
+69	मत्रूह मुहाफ़ज़ाह का अंदरूनी भाग	स्थित है	सीवा नख़लिस्तान (ओएसिस
+69	types. "मत्रूह मुहाफ़ज़ाह का अंदरूनी भाग" is a part of a region	s are correctly identified. The first relation is "हिस्सा है" which is "is a part of	being the oasis. But the subject here is "मत्रूह मुहाफ़ज़ाह का अंदरूनी भाग" which is the same as the first subject. So the triplet would be (Subject
+69	is a Location	and	. </think> **तर्क-वितर्क (Reasoning):** * **संबंध
+70	here is "राज्य की राजधानी" which is "the capital of the state." The object is "बंगलुरु शहर" (Bengaluru city). The relation is "है" (is	. Wait	. The first part is "राज्य की राजधानी बंगलुरु शहर है" which is "Bengaluru is the capital of the state." So the relation here is "है" (is
+70	is "राज्य की राजधानी" (the capital of the state	is "है" (is	is "राज्य की राजधानी" (the capital of the state). Wait
+70	is "Bengaluru	is "is the capital of	is "the state." But in the sentence
+71	ये	प्रसिद्ध हैं	अपनी रहस्यमयी और भयावह कहानियों के लिए
+71	ये	प्रसिद्ध हैं	अपनी रहस्यमयी और भयावह कहानियों के लिए
+71	here is "ये" which refers to some entities	is "प्रसिद्ध हैं" (are famous). The subject is "ये" which is a pronoun	is the reason for their fame
+71	ये" is a pronoun	is "प्रसिद्ध हैं" which is a verb indicating fame. The object is "अपनी रहस्यमयी और भयावह कहानियों के लिए" which is the reason for fame. The object type here is "Reason" or "Cause	was a thing (like "विश्व कप"). However
+71	. The sentence is "ये... प्रसिद्ध हैं" so the subject is "ये	is "प्रसिद्ध हैं	is the reason
+72	Subject	Relation	Object
+72	collections	published	action
+72	collections	published	action
+72	here is "उनका एक कहानी संग्रह और दो निबंध संग्रह" which translates to "one collection of stories and two essay collections." The verb is "प्रकाशित हुए हैं" meaning "have been published." Now	s. The main relation here is "प्रकाशित हुए हैं" which is the action of being published. The subject is the collections	would be the action itself
+72	is the collections	is the action. So the triplet would be (Subject	). However
+72	and the action (like "हराकर" which is the action of defeating). So here	would be "प्रकाशित हुए हैं" and the object is the action. But that's not standard. Alternatively	is the publisher
+72	is the collections	is "प्रकाशित हुए हैं" and the object is the action. But that's not a standard triplet. Alternatively	is the publisher
+72	is the collections	to be "प्रकाशित हुए हैं" (published	is the action. But in the example
+73	Subject	Relation	Object
+73	is "पद्मनाभ दत्त ने	s. The main relation here is "लिखा है" (wrote). The subject is the person	is the book "सुपद्य व्याकरण". The 15th century is probably the time when the book was written
+73	is "पद्मनाभ दत्त ने	s would be "लिखा है" between the person and the book. Then	s description. But the example didn't do that. Let me check the example again. In the example
+73	s information	. However	s attributes. But the example didn't do that. The example had two relations: one for "हराकर" and another for "जीता". So in this case
+73	here is the person	is "लिखा है	is the book. Then
+74	Alabama	located to the west of	this
+74	was "भारतीय टीम ने	is their location relative to "इसके". But since "इसके" is not a specific entity	is "इसके". However
+76	is "निम्नलिखित सूचना नियम" (the following information rule	is "है" (is	being "एक सरलीकृत सारांश" (a simplified summary). But wait
+76	to the summary. The second is "नहीं है" (is not) connecting the same subject to the full copy. But according to the example	s are "हराकर" and "जीता". So in this case	. So here
+77	आत्यन्तिक प्रलय	कहते हैं	ब्रह्म में लीन हो जाने को
+77	आत्यन्तिक प्रलय	कहते हैं	ब्रह्म में लीन हो जाने को
+77	is "आत्यन्तिक प्रलय	is "कहते हैं" (say	is the term. However
+77	is "आत्यन्तिक प्रलय	is "कहते हैं" (say	is "ब्रह्म में लीन हो जाने को". But the object here is the term that is being said. So the triplet would be (आत्यन्तिक प्रलय
+77	is "आत्यन्तिक प्रलय	is "कहते हैं	is the term that is being referred to. However
+77	is the thing being said	is "is said to be	is "to be united with Brahman". So the triplet would be (आत्यन्तिक प्रलय
+78	कुछ लोगों	विभाजित किया है	इंडोचायनीज़ और इंडोमलायन उपक्षेत्रों में
+78	कुछ लोगों	विभाजित किया है	इंडोचायनीज़ और इंडोमलायन उपक्षेत्रों में
+78	is "कुछ लोगों" (some people	is "विभाजित किया है" (divided	is "इंडोचायनीज़ और इंडोमलायन उपक्षेत्रों में" (Indo-Chinese and Indo-Malayan regions). But the object here is the regions into which the forests were divided. So the triplet would be (कुछ लोगों
+78	is "कुछ लोगों ने" (some people). The	is "विभाजित किया है." The object is the regions. So the final triplet would be (कुछ लोगों	.
+80	5364 ईसा पूर्व	दर्शाता है	ईसा मसीह के जन्म से पूर्व के वर्षों
+81	सीता	पहनाती हैं	जयमाल
+81	सीता	पहनाती हैं	जयमाल
+81	सीता	पहनाती हैं	जयमाल
+81	] [Relation] [Object]. The main verb here is "पहनाती हैं" which means "is wearing" or "is putting on". The subject is "सीता" (Sita	here is "पहनाती हैं" which indicates the action of wearing. But wait	is "जयमाल". But I need to check if there are other relations. The sentence mentions "राम को" (to Rama
+81	and the object. So the triplet would be (सीता	is "पहनाती हैं	is "जयमाल
+82	sources	confirmed	fact
+82	the team). Alternatively	is "confirmed" between sources and the fact. The fact is a complex	. But the user's example had two relations
+83	विभिन्न विभाग	होते हैं	प्रत्येक भाग के अंतर्गत
+83	विभिन्न विभाग	होते हैं	अलगअलग अध्यक्ष
+83	विभिन्न विभाग	होते हैं	अलगअलग अध्यक्ष
+83	विभिन्न विभाग	होते हैं	प्रत्येक भाग के अंतर्गत
+83	विभिन्न विभाग	होते हैं	अलगअलग अध्यक्ष
+83	here is "विभिन्न विभाग" (various departments	is "होते हैं" (exist). The object would be "प्रत्येक भाग के अंतर्गत" (under each part). But wait	here is "प्रत्येक भाग के अंतर्गत" but that's the location. Alternatively
+83	here is "विभिन्न विभाग" again	is "होते हैं" (have	is "अलगअलग अध्यक्ष" (different chairpersons). So the triplet would be (विभिन्न विभाग
+84	third single	released	2006 middle
+84	third single from the album	released	2006 middle
+84	third single from the album	released	2006 middle
+84	third single from the album	released	2006 middle
+84	third single from the album	released	2006 middle
+84	here is "एल्बम से तीसरा कट	here is "जारी किया गया" (was released). The subject is the third single from the album. The object would be the time period	. So maybe the relation is between the third single and the release date. But the structure is a bit tricky. The subject is the third single
+84	is "एल्बम से तीसरा कट	is "जारी किया गया" (was released	is the time. But in the example given
+84	is a single (thing	is release	is a time (date). Wait
+84	is the third single. The relation is "जारी किया गया" (was released). The object is the time "2006 के मध्य में". So the triplet would be (third single from the album	s. In this case	is the time. Therefore
+85	could be "उनके सामने	is "कोई और मानक नहीं थे	being "मानक". But I need to make sure. Then the second part: "अतः सब कामचलाऊ व्यवस्था उन्हें स्वयं करनी पड़ी". "अतः" is "therefore
+85	is "सब कामचलाऊ व्यवस्था" (all the messy system	is "स्वयं करनी पड़ी". So possible triplets: 1. Subject: "उस दौर में	मानक
+86	बहुत से विकासों	बेहतर कर दिया था	परिणामों को
+86	बहुत से विकासों	बेहतर कर दिया था	परिणामों को
+86	बहुत से विकासों	बेहतर कर दिया था	परिणामों को
+86	. The sentence starts with "1900 के आसपास बहुत से विकासों ने". Here	. The verb here is "बेहतर कर दिया था	is "परिणामों को
+86	being "developments". The "for people affected by pneumonia" is a modifier	is "improve	is "outcomes". Wait
+87	आप	योगदान करना	सांप्रदायिक सिद्धांतों के प्रचार और प्रसार में
+87	here is "आपका योगदान" (your contribution	is "है" (is). But wait	is the spread of religious principles. Wait
+87	is "आपका योगदान" (your contribution	is "है" (is	is "सांप्रदायिक सिद्धांतों के प्रचार और प्रसार में." But the example given in the instructions had the subject as the entity performing the action
+87	is "आप" (you	is "योगदान करना" (to contribute	is "सांप्रदायिक सिद्धांतों के प्रचार और प्रसार में." But the sentence says "your contribution is also very much in the spread of religious principles." So the relation is "है" (is
+87	is "आप" (you). Wait	is "है" (is	is the context where the contribution is made. But the example used "हराकर" as the relation
+87	is "आपका योगदान" (your contribution	is "है" (is	is "सांप्रदायिक सिद्धांतों के प्रचार और प्रसार में." But that's a bit unclear. Let me check the example again. In the example
+88	मेसोथेलियोमा उत्पन्न होने के मामले	लेखबद्ध किये गये हैं	केवल 1 -- 3 माह के संपर्क में भी
+89	इश -- डू	सामना होता है	दो प्राणियों का
+89	इश -- एस	मिलते नहीं है	प्राणी
+89	s	s	s. The main subjects here are "इश -- डू" and "इश -- एस". But wait
+89	is "इश -- डू	is "सामना होता है	is "दो प्राणियों का". Then the second part: "इश -- एस में प्राणी वास्तव में मिलते नहीं है" translates to "In इश -- एस
+89	is "इश -- एस	is "मिलते नहीं है	is "प्राणी". But I need to check the types. The subjects are "इश -- डू" and "इश -- एस". These could be locations
+89	s are correctly identified. The sentence starts with "जहां" which is "where	s are the verbs "सामना होता है" and "मिलते नहीं है". The objects are the nouns that follow the relations. I think that's all. Let me check again. The first relation is "सामना होता है" which is "meet	is "दो प्राणियों का" (of two animals). The second relation is "मिल
+90	तीनों अक्ष	एकबिन्दुगामी	उस तल में
+90	तीनों अक्ष	एकबिन्दुगामी	उस तल में
+90	तीनों अक्ष	एकबिन्दुगामी	उस तल में
+90	here is "तीनों अक्ष" (three axes). The relation is "एकबिन्दुगामी" (concurrent) and the object is "उस तल में" (in that plane). Now	is "एकबिन्दुगामी" which means concurrent. The object is "उस तल में" which refers to a plane. The object type would be a location or a plane. Wait	. Alternatively
+91	विकासशील देशों में	बदल रहे हैं	पुराने तरीके
+91	विकासशील देशों में	बदल रहे हैं	पुराने तरीके
+91	विकासशील देशों में	बदल रहे हैं	पुराने तरीके
+91	here is "विकासशील देशों में" which is a location. The relation is "बदल रहे हैं" (changing	is "changing	is methods (Thing). Wait
+91	is "विकासशील देशों में" (developing countries	is "बदल रहे हैं" (changing	being "पुराने तरीके" (old methods). Alternatively
+91	is "विकासशील देशों में" (developing countries	is "बदल रहे हैं" (changing	is "पुराने तरीके" (old methods). But the object here is the thing that's changing. So the triplet would be (विकासशील देशों में
+92	उन्होंने	शुरुआत की	एक दीवाना था
+92	एक दीवाना था	रिलीज़ किया गया	17 फ़रवरी 2012
+92	उन्होंने	शुरुआत की	एक दीवाना था
+92	एक दीवाना था	रिलीज़ किया गया	17 फ़रवरी 2012
+92	types are correct. The first subject is "उन्होंने" which refers to a person or people	is the film	is the date
+93	is "मक्खियों से खाद्य एवं पेय पदार्थो को बचाना	is "बचाना	is "खाद्य एवं पेय पदार्थो." The subject type would be the action
+93	is "मक्खियों से" (from mosquitoes	is "बचाना	is "खाद्य एवं पेय पदार्थो." Wait
+93	is "मक्खियों से" (from mosquitoes). Hmm	is "बचाना	is "खाद्य एवं पेय पदार्थो." But that might not be accurate. Alternatively
+93	is "मक्खियों से खाद्य एवं पेय पदार्थो को बचाना	is "बचाना	is "खाद्य एवं पेय पदार्थो." But I need to check the example again. In the example
+94	यह	संदर्भित करता है	प्रतिस्पर्धी टीम की राष्ट्रीयता
+94	यह	संदर्भित करता है	प्रतिस्पर्धी टीम की राष्ट्रीयता
+94	** The subject is "यह" (this). But in the sentence	is "संदर्भित करता है	being "प्रतिस्पर्धी टीम की राष्ट्रीयता" (the nationality of the competitive team) and the contrast is with "गाड़ी निर्माता या चालक की राष्ट्रीयता". But the user's example had two relations. However
+94	referring to the first object. So the subject is "यह	is "संदर्भित करता है	is "प्रतिस्पर्धी टीम की राष्ट्रीयता". The other part is the contrast
+96	छपाई	प्रयोग होता था	लकड़ी के ब्लाकों का प्रयोग
+96	शिल्पी -- सुथार	निर्माण करते थे	लकड़ी के ब्लाकों
+96	शिल्पी -- सुथार	निर्माण करते थे	लकड़ी के ब्लाकों
+96	is "छपाई" (printing	is "निर्माण करते थे" (constructed	is "लकड़ी के ब्लाकों" (wooden blocks
+97	यह शब्द	प्रयोग में आता है	विधि बनाने वाली सरकारी इकाई
+98	यह	स्थित है	उत्तर प्रदेश के बलिया जिले में
+98	यह	स्थित है	बलिया शहर से थोड़ी दूर पश्चिम में
+98	here is "यह" (this	is "स्थित है" (is located). The object for the first relation would be "उत्तर प्रदेश के बलिया जिले में" (in the Balia district of Uttar Pradesh). The second relation is "स्थित है" again	here is "बलिया शहर से थोड़ी दूर पश्चिम में" (a little west of the city of Balia). Now
+98	यह" is a thing	s are both "स्थित है" which is "located" or "is located". Wait	is a location relative to Balia city. So the two triplets would be: 1. (यह
+99	उन्होने	नहीं करवाई	पिता की हत्या
+99	उन्होने	जैसाकि	अन्य सम्राट किया करते थे
+99	उन्होने	नहीं करवाई	पिता की हत्या
+99	उन्होने	जैसाकि	अन्य सम्राट किया करते थे
+99	here is "उन्होने" (they). The relation here is "नहीं करवाई" (did not have). The object is "पिता की हत्या" (the killing of the father). Then	is between "उन्होने" and "पिता की हत्या नहीं करवाई	is "पिता की हत्या" (killing of the father). Then
+99	here is still "उन्होने	is "जैसाकि	is "अन्य सम्राट किया करते थे". I need to check if "अन्य सम्राट" is the object. The phrase "अन्य सम्राट किया करते थे" is "other kings did". So the object here is "अन्य सम्राट किया करते थे
+100	determination of wind condition for each player	done by throwing a dice	...
+100	भारतीय टीम ने	हराकर	ऑस्ट्रेलिया को
+100	is "सर्वप्रथम प्रत्येक खिलाड़ी के लिये हवाओं की स्थिति का निर्धारण	is between the subject (determination of wind condition for each player) and the action (throwing a dice). The subject here is an action (the determination	here is the action itself
+100	is the thing being done	is "done by throwing a dice." So the triplet would be (determination of wind condition for each player	as the entity being acted upon. Hmm
+100	determination of wind condition for each player	is "done by	is the method. But in the example
+100	was the team	was "हराकर" (defeated	was Australia. So here
+100	is the determination of wind condition	is "done by	is "पासा फेंककर" (throwing a dice). But the example used "जीता" as the relation
+100	and object. So in the current sentence	would be "पासा फेंककर" (by throwing a dice	is the action of throwing a dice. Wait
+100	is the thing being done (determination of wind condition	is "done by	is the method (throwing a dice). However
+101	हाइपरयूरीसेमिया	मूल कारण	वात रोग
+102	केरल	कारण	आयुर्वेदिक चिकित्सा शैली
+102	केरल	प्रसिद्ध है	आयुर्वेदिक चिकित्सा शैली
+102	here is "केरल" (Kerala	is "कारण" (because of	is "आयुर्वेदिक चिकित्सा शैली" (Ayurvedic medical system). Wait
+103	इसका उदगम स्थान		सिरमोर राज्य के अंतगर्त हिमालय पर्वत के नीचे का ढलुवा भाग
+104	दक्षिण भारत में	प्राधान्य था	परम्परागत चित्रकला का ही प्राधान्य
+104	दक्षिण भारत में	प्राधान्य था	परम्परागत चित्रकला का ही प्राधान्य
+104	दक्षिण भारत में	प्राधान्य था	परम्परागत चित्रकला का ही प्राधान्य
+104	दक्षिण भारत में	प्राधान्य था	परम्परागत चित्रकला का ही प्राधान्य
+104	is "दक्षिण भारत में" which translates to "in southern India." The verb here is "था" (was	is "had primacy" (प्राधान्य था). The subject is "दक्षिण भारत में" which is a location. The object is "परम्परागत चित्रकला का ही प्राधान्य	is the primacy. So the triplet would be (दक्षिण भारत में
+104	is "दक्षिण भारत में" and the relation is "had primacy" with the object being "परम्परागत चित्रकला का ही प्राधान्य." I think the correct triplet is (दक्षिण भारत में	is "had primacy." But the sentence says "परम्परागत चित्रकला का ही प्राधान्य था	is the primacy itself. So the triplet should be (दक्षिण भारत में
+105	ये कहानियाँ	हो सकती हैं	किसी देश या समय की
+106	निम्नलिखित कारण हैं	प्रोत्साहित करते हैं	प्रकृति आधारित निर्माण
+106	is "निम्नलिखित कारण हैं" (the following reasons	is "जोकि" which is a conjunction	is "प्रकृति आधारित निर्माण" (nature-based construction). Alternatively
+106	is "जोकि" but that's a conjunction. So the main subject is "निम्नलिखित कारण हैं	is "जोकि" which is a conjunction	is "प्रकृति आधारित निर्माण को प्रोत्साहित करते हैं". But that seems a bit off. Wait
+107	is usually the entity performing the action. Here	would be "सम्पन्न हुआ" (held	would be the year 2010. Wait
+107	is the event (Darsan-Parishad	is "सम्पन्न हुआ" (held	is the year 2010. But the example had the object as the prize
+107	is Darsan-Parishad	is "सम्पन्न हुआ" (held	is the year 2010. But the example had the object as the prize
+107	is the event (Darsan-Parishad	is "सम्पन्न हुआ" (held	is the year 2010. But the example had the object as the prize
+107	is Darsan-Parishad	is "सम्पन्न हुआ" (held	is the year 2010. But the example had the object as the prize
+107	as the event (Darsan-Parishad	as "सम्पन्न हुआ" (held	as the year 2010. But the example had the object as the prize
+107	is the event (Darsan-Parishad	is "सम्पन्न हुआ" (held	is the year 2010. But the example had the object as the prize
+108	subject: उन	relation: देहांत हो गया	object: उनका देहांत
+108	उन	देहांत हो गया	उनका देहांत
+108	उन	देहांत हो गया	उनका देहांत
+108	उन	रथयात्रा के दिन	रथयात्रा के दिन
+108	here is "उन" which refers to "they	would be about the death occurring on a specific day	here is "उनका देहांत" but the structure is "उनका देहांत हो गया
+109	यह	देखा जाता है	तालाब
+109	इसे	कहा जाता है	पाण्सिल्क
+109	यह	देखा जाता है	तालाब
+109	here is "इसे" which refers to something	is "कहा जाता है" meaning "is called." Then	is "तालाब" (lake
+109	as "भारतीय टीम ने" which is a noun phrase. In this case	is "कहा जाता है." Then the second part is "यह" (which is the same as "इसे") is the subject	being "तालाब." But I need to make sure about the subject and object types. For the first triplet
+109	is "इसे" which is a pronoun	is "कहा जाता है	is "पाण्सिल्क
+109	is "यह" (which is the same as "इसे	is "देखा जाता है	is "तालाब
+110	वे	बने	तीसरे ब्रिटिश प्रबंधक
+110	वे	जीता	यूरोपियन कप
+110	वे	जीता	यूरोपियन कप
+110	is "वे" (they	बने" is becoming	is the title. For the second relation
+111	जल	रोक रखा जाता है	मिट्टी में
+111	जल	रोक रखा जाता है	मिट्टी में
+111	जल	रोक रखा जाता है	मिट्टी में
+111	s	s. The verb here is "रोक रखा जाता है" which means "is kept" or "is prevented." The subject of the main clause is "जल" (water	is "मिट्टी में" (in the soil). But the "मॉस से" (from moss) might be part of the relation or the object. Alternatively
+111	is "जल" (water	is "रोक रखा जाता है" (kept from flowing	is "मिट्टी में" (in the soil). But the "मॉस से" (from moss) might be part of the relation or the object. Alternatively
+111	is "जल	is "रोक रखा जाता है	is "मिट्टी में". However
+111	is "मॉस से" (from moss	is "रोक रखा जाता है	is "मिट्टी में". So the final triplet would be (जल
+112	Subject	is	Object
+112	Subject	is	Object
+112	महाभारत का वर्तमान रूप		प्राचीन इतिहास कथाओं उपदेशों आदि का भण्डार
+112	is Object." So the triplet would be (Subject	s. So perhaps the relation here is "भण्डार है" but that's part of the object. Hmm	." So the relation is "है" (is

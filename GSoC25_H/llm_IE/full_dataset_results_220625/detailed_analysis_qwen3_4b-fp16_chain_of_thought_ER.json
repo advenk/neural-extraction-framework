@@ -1,0 +1,5264 @@
+{
+  "model_name": "qwen3:4b-fp16",
+  "strategy": "chain_of_thought_ER",
+  "sentences": [
+    {
+      "sent_id": "1",
+      "text": "कार्यरूप जगत को देखकर ही शक्तिरूपी माया की सििद्ध होती है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "seems to be \"शक्तिरूपी माया\" (powerful Maya) and the object is \"सििद्ध\" (proven). But wait",
+            "here is that \"शक्तिरूपी माया\" becomes \"सििद्ध\" (proven) by observing \"कार्यरूप जगत\" (the world in action). Now",
+            ". So here"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[शक्तिरूपी]{a} माया की --> सििद्ध होती है --> [कार्यरूप]{b} जगत को देखकर [ही]"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 1,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "2",
+      "text": "अखिल भारतीय पुलिस डयूटी मीट ( 1958 से ) में अंगुलि चिह्न विज्ञान प्रतियोगिता आयोजित करना .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "अखिल भारतीय पुलिस डयूटी मीट",
+            "आयोजित करना",
+            "अंगुलि चिह्न विज्ञान प्रतियोगिता"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "अखिल भारतीय पुलिस डयूटी मीट [( 1958 से )]{a} में --> आयोजित करना --> [अंगुलि चिह्न विज्ञान]{b} प्रतियोगिता"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 1,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "3",
+      "text": "केन्द्रीय सरकार के विभागों एवं भारत सरकार के उपक्रमों द्वारा भेजे गए विवादित अंगुलि चिह्नों का परीक्षण करना .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "केन्द्रीय सरकार के विभागों एवं भारत सरकार के उपक्रमों द्वारा",
+            "परीक्षण करना",
+            "विवादित अंगुलि चिह्नों"
+          ]
+        },
+        {
+          "model_extraction": [
+            "केन्द्रीय सरकार के विभागों एवं भारत सरकार के उपक्रमों द्वारा",
+            "परीक्षण करना",
+            "विवादित अंगुलि चिह्नों"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the departments and projects",
+            "is \"test\" (परीक्षण करना",
+            "is the disputed finger marks. The object is a thing. So the final triplet is (केन्द्रीय सरकार के विभागों एवं भारत सरकार के उपक्रमों द्वारा"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[विवादित]{a} अंगुलि चिह्नों का --> परीक्षण करना --> [केन्द्रीय सरकार के विभागों एवं] भारत सरकार के उपक्रमों द्वारा"
+        },
+        {
+          "type": "essential",
+          "extraction": "[केन्द्रीय]{b} सरकार के विभागों --> द्वारा भेजे गए --> [विवादित]{a} अंगुलि चिह्नों का"
+        },
+        {
+          "type": "essential",
+          "extraction": "[भारत]{c} सरकार के उपक्रमों --> द्वारा भेजे गए --> [विवादित]{a} अंगुलि चिह्नों का"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 3,
+        "FN": 3
+      }
+    },
+    {
+      "sent_id": "4",
+      "text": "007 के गुप्त नाम से प्रसिद्ध यह एजेंट फ़्लेमिंग की बारह पुस्तकों व दो लघुकथाओं में मौजूद है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 3",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "यह एजेंट",
+            "प्रसिद्ध",
+            "007 के गुप्त नाम से"
+          ]
+        },
+        {
+          "model_extraction": [
+            "यह एजेंट",
+            "मौजूद है",
+            "फ़लेमिंग की बारह पुस्तकों व दो लघुकथाओं में"
+          ]
+        },
+        {
+          "model_extraction": [
+            "यह एजेंट",
+            "प्रसिद्ध",
+            "007 के गुप्त नाम से"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here seems to be \"यह एजेंट\" (this agent",
+            "is probably \"प्रसिद्ध\" (famous) connecting the agent to 007. The subject is \"यह एजेंट\" (this agent",
+            "is \"007 के गुप्त नाम से\" (under the secret name 007). Wait"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[007 के गुप्त नाम से प्रसिद्ध]{a} यह एजेंट --> मौजूद है --> [फ़्लेमिंग की]{b} बारह पुस्तकों व दो लघुकथाओं में"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 4,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "5",
+      "text": "01 अगस्त 1907 को उन्होंने अपनी एक पत्रिका ' साधु ' शुरू की .",
+      "status": "analyzed",
+      "best_cluster": "cluster 2",
+      "true_positives": [],
+      "false_positives": [],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[01 अगस्त 1907 को]{a} उन्होंने --> शुरू की --> [अपनी] एक पत्रिका [साधु]{b}"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "6",
+      "text": "01 अप्रैल 2009 से कंपनी में नवीनतम वेतनमानों को लागू किया गया है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "नवीनतम वेतनमानों",
+            "लागू किया गया है",
+            "कंपनी में"
+          ]
+        },
+        {
+          "model_extraction": [
+            "कंपनी",
+            "लागू किया गया है",
+            "नवीनतम वेतनमानों"
+          ]
+        },
+        {
+          "model_extraction": [
+            "s",
+            "s",
+            "s. The main verb here is \"लागू किया गया है\" which means \"have been implemented.\" The subject is \"नवीनतम वेतनमानों\" (latest salary rates"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is actually the action's recipient. Wait",
+            "is between the company and the salary rates. Wait",
+            "of the verb is \"नवीनतम वेतनमानों को\" (the latest salary rates). The location is \"कंपनी में\" (in the company). The time is \"01 अप्रैल 2009 से\" (from April 1"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the company",
+            "is \"लागू किया गया है\" (implemented",
+            "is the salary rates. Wait"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[01 अप्रैल 2009 से]{a} कंपनी में --> लागू किया गया है --> नवीनतम वेतनमानों को"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 5,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "7",
+      "text": "01 जून : गोधरा ट्रेन कांड की सुनवाई अहमदाबाद के साबरमती केंद्रीय जेल के अंदर शुरू हुई .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [
+        {
+          "model_extraction": [
+            "गोधरा ट्रेन कांड की सुनवाई",
+            "शुरू हुई",
+            "अहमदाबाद के साबरमती केंद्रीय जेल के अंदर"
+          ],
+          "matched_golden": "[गोधरा ट्रेन कांड की]{b} सुनवाई --> शुरू हुई --> [अहमदाबाद के]{c} साबरमती केंद्रीय जेल के अंदर",
+          "match_type": "satisfied"
+        }
+      ],
+      "false_positives": [],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "01 जून --> शुरू हुई --> [गोधरा]{a} [ट्रेन कांड की]{b} सुनवाई |OR| 01 जून --> property --> शुरू हुई"
+        }
+      ],
+      "summary": {
+        "TP": 1,
+        "FP": 0,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "8",
+      "text": "06 अक्टूबर 1989 को वे सर्वोच्च न्यायालय की न्यायाधीश नियुक्त हुई .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "वे",
+            "नियुक्त हुई",
+            "सर्वोच्च न्यायालय की न्यायाधीश"
+          ]
+        },
+        {
+          "model_extraction": [
+            "वे",
+            "नियुक्त हुई",
+            "सर्वोच्च न्यायालय की न्यायाधीश"
+          ]
+        },
+        {
+          "model_extraction": [
+            "वे",
+            "नियुक्त हुई",
+            "सर्वोच्च न्यायालय की न्यायाधीश"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"वे\" which means \"they\" or \"they were\". The object is \"सर्वोच्च न्यायालय की न्यायाधीश\" which translates to \"Chief Justice of the Supreme Court\". The verb is \"नियुक्त हुई\" meaning \"appointed\". So",
+            "here is \"appointed\" (नियुक्त हुई). The subject is \"वे\" (they",
+            "is \"सर्वोच्च न्यायालय की न्यायाधीश\" which is a position"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[06 अक्टूबर 1989 को]{a} वे [सर्वोच्च न्यायालय की]{b} --> नियुक्त हुई --> न्यायाधीश"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 4,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "9",
+      "text": "06 प्रतिशत ऐसे लोग थे जिनका कोई विशेष धर्म नहीं था .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "06 प्रतिशत ऐसे लोग थे",
+            "जिनका कोई विशेष धर्म नहीं था",
+            "..."
+          ]
+        },
+        {
+          "model_extraction": [
+            "Subject",
+            "Relation",
+            "Object"
+          ]
+        },
+        {
+          "model_extraction": [
+            "ऐसे लोग",
+            "कोई विशेष धर्म नहीं था",
+            "..."
+          ]
+        },
+        {
+          "model_extraction": [
+            "and the object. The subject is the people",
+            "is that they have no particular religion. So the relation is \"जिनका कोई विशेष धर्म नहीं था",
+            "description. Maybe the relation is \"कोई विशेष धर्म नहीं था\" as the relation"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the people",
+            "is that they have no religion. So the relation is \"कोई विशेष धर्म नहीं था",
+            "is the people. But that doesn't fit. Maybe the relation is \"जिनका\" which is a relative pronoun"
+          ]
+        },
+        {
+          "model_extraction": [
+            "and the object. But I'm a bit confused here. Let me check the example again. In the example",
+            "was \"हराकर\" and \"जीता",
+            "is the people. But that doesn't make sense. Wait"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "06 प्रतिशत --> [ऐसे] लोग थे --> जिनका कोई विशेष धर्म नहीं था"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 6,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "10",
+      "text": "1 अक्टूबर 1854 को इम्पीरियल पोस्टल सर्विस द्वारा पहला डाक टिकट जारी किया गया .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "इम्पीरियल पोस्टल सर्विस",
+            "जारी किया गया",
+            "पहला डाक टिकट"
+          ]
+        },
+        {
+          "model_extraction": [
+            "इम्पीरियल पोस्टल सर्विस",
+            "जारी किया गया",
+            "पहला डाक टिकट"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the organization that issued the stamp",
+            "The subject is \"इम्पीरियल पोस्टल सर्विस",
+            "is \"पहला डाक टिकट"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here is the organization",
+            "s. However",
+            "]. The main relation is \"issued\" between the organization and the postage stamp. The date is a time element"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[1 अक्टूबर 1854 को]{a} इम्पीरियल पोस्टल सर्विस द्वारा --> जारी किया गया --> [पहला]{b} डाक टिकट"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 4,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "11",
+      "text": "1 अक्टूबर 1953 को आंध्र ने कर्नूल को अपनी राजधानी के साथ राज्य का दर्जा पाया .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "आंध्र",
+            "राज्य का दर्जा पाया",
+            "कर्नूल को"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[1 अक्टूबर 1953 को]{a} आंध्र ने --> पाया --> कर्नूल [को] [अपनी राजधानी]{c}"
+        },
+        {
+          "type": "essential",
+          "extraction": "[1 अक्टूबर 1953 को]{a} आंध्र ने --> दर्जा पाया --> राज्य का"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 1,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "12",
+      "text": "1 अक्टूबर 2008 को न्यूजीलैंड और ऑस्ट्रेलिया में दूसरा सीज़न ज़ारी किया गया .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "दूसरा सीज़न",
+            "ज़ारी किया गया",
+            "न्यूजीलैंड और ऑस्ट्रेलिया"
+          ]
+        },
+        {
+          "model_extraction": [
+            "दूसरा सीज़न",
+            "ज़ारी किया गया",
+            "न्यूजीलैंड और ऑस्ट्रेलिया"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"दूसरा सीज़न\" (the second season). The location is \"न्यूजीलैंड और ऑस्ट्रेलिया\" (New Zealand and Australia). The time is \"1 अक्टूबर 2008 को\" (on October 1",
+            "s. The main relation here is between the second season and the locations where it was started. So the subject is \"दूसरा सीज़न",
+            "is the locations. But the object here is a location"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the second season",
+            "to be \"ज़ारी किया गया\" as the relation",
+            "is the two countries. Also"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"दूसरा सीज़न",
+            "is \"ज़ारी किया गया",
+            "is \"न्यूजीलैंड और ऑस्ट्रेलिया"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[1 अक्टूबर 2008 को]{a} [न्यूजीलैंड और]{b} ऑस्ट्रेलिया में --> ज़ारी किया गया --> [दूसरा]{c} सीज़न"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 5,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "13",
+      "text": "1 अक्टूबर को , रॉबर्ट आइगर ने सीईओ के रूप में माइकल आइजनर का स्थान लिया .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "Robert Iger",
+            "took over",
+            "Michael Eisenberg's position as CEO"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is Robert Iger",
+            "is \"सीईओ के रूप में\" which is \"as CEO\". So maybe the relation is \"सीईओ के रूप में\" (as CEO",
+            "is Michael Eisenberg. But that might not be correct. Alternatively"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[1 अक्टूबर को ,]{a} रॉबर्ट आइगर ने --> स्थान लिया --> सीईओ के रूप में"
+        },
+        {
+          "type": "essential",
+          "extraction": "[1 अक्टूबर को ,]{a} रॉबर्ट आइगर ने --> स्थान लिया --> माइकल आइजनर का"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 2,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "14",
+      "text": "1 अक्टूबर , 1960 को यह देश इंग्लैंड के शासन से आजाद हुआ .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [
+        {
+          "model_extraction": [
+            "यह देश",
+            "आजाद हुआ",
+            "इंग्लैंड के शासन से"
+          ],
+          "matched_golden": "[1 अक्टूबर , 1960 को]{a} यह देश --> आजाद हुआ --> [इंग्लैंड के]{b} शासन से",
+          "match_type": "satisfied but with a"
+        }
+      ],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "यह देश",
+            "आजाद हुआ",
+            "इंग्लैंड के शासन से"
+          ]
+        },
+        {
+          "model_extraction": [
+            "यह देश",
+            "आजाद हुआ",
+            "इंग्लैंड के शासन से"
+          ]
+        },
+        {
+          "model_extraction": [
+            "यह देश",
+            "आजाद हुआ",
+            "इंग्लैंड के शासन से"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here is \"यह देश",
+            "is between the country and becoming free from England's rule. The subject is \"यह देश",
+            "is \"इंग्लैंड के शासन से\" (from the rule of England). The object here is the source of the freedom"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"यह देश",
+            "is \"आजाद हुआ",
+            "is \"इंग्लैंड के शासन से.\" So the triplet is (यह देश"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the country",
+            "is becoming free",
+            "is the source of the freedom (England's rule). Therefore"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential_with_unmatched_compensatory",
+          "extraction": "[1 अक्टूबर , 1960 को]{a} यह देश --> आजाद हुआ --> [इंग्लैंड के]{b} शासन से",
+          "needs": [
+            "a"
+          ]
+        }
+      ],
+      "summary": {
+        "TP": 1,
+        "FP": 6,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "15",
+      "text": "1 अगस्त 1915 में चन्द्रसिंह को अन्य गढ़वाली सैनिकों के साथ अंग्रेजों द्वारा फ्रांस भेज दिया गया .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [
+        {
+          "model_extraction": [
+            "चन्द्रसिंह को",
+            "भेज दिया गया",
+            "फ्रांस"
+          ],
+          "matched_golden": "[1 अगस्त 1915 में]{a} चन्द्रसिंह को --> भेज दिया गया --> फ्रांस",
+          "match_type": "satisfied but with a"
+        }
+      ],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "is \"चन्द्रसिंह को\" which is the object of the verb. However",
+            "is \"भेज दिया गया",
+            "is \"फ्रांस\". But in the example"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential_with_unmatched_compensatory",
+          "extraction": "[1 अगस्त 1915 में]{a} चन्द्रसिंह को --> भेज दिया गया --> फ्रांस",
+          "needs": [
+            "a"
+          ]
+        },
+        {
+          "type": "essential",
+          "extraction": "अंग्रेजों द्वारा --> भेज दिया गया --> चन्द्रसिंह को |OR| अंग्रेजों द्वारा --> भेज दिया गया --> फ्रांस"
+        },
+        {
+          "type": "essential",
+          "extraction": "[अन्य] [गढ़वाली]{b} सैनिकों के साथ --> भेज दिया गया --> चन्द्रसिंह को"
+        }
+      ],
+      "summary": {
+        "TP": 1,
+        "FP": 1,
+        "FN": 3
+      }
+    },
+    {
+      "sent_id": "16",
+      "text": "1 अप्रैल 1946 को इसे स्वायत्तशासी प्रान्त घोषित किया गया और गोविन्द बल्लभ पन्त इसके पहले मुख्य मन्त्री बने .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [
+        {
+          "model_extraction": [
+            "इसे",
+            "घोषित किया गया",
+            "स्वायत्तशासी प्रान्त"
+          ],
+          "matched_golden": "[1 अप्रैल 1946 को]{a} इसे --> घोषित किया गया --> [स्वायत्तशासी]{b} प्रान्त",
+          "match_type": "satisfied but with a"
+        }
+      ],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "here is \"इसे\" which refers to \"इस\" (this",
+            "is \"घोषित किया गया\" (declared). The object would be \"स्वायत्तशासी प्रान्त\" (self-governing province). So the first triplet would be (इसे",
+            "of the verb \"घोषित किया गया\". Wait"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential_with_unmatched_compensatory",
+          "extraction": "[1 अप्रैल 1946 को]{a} इसे --> घोषित किया गया --> [स्वायत्तशासी]{b} प्रान्त",
+          "needs": [
+            "a"
+          ]
+        },
+        {
+          "type": "essential",
+          "extraction": "गोविन्द बल्लभ पन्त --> बने --> [इसके पहले]{c} मुख्य मन्त्री |OR| गोविंद बल्लभ पंत --> बने --> [इसके पहले]{c} मुख्य मंत्री"
+        }
+      ],
+      "summary": {
+        "TP": 1,
+        "FP": 1,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "17",
+      "text": "हिन्दी प्रचार सभा एक आन्दोलन थी जो भारत के स्वतन्त्रता आन्दोलन के साथ ही आरम्भ हुई .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            ". Wait",
+            "is between \"हिन्दी प्रचार सभा\" (subject) and \"एक आन्दोलन थी\" (relation). But \"थी\" is the verb \"was",
+            "is \"एक आन्दोलन\" (an agitation). Wait"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"हिन्दी प्रचार सभा",
+            "is \"थी\" (was",
+            "is \"एक आन्दोलन.\" But in the example"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "हिन्दी प्रचार सभा --> थी --> एक आन्दोलन"
+        },
+        {
+          "type": "essential",
+          "extraction": "हिन्दी प्रचार सभा --> आरम्भ हुई --> [भारत के]{a} स्वतन्त्रता आन्दोलन के साथ |OR| जो --> आरम्भ हुई --> [भारत के]{a} स्वतन्त्रता आन्दोलन के साथ"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 2,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "18",
+      "text": "बाल्यकाल से ही कर्मा के चेहरे पर एक अनूठी आभा दिखाई पड़ती थी .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "कर्मा",
+            "दिखाई पड़ती थी",
+            "एक अनूठी आभा"
+          ]
+        },
+        {
+          "model_extraction": [
+            "कर्मा",
+            "दिखाई पड़ती थी",
+            "एक अनूठी आभा"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here is \"कर्मा\" (Karma",
+            "here is that \"Karma\" had a unique glow on her face. The verb here is \"दिखाई पड़ती थी\" which translates to \"was seen\" or \"was visible.\" The object is \"एक अनूठी आभा\" (a unique glow). Now",
+            "is \"एक अनूठी आभा\" (a unique glow"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[बाल्यकाल से ही]{a} [कर्मा के]{b} चेहरे पर --> दिखाई पड़ती थी --> [एक अनूठी]{c} आभा |OR| बाल्यकाल से ही --> दिखाई पड़ती थी --> [कर्मा के]{b} चेहरे पर [एक अनूठी]{c} आभा"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 3,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "19",
+      "text": "तब से अब तक , सोनू भारतीय संगीत जगत में एक प्रमुख हस्ती बन चुके हैं .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "Sonu",
+            "has become",
+            "prominent figure in Indian music world"
+          ]
+        },
+        {
+          "model_extraction": [
+            "Sonu",
+            "has become",
+            "prominent figure in Indian music world"
+          ]
+        },
+        {
+          "model_extraction": [
+            "Sonu",
+            "has become",
+            "prominent figure in Indian music world"
+          ]
+        },
+        {
+          "model_extraction": [
+            "Sonu",
+            "has become",
+            "prominent figure in Indian music world"
+          ]
+        },
+        {
+          "model_extraction": [
+            "Sonu",
+            "has become",
+            "prominent figure in Indian music world"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here is \"सोनू",
+            "here is \"बन चुके हैं\" which indicates a change in status. The subject is Sonu",
+            "is \"एक प्रमुख हस्ती\" which is a thing"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "सोनू [भारतीय संगीत जगत में]{a} --> बन चुके हैं --> एक प्रमुख हस्ती |OR| [सोनू]{a} [भारतीय]{b} संगीत जगत में --> बन चुके हैं --> एक प्रमुख हस्ती"
+        },
+        {
+          "type": "essential",
+          "extraction": "सोनू --> बन चुके हैं --> तब से [अब तक]{c}"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 6,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "20",
+      "text": "कोप्पेन मौसम वर्गीकरण मौसम आकलन के लिए प्रयोग किया जाने वाला सबसे अधिक प्रयोगनीय मौसम वर्गीकरण है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "X",
+            "is the most commonly used",
+            "Y"
+          ]
+        },
+        {
+          "model_extraction": [
+            "X",
+            "used for",
+            "Z"
+          ]
+        },
+        {
+          "model_extraction": [
+            "Subject",
+            "is the most commonly used",
+            "Object1"
+          ]
+        },
+        {
+          "model_extraction": [
+            "Subject",
+            "used for",
+            "Object2"
+          ]
+        },
+        {
+          "model_extraction": [
+            "Subject",
+            "is the most commonly used",
+            "weather classification"
+          ]
+        },
+        {
+          "model_extraction": [
+            "Subject",
+            "used for",
+            "weather assessment"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here is \"कोप्पेन मौसम वर्गीकरण\" which translates to \"Copenhagen Weather Classification.\" The sentence is saying that this is the most commonly used weather classification for weather assessment. So",
+            "is probably \"is the most commonly used\" or something similar. The subject is \"कोप्पेन मौसम वर्गीकरण",
+            "would be \"मौसम आकलन के लिए\" which is \"for weather assessment.\" Wait"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "कोप्पेन मौसम वर्गीकरण --> है --> [सबसे अधिक प्रयोगनीय]{a} मौसम वर्गीकरण"
+        },
+        {
+          "type": "essential",
+          "extraction": "कोप्पेन मौसम वर्गीकरण --> property --> मौसम आकलन के लिए [प्रयोग किया जाने वाला]"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 7,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "21",
+      "text": "बर्लिन पर क़ब्ज़ा करने के बाद सोवियत दस्तों ने चेकोस्लोवाकिया की राजधानी प्राग को आज़ाद कराया .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "सोवियत दस्तों ने",
+            "क़ब्ज़ा करने",
+            "बर्लिन पर"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"सोवियत दस्तों ने\" (the Soviet troops). The object is \"प्राग को\" (Prague). The relation here is \"आज़ाद कराया\". But wait",
+            "or part of the subject? Wait",
+            "is \"प्राग को\" (Prague). But the relation between the subject and the object is \"आज़ाद कराया\". But then"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here would be \"सोवियत दस्तों ने\" again",
+            "would be \"क़ब्ज़ा करने\" (taking control). Wait",
+            "is \"बर्लिन पर\" (on Berlin). The second relation is \"आज़ाद कराया\" (freed"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "सोवियत दस्तों ने --> आज़ाद कराया --> [चेकोस्लोवाकिया की राजधानी]{a} प्राग को"
+        },
+        {
+          "type": "essential",
+          "extraction": "सोवियत दस्तों ने --> property --> बर्लिन पर क़ब्ज़ा [करने के बाद] |OR| बर्लिन पर क़ब्ज़ा [करने के बाद] --> आज़ाद कराया --> सोवियत दस्तों ने |OR| बर्लिन पर क़ब्ज़ा [करने के बाद] --> आज़ाद कराया --> [चेकोस्लोवाकिया की राजधानी]{a} प्राग को"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 3,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "22",
+      "text": "योग एवं शिक्षा के क्षेत्र में राष्ट्रपति से पद्म श्री सम्मान प्राप्त करने वाले वे प्रथम भारतीय हैं .",
+      "status": "analyzed",
+      "best_cluster": "cluster 3",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "वे",
+            "प्राप्त करने वाले",
+            "पद्म श्री सम्मान"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here is \"वे\" which means \"they\" or \"those people.\" But looking at the context",
+            "here is about receiving an award. The award is \"पद्म श्री\" (Padma Shri",
+            "is \"पद्म श्री सम्मान\" (Padma Shri award). But the subject type here is a person (since it's referring to the first Indian"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"वे\" (they",
+            "is \"प्रथम भारतीय हैं\" (are the first Indian). But that's a different relation. Wait",
+            "for the first relation is \"पद्म श्री सम्मान\" (Padma Shri award"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[योग एवं]{a} शिक्षा के क्षेत्र में --> [वे] प्रथम भारतीय हैं --> [राष्ट्रपति से]{b} पद्म श्री सम्मान प्राप्त करने वाले [वे]"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 3,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "23",
+      "text": "सभी बच्चों को स्कूल की पढ़ाई पूरी करने तक वित्तीय सहायता भी दी जाती है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "वित्तीय सहायता",
+            "दी जाती है",
+            "सभी बच्चों को स्कूल की पढ़ाई पूरी करने तक"
+          ]
+        },
+        {
+          "model_extraction": [
+            "वित्तीय सहायता",
+            "दी जाती है",
+            "सभी बच्चों को स्कूल की पढ़ाई पूरी करने तक"
+          ]
+        },
+        {
+          "model_extraction": [
+            "वित्तीय सहायता",
+            "दी जाती है",
+            "सभी बच्चों को स्कूल की पढ़ाई पूरी करने तक"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"वित्तीय सहायता\" (financial assistance",
+            ". The object here is the recipients and the condition. But according to the example given",
+            ". So the main relation here is \"दी जाती है\" (is given). The subject is \"वित्तीय सहायता"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is correctly identified. The subject is \"वित्तीय सहायता\" (financial assistance",
+            "is \"दी जाती है\" (is given). The object is the recipients and the condition. Alternatively",
+            "is \"सभी बच्चों को\" (all children"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is financial assistance",
+            "is given",
+            "is the condition under which it's given. I think that's the main triplet here. There might not be another relation"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[सभी] बच्चों को --> [भी] दी जाती है --> [वित्तीय]{b} सहायता [भी]"
+        },
+        {
+          "type": "essential",
+          "extraction": "[स्कूल की]{a} पढ़ाई पूरी करने तक --> [भी] दी जाती है --> [वित्तीय]{b} सहायता [भी]"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 6,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "24",
+      "text": "आज भी यह स्थान क्षेत्र के लोगों के लिए दर्शनीय केन्द्र है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 3",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "यह स्थान",
+            "",
+            "दर्शनीय केन्द्र"
+          ]
+        },
+        {
+          "model_extraction": [
+            "यह स्थान",
+            "",
+            "दर्शनीय केन्द्र"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here is \"यह स्थान\" (this place). The relation is \"है\" (is",
+            "है\" (is). Evidence: \"है\". Object: \"दर्शनीय केन्द्र\" (place of worship). Type: Thing. Evidence: \"दर्शनीय केन्द्र\". But wait",
+            ". However"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "यह --> है --> [स्थान क्षेत्र के लोगों के लिए]{a} दर्शनीय"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 3,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "25",
+      "text": "इस सम्बन्ध में पाणिनीय व्याकरण ही वेदाङ्ग का प्रतिनिधित्व करता है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 2",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "पाणिनीय व्याकरण",
+            "करता है",
+            "वेदाङ्ग का प्रतिनिधित्व"
+          ]
+        },
+        {
+          "model_extraction": [
+            "पाणिनीय व्याकरण",
+            "करता है",
+            "वेदाङ्ग का प्रतिनिधित्व"
+          ]
+        },
+        {
+          "model_extraction": [
+            "पाणिनीय व्याकरण",
+            "करता है",
+            "वेदाङ्ग का प्रतिनिधित्व"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here is \"पाणिनीय व्याकरण",
+            "here is \"करता है\" (does/represents). The subject is the grammar",
+            "is the Vedāṅga"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"इस सम्बन्ध में\" (in this relation",
+            ". Wait",
+            ". So the relation is \"करता है"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "इस सम्बन्ध में --> वेदाङ्ग का प्रतिनिधित्व करता है --> पाणिनीय व्याकरण"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 5,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "26",
+      "text": "मैं शब्द की आत्मा समझकर ही इस श्रेष्ठ तत्त्व की उपासना करता हूं .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "मैं",
+            "समझकर",
+            "इस श्रेष्ठ तत्त्व की उपासना"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "मैं --> उपासना करता हूं --> [इस श्रेष्ठ]{b} तत्त्व की"
+        },
+        {
+          "type": "essential",
+          "extraction": "[शब्द की]{a} आत्मा समझकर [ही] --> उपासना करता हूं --> मैं"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 1,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "27",
+      "text": "हिमाचल प्रदेश में बहने वाली पांच नदियों में से चार का उल्लेख ऋग्वेद में मिलता है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "चार का उल्लेख",
+            "मिलता है",
+            "ऋग्वेद में"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here is \"चार का उल्लेख\" (the mention of four). The relation is \"मिलता है\" (is found). The object would be \"ऋग्वेद में\" (in the Rigveda). But wait",
+            "is \"मिलता है\" connecting the four rivers to the Rigveda. But wait",
+            "is \"ऋग्वेद में\" (in the Rigveda). But the subject type would be \"वस्तु\" (thing) because it's the mention of rivers. The object is \"ऋग्वेद"
+          ]
+        },
+        {
+          "model_extraction": [
+            "four's mention) is found in the Rigveda\". So the relation is \"मिलता है\" (found",
+            "is \"मिलता है",
+            "is \"ऋग्वेद\". But the sentence says \"में\" (in"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"चार का उल्लेख",
+            "is \"मिलता है",
+            "is \"ऋग्वेद में\". But the object is \"ऋग्वे"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[हिमाचल प्रदेश में बहने वाली पांच नदियों में से]{a} चार का --> उल्लेख मिलता है --> ऋग्वेद में"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 4,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "28",
+      "text": "उन्होंने बच्चे को देने से स्पष्ट इंकार कर दिया .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [
+        {
+          "model_extraction": [
+            "उन्होंने",
+            "इंकार कर दिया",
+            "बच्चे को देने से"
+          ],
+          "matched_golden": "उन्होंने --> [स्पष्ट] इंकार कर दिया --> [बच्चे को]{a} देने से",
+          "match_type": "satisfied"
+        }
+      ],
+      "false_positives": [],
+      "false_negatives": [],
+      "summary": {
+        "TP": 1,
+        "FP": 0,
+        "FN": 0
+      }
+    },
+    {
+      "sent_id": "29",
+      "text": "शिक्षा का तुलनात्मक अध्ययन सभी सामाजिक विज्ञानों से जुड़ा है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "शिक्षा का तुलनात्मक अध्ययन",
+            "जुड़ा है",
+            "सभी सामाजिक विज्ञानों"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[शिक्षा का]{a} तुलनात्मक अध्ययन --> जुड़ा है --> सभी सामाजिक विज्ञानों से"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 1,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "30",
+      "text": "गुजरात क्वीन एक्स्प्रेस 9110 भारतीय रेल द्वारा संचालित एक मेल एक्स्प्रेस ट्रेन है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 2",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "गुजरात क्वीन एक्स्प्रेस 9110",
+            "संचालित",
+            "भारतीय रेल"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "गुजरात क्वीन एक्स्प्रेस [9110]{a} --> है --> भारतीय रेल द्वारा संचालित [एक] मेल एक्स्प्रेस ट्रेन"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 1,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "31",
+      "text": "वर्तमान में यह शहर पश्चिम बंगाल का प्रमुख हिल स्टेशन है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 4",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "यह शहर",
+            "",
+            "पश्चिम बंगाल का प्रमुख हिल स्टेशन"
+          ]
+        },
+        {
+          "model_extraction": [
+            "यह शहर",
+            "",
+            "पश्चिम बंगाल का प्रमुख हिल स्टेशन"
+          ]
+        },
+        {
+          "model_extraction": [
+            "यह शहर",
+            "",
+            "पश्चिम बंगाल का प्रमुख हिल स्टेशन"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[वर्तमान में]{b} यह शहर --> है --> [पश्चिम बंगाल का]{a} प्रमुख हिल स्टेशन"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 3,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "32",
+      "text": "सिलकोट , गंगोलीहाट तहसील में भारत के उत्तराखण्ड राज्य के अन्तर्गत कुमाऊँ मण्डल के पिथोरागढ जिले का एक गाँव है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 3",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "here is \"सिलकोट\" which is a village. The sentence says it's located in Gangolihat tehsil",
+            "is \"स्थित है\" (is located in) between Silkot and Gangolihat tehsil. Then",
+            "Gangolihat tehsil. Then"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is Silkot. The",
+            "is \"स्थित है\" (is located in",
+            "is Gangolihat tehsil. Then"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "सिलकोट , गंगोलीहाट तहसील में [भारत के उत्तराखण्ड राज्य के अन्तर्गत कुमाऊँ मण्डल के]{a} पिथोरागढ --> एक गाँव है --> जिले का"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 2,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "33",
+      "text": "एयर लाइन के तकनीकी केंद्र को तिरुवनंतपुरम में स्थानापन्न करना है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "एयर लाइन के तकनीकी केंद्र को",
+            "स्थानापन्न करना",
+            "तिरुवनंतपुरम में"
+          ]
+        },
+        {
+          "model_extraction": [
+            ". The subject here is \"एयर लाइन के तकनीकी केंद्र को\". Wait",
+            "is \"स्थानापन्न करना\" (relocation). The object would be \"तिरुवनंतपुरम में\" (in Tiruvananthapuram). Wait",
+            "is \"तिरुवनंतपुरम में\". But the subject is the technical center of the airline. So the triplet would be (एयर लाइन के तकनीकी केंद्र को"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is an organization (एयर लाइन के तकनीकी केंद्र को) because it's a technical center of an airline. The",
+            "is \"स्थानापन्न करना\" which is a verb indicating relocation. The",
+            "is the location \"तिरुवनंतपुरम में"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[एयर लाइन के]{a} तकनीकी केंद्र को --> स्थानापन्न करना है --> तिरुवनंतपुरम में"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 3,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "34",
+      "text": "चीफ कोर्ट के मुख्य न्यायाधीश सर लुइस शर्ट और विशेष न्यायाधीश मोहम्मद रजा के सामने दोनों मामले पेश हुए .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "दोनों मामले",
+            "पेश हुए",
+            "मुख्य न्यायाधीश सर लुइस शर्ट और विशेष न्यायाधीश मोहम्मद रजा"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[चीफ कोर्ट के मुख्य न्यायाधीश सर लुइस शर्ट और]{a} [विशेष न्यायाधीश]{b} मोहम्मद रजा के सामने --> पेश हुए --> दोनों मामले"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 1,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "35",
+      "text": "किसी बीमारी की वजह से बाशो की मृत्यु 28 नवम्बर 1694 को हो गई .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "बाशो",
+            "कारण",
+            "बीमारी"
+          ]
+        },
+        {
+          "model_extraction": [
+            "बाशो की मृत्यु",
+            "हो गई",
+            "28 नवम्बर 1694 को"
+          ]
+        },
+        {
+          "model_extraction": [
+            "बीमारी",
+            "कारण",
+            "बाशो की मृत्यु"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"बाशो\" (Basho",
+            "is \"मृत्यु हो गई\" (died",
+            "being the date. The second relation is \"कारण\" (cause) between the illness and the death. So the first triplet would be (बाशो की मृत्यु"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here is \"बाशो की मृत्यु\" (the death of Basho",
+            "is \"हो गई\" (occurred",
+            "is the date. The second triplet is the cause: (बीमारी"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"बीमारी\" (illness",
+            "is \"कारण\" (cause",
+            "is \"बाशो की मृत्यु\" (death of Basho). But I need to check the exact words. The sentence says \"किसी बीमारी की वजह से\" which is \"due to some illness.\" So the relation is \"कारण\" (cause"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "बाशो की --> मृत्यु हो गई --> 28 नवम्बर 1694 को"
+        },
+        {
+          "type": "essential",
+          "extraction": "बाशो की --> मृत्यु हो गई --> [किसी] बीमारी [की वजह] से"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 6,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "36",
+      "text": "जब कोई मतैक्य नहीं हुआ तो विक्रम ने एक हल सोचा .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [
+        {
+          "model_extraction": [
+            "विक्रम ने",
+            "सोचा",
+            "एक हल"
+          ],
+          "matched_golden": "विक्रम ने --> सोचा --> एक हल",
+          "match_type": "satisfied"
+        }
+      ],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "Vikram",
+            "thought of",
+            "a solution"
+          ]
+        },
+        {
+          "model_extraction": [
+            "विक्रम ने",
+            "सोचा",
+            "एक हल"
+          ]
+        },
+        {
+          "model_extraction": [
+            "विक्रम ने",
+            "सोचा",
+            "एक हल"
+          ]
+        },
+        {
+          "model_extraction": [
+            "विक्रम ने",
+            "सोचा",
+            "एक हल"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here is \"विक्रम ने\" (Vikram). The relation here is \"सोचा\" (thought of). The object is \"एक हल\" (a solution). Now",
+            "is \"सोचा\" which is the verb here. The object \"एक हल\" is a solution",
+            "is \"एक हल.\" But wait"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is a person. The relation is \"सोचा\" which is \"thought of.\" I think that's the only relation here. The first part of the sentence is a condition",
+            "is \"सोचा",
+            "is \"एक हल.\" I need to confirm that \"एक हल\" is the correct object. Yes"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "विक्रम ने --> सोचा --> जब कोई मतैक्य नहीं हुआ |OR| जब कोई मतैक्य नहीं हुआ --> सोचा --> एक हल"
+        }
+      ],
+      "summary": {
+        "TP": 1,
+        "FP": 6,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "37",
+      "text": "सन 1696 में एक बार फिर शाही सेना से पंचायती सेना का मुकाबला हुआ .",
+      "status": "analyzed",
+      "best_cluster": "cluster 2",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "पंचायती सेना",
+            "मुकाबला हुआ",
+            "शाही सेना"
+          ]
+        },
+        {
+          "model_extraction": [
+            "पंचायती सेना",
+            "मुकाबला हुआ",
+            "शाही सेना"
+          ]
+        },
+        {
+          "model_extraction": [
+            "पंचायती सेना",
+            "मुकाबला हुआ",
+            "शाही सेना"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is Panchayati Sena",
+            "is the contest. So the final triplet should be (पंचायती सेना",
+            "is also an organization (Royal Army). The relation is the contest. Yes"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "शाही सेना से --> मुकाबला हुआ [फिर] --> पंचायती सेना का"
+        },
+        {
+          "type": "essential",
+          "extraction": "सन 1696 में --> मुकाबला हुआ [फिर] --> पंचायती सेना का"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 4,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "38",
+      "text": "मर्लगोंड , कुभीर मण्डल में भारत के आन्ध्रप्रदेश राज्य के अन्तर्गत के अदिलाबादु जिले का एक गाँव है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 4",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "मर्लगोंड",
+            "is a",
+            "गाँव"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here is \"मर्लगोंड\". The sentence says that मर्लगोंड is a village (गाँव) in the district of अदिलाबादु",
+            ". The sentence uses \"है\" which means \"is\" or \"is a\". So the relation here is \"is a\" or \"is located in\". But looking at the structure",
+            ". The sentence says \"मर्लगोंड ... एक गाँव है"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "मर्लगोंड --> एक गाँव है --> [अदिलाबादु]{a} जिले का"
+        },
+        {
+          "type": "essential",
+          "extraction": "मर्लगोंड --> एक गाँव है --> [कुभीर]{b} मण्डल में"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 2,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "39",
+      "text": "बाद में व्याकरण के दर्शन पक्ष पर अनेक ग्रन्थ लिखे गये .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "Subject",
+            "Relation",
+            "Object"
+          ]
+        },
+        {
+          "model_extraction": [
+            "many books",
+            "were written",
+            "subject of grammar"
+          ]
+        },
+        {
+          "model_extraction": [
+            "Subject",
+            "Relation",
+            "Object"
+          ]
+        },
+        {
+          "model_extraction": [
+            "अनेक ग्रन्थ",
+            "लिखे गये",
+            "व्याकरण के दर्शन पक्ष"
+          ]
+        },
+        {
+          "model_extraction": [
+            "of the sentence is \"अनेक ग्रन्थ\" (many books). The verb is \"लिखे गये\" (were written). The object here is the thing that was written",
+            "here is that the books were written. So the subject is \"अनेक ग्रन्थ\" (many books",
+            "would be... Wait"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the one that is being acted upon. So in this case",
+            "is \"written",
+            "is the books themselves? That doesn't make sense. Wait"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the books",
+            "is \"written",
+            "is the person who wrote them"
+          ]
+        },
+        {
+          "model_extraction": [
+            "of grammar.\" Wait",
+            "here is that the books were written on the subject of grammar. Therefore",
+            "is \"व्याकरण के दर्शन पक्ष\" (subject of grammar). Wait"
+          ]
+        },
+        {
+          "model_extraction": [
+            "of grammar). But the",
+            "is \"लिखे गये",
+            ") as (अनेक ग्रन्थ"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[व्याकरण के]{a} दर्शन पक्ष पर --> लिखे गये --> अनेक ग्रन्थ"
+        },
+        {
+          "type": "essential",
+          "extraction": "बाद में --> लिखे गये --> अनेक ग्रन्थ"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 9,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "40",
+      "text": "1975 में इलाहाबाद में नवनिर्मित मेहता अनुसंधान संस्थान में निदेशक बने .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            ". The sentence starts with \"1975 में इलाहाबाद में नवनिर्मित मेहता अनुसंधान संस्थान में निदेशक बने .\" Wait",
+            "here is \"became director\" (निदेशक बने). The object would be the person who became the director. Wait",
+            "being the person. But the sentence doesn't mention a person. Hmm"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the institute",
+            "is \"became director\" (निदेशक बने",
+            "is the position or the role. But the original sentence is in passive voice"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the institute",
+            "is \"became director\" (निदेशक बने",
+            "is the position. Wait"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the institute",
+            "is \"became director",
+            "is the position. But the object here is the role"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the institute",
+            "is \"became director",
+            "is the person who became the director. But the sentence doesn't mention a person. Wait"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the person",
+            "is \"became director",
+            "is the position. Alternatively"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the person who became the director",
+            "is \"became director",
+            "is the position. But the example had \"जीता\" (won) as"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[1975 में]{a} [इलाहाबाद में]{b} नवनिर्मित मेहता --> निदेशक बने --> अनुसंधान संस्थान में"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 7,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "41",
+      "text": "उनके नाम पर इस जगह का नाम रुस्तम खान रखा गया .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [
+        {
+          "model_extraction": [
+            "इस जगह का नाम",
+            "रखा गया",
+            "रुस्तम खान"
+          ],
+          "matched_golden": "इस जगह का नाम --> रखा गया --> रुस्तम खान",
+          "match_type": "satisfied"
+        }
+      ],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "here is \"उनके नाम पर",
+            "is between the place and the name. The subject is \"उनके नाम पर",
+            "is \"रुस्तम खान"
+          ]
+        },
+        {
+          "model_extraction": [
+            "type might be a bit tricky. \"उनके नाम पर\" is a prepositional phrase",
+            "is \"रखा गया\" with the object being \"रुस्तम खान\". Alternatively",
+            "being \"रुस्तम खान\". But the sentence is \"उनके नाम पर इस जगह का नाम रुस्तम खान रखा गया.\" So the structure is: on their name"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"इस जगह का नाम\" (the name of this place",
+            "is \"रखा गया\" (was kept",
+            "being \"रुस्तम खान\". But the example had the subject as \"भारतीय टीम ने"
+          ]
+        },
+        {
+          "model_extraction": [
+            "might be \"इस जगह का नाम\" (the name of this place",
+            "is \"रखा गया",
+            "is \"रुस्तम खान\". So the triplet would be (इस जगह का नाम"
+          ]
+        },
+        {
+          "model_extraction": [
+            "type would be \"वस्तु\" (thing) or \"नाम\" (name). The object is \"रुस्तम खान",
+            "is \"रखा गया",
+            "being \"रुस्तम खान\". So the final triplet would be (इस जगह का नाम"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[उनके]{a} नाम पर --> रखा गया --> इस जगह का नाम"
+        }
+      ],
+      "summary": {
+        "TP": 1,
+        "FP": 5,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "42",
+      "text": "कुछ लोग इस आपाधापी से दूर अपने घर पर ही रहना पसंद करते हैं .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [
+        {
+          "model_extraction": [
+            "कुछ लोग",
+            "पसंद करते हैं",
+            "अपने घर पर ही रहना"
+          ],
+          "matched_golden": "कुछ लोग --> पसंद करते हैं --> [अपने घर पर ही]{a} रहना",
+          "match_type": "satisfied"
+        }
+      ],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "कुछ लोग",
+            "पसंद करते हैं",
+            "अपने घर पर ही रहना"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"कुछ लोग\" which translates to \"some people.\" The subject type is Person or Organization",
+            "here is \"पसंद करते हैं\" which means \"prefer.\" But in the example",
+            "would be \"अपने घर पर ही रहना\" which is \"to stay at home.\" The object type is an action or a thing. Since it's a verb phrase"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"कुछ लोग\" (some people",
+            "is \"पसंद करते हैं\" (prefer",
+            "is \"अपने घर पर ही रहना\" (to stay at home). The object type is Action. So the triplet is (कुछ लोग"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[अपने घर पर ही] रहना --> property --> इस आपाधापी से दूर"
+        }
+      ],
+      "summary": {
+        "TP": 1,
+        "FP": 3,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "43",
+      "text": "मार्च 2001 में एक बार फिर अमरीका के अट्ठाइसवें रक्षा सचिव के रूप में उनकी वापसी हुई .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "उन",
+            "वापसी हुई",
+            "अमरीका के अट्ठाइसवें रक्षा सचिव के रूप में"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[अमरीका के]{a} [अट्ठाइसवें]{b} रक्षा सचिव के रूप में --> वापसी हुई --> उनकी"
+        },
+        {
+          "type": "essential",
+          "extraction": "मार्च 2001 में --> वापसी हुई --> उनकी"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 1,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "44",
+      "text": "इसकी रचना की आधारशिला 3 मार्च 1884 को सर वाईकर के द्वारा रखी गयी थी .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "Foundation",
+            "was laid",
+            "Sir Wicker"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"आधारशिला\" (foundation",
+            "is \"रखी गयी थी\" (was laid",
+            "is \"सर वाईकर के द्वारा\" (by Sir Wicker). But the object here is the person who performed the action. Wait"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the foundation",
+            ") by Sir Wicker (agent). So the triplet would be (Foundation",
+            "is \"सर वाईकर के द्वारा\". But the object here is the agent"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the thing that was done (foundation",
+            "is the action (laid",
+            "is the agent (Sir Wicker)."
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[इसकी रचना की]{a} आधारशिला --> रखी गयी थी --> सर वाईकर के द्वारा"
+        },
+        {
+          "type": "essential",
+          "extraction": "3 मार्च 1884 को --> रखी गयी थी --> [इसकी रचना की]{a} आधारशिला"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 4,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "45",
+      "text": "इस तकनीक के लिए वह विभिन्न टेलीविजन कंपनियों से संपर्क में है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "वह",
+            "संपर्क में है",
+            "विभिन्न टेलीविजन कंपनियों"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "वह --> संपर्क में है --> विभिन्न टेलीविजन कंपनियों से"
+        },
+        {
+          "type": "essential",
+          "extraction": "इस तकनीक के लिए --> संपर्क में है --> विभिन्न टेलीविजन कंपनियों से |OR| इस तकनीक के लिए --> संपर्क में है --> वह"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 1,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "46",
+      "text": "त्रिदेवनाथ बैनर्जी को चिकित्सा विज्ञान के क्षेत्र में सन 1961 में पद्म भूषण से सम्मानित किया गया था .",
+      "status": "analyzed",
+      "best_cluster": "cluster 2",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "त्रिदेवनाथ बैनर्जी को",
+            "सम्मानित किया गया था",
+            "पद्म भूषण"
+          ]
+        },
+        {
+          "model_extraction": [
+            "त्रिदेवनाथ बैनर्जी को",
+            "सम्मानित किया गया था",
+            "पद्म भूषण"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here is \"त्रिदेवनाथ बैनर्जी को",
+            "is \"सम्मानित किया गया था\" meaning \"was honored\". The object would be \"पद्म भूषण\" (Padma Bhushan",
+            "being \"पद्म भूषण\". Then"
+          ]
+        },
+        {
+          "model_extraction": [
+            ". So maybe here",
+            "is \"सम्मानित किया गया था",
+            "is \"पद्म भूषण\". Then"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "त्रिदेवनाथ बैनर्जी को [चिकित्सा विज्ञान के क्षेत्र में]{a} --> सम्मानित किया गया था --> पद्म भूषण से"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 4,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "47",
+      "text": "मराठी के अतिरिक्त उन्होने हिन्दी फिल्मों के लिए भी संगीत रचना की .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "here is \"उन्होने\" which is \"they\". But in the example",
+            "is \"रचना की\" (composed). Then the object would be \"संगीत\" (music) or \"हिन्दी फिल्मों के लिए\" (for Hindi films). Wait",
+            "is \"संगीत\" (music). But then there's also \"हिन्दी फिल्मों के लिए\" (for Hindi films"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "उन्होने --> संगीत रचना की --> [मराठी के अतिरिक्त]{a} हिन्दी फिल्मों के लिए [भी]"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 1,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "48",
+      "text": "काइटिन का औद्योगिक रूप से अनेक प्रक्रियाओं में उपयोग किया जाता है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "काइटिन",
+            "उपयोग किया जाता है",
+            "अनेक प्रक्रियाओं में"
+          ]
+        },
+        {
+          "model_extraction": [
+            "काइटिन",
+            "उपयोग किया जाता है",
+            "अनेक प्रक्रियाओं में"
+          ]
+        },
+        {
+          "model_extraction": [
+            "काइटिन",
+            "उपयोग किया जाता है",
+            "अनेक प्रक्रियाओं में"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here is \"काइटिन का\" which translates to \"of cotton\" or \"cotton's\". But wait",
+            "here is \"used in\" or \"used for\". The subject is \"काइटिन का\" (cotton's?",
+            "would be \"अनेक प्रक्रियाओं में\" (in many processes). So the triplet would be (काइटिन"
+          ]
+        },
+        {
+          "model_extraction": [
+            "and object types. The subject is \"काइटिन\" (chitin",
+            "is \"used in\" with the object being \"many processes\". But the exact words for the relation are \"उपयोग किया जाता है",
+            ". The structure is \"is used in many processes\". So the object is \"many processes"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "काइटिन का --> उपयोग किया जाता है --> [औद्योगिक रूप से]{a} अनेक प्रक्रियाओं में"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 5,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "49",
+      "text": "हिंदूओं और मुस्लिमों के सभी पर्व मिलजुल कर मनाए जाते हैं .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "is \"सभी पर्व\" (all festivals) of \"हिंदूओं और मुस्लिमों\" (Hindus and Muslims). The phrase \"मिलजुल कर\" means \"together\" or \"jointly",
+            "here is that all festivals of Hindus and Muslims are celebrated together. The subject is \"सभी पर्व\" (all festivals",
+            "here is the action of being celebrated"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the festivals",
+            "is \"celebrated together",
+            "is the action of celebration. But in the example"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"सभी पर्व\" (all festivals",
+            "is \"celebrated together",
+            "is the festivals. Wait"
+          ]
+        },
+        {
+          "model_extraction": [
+            "was \"भारतीय टीम ने\" (the Indian team",
+            "was \"हराकर\" (defeated",
+            "was \"ऑस्ट्रेलिया को\" (Australia). So the object was a noun. In this case"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"सभी पर्व\" (all festivals",
+            "is \"मनाए जाते हैं\" (are celebrated",
+            "is \"मिलजुल कर\" (together). But \"मिलजुल कर\" is a verb phrase"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[हिंदूओं और मुस्लिमों के]{a} सभी पर्व --> मनाए जाते हैं --> मिलजुल कर"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 5,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "50",
+      "text": "द डार्क नाईट राइसेस को अमेरिका , संयुक्त राजशाही व कनाडा में 20 जुलाई 2012 को रिलीज़ किया गया .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "The Dark Knight Rises",
+            "released in",
+            "America"
+          ]
+        },
+        {
+          "model_extraction": [
+            "The Dark Knight Rises",
+            "released in",
+            "United Kingdom"
+          ]
+        },
+        {
+          "model_extraction": [
+            "The Dark Knight Rises",
+            "released in",
+            "Canada"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"द डार्क नाईट राइसेस\" (The Dark Knight Rises). The locations mentioned are America",
+            "here is \"released\" (रिलीज़ किया गया). The subject is the movie",
+            "would be the locations where it was released. Wait"
+          ]
+        },
+        {
+          "model_extraction": [
+            ". Wait",
+            "s. So maybe here",
+            "s? But the user's example had two different relations. Wait"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "द डार्क नाईट राइसेस को --> रिलीज़ किया गया --> अमेरिका [, संयुक्त राजशाही व कनाडा में]{a}"
+        },
+        {
+          "type": "essential",
+          "extraction": "द डार्क नाईट राइसेस को --> रिलीज़ किया गया --> 20 जुलाई 2012 को |OR| अमेरिका [, संयुक्त राजशाही व कनाडा में]{b} --> रिलीज़ किया गया --> 20 जुलाई 2012 को"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 5,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "51",
+      "text": "यह हर साल जर्मनी के फ्रैंकफर्ट शहर मे लगाया जाता है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [
+        {
+          "model_extraction": [
+            "यह",
+            "लगाया जाता है",
+            "जर्मनी के फ्रैंकफर्ट शहर मे"
+          ],
+          "matched_golden": "यह --> लगाया जाता है --> [जर्मनी के]{a} फ्रैंकफर्ट शहर मे |OR| यह --> लगाया जाता है --> [जर्मनी के]{a} फ्रैंकफर्ट शहर में",
+          "match_type": "satisfied"
+        }
+      ],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "यह",
+            "लगाया जाता है",
+            "जर्मनी के फ्रैंकफर्ट शहर मे"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"यह\" (this",
+            "here is probably between \"यह\" (the subject) and \"जर्मनी के फ्रैंकफर्ट शहर मे\" (the location). The verb \"लगाया जाता है\" indicates the action of being done. Now",
+            "or \"Entity.\" The relation is \"लगाया जाता है"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"यह",
+            "is \"लगाया जाता है",
+            "is \"जर्मनी के फ्रैंकफर्ट शहर मे.\" The object type is Location. I think that's the only relation here. The sentence is passive"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "यह --> लगाया जाता है --> हर साल |OR| [जर्मनी के]{a} फ्रैंकफर्ट शहर मे --> लगाया जाता है --> हर साल |OR| [जर्मनी के]{a} फ्रैंकफर्ट शहर में --> लगाया जाता है --> हर साल"
+        }
+      ],
+      "summary": {
+        "TP": 1,
+        "FP": 3,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "52",
+      "text": "द्रौपदी ने आगे बढ़ कर अर्जुन के गले में वरमाला डाल दिया .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "द्रौपदी ने",
+            "डाल दिया",
+            "वरमाला"
+          ]
+        },
+        {
+          "model_extraction": [
+            "द्रौपदी ने",
+            "डाल दिया",
+            "वरमाला"
+          ]
+        },
+        {
+          "model_extraction": [
+            "द्रौपदी ने",
+            "डाल दिया",
+            "वरमाला"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here is \"द्रौपदी ने\" which is \"Draupadi did.\" The verb is \"डाल दिया\" meaning \"gave\" or \"placed.\" The object is \"वरमाला\" (vermala",
+            "is between Draupadi and Arjuna. The action here is \"वरमाला डाल दिया\" which is \"placed the garland.\" The object is \"वरमाला.\" Wait",
+            "is \"वरमाला"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is Draupadi",
+            "is \"placed",
+            "is the garland. But the location is specified as Arjuna's neck. So maybe the relation is \"placed in the neck of Arjuna.\" Alternatively"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "द्रौपदी ने [आगे बढ़ कर] --> वरमाला डाल दिया --> [आगे बढ़ कर] [अर्जुन के]{a} गले में"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 5,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "53",
+      "text": "यह त्यौहार पूरे उत्तर भारत में राम नवमी के दौरान मनाया जाता है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [
+        {
+          "model_extraction": [
+            "यह त्यौहार",
+            "मनाया जाता है",
+            "पूरे उत्तर भारत में"
+          ],
+          "matched_golden": "पूरे उत्तर भारत में --> मनाया जाता है --> यह त्यौहार",
+          "match_type": "satisfied"
+        }
+      ],
+      "false_positives": [],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "यह [त्यौहार]{b} [पूरे उत्तर भारत में]{a} --> मनाया जाता है --> राम नवमी के दौरान"
+        }
+      ],
+      "summary": {
+        "TP": 1,
+        "FP": 0,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "54",
+      "text": "तटीय कर्नाटक के भोजन में समुद्री भोजन , नारियल और नारियल तेल का व्यापक उपयोग उल्लेखनीय है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "sea food",
+            "coconut",
+            "coconut oil"
+          ]
+        },
+        {
+          "model_extraction": [
+            "Subject",
+            "Relation",
+            "Object"
+          ]
+        },
+        {
+          "model_extraction": [
+            "Subject",
+            "Relation",
+            "Object"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here is \"तटीय कर्नाटक के भोजन\" which translates to \"coastal Karnataka food\". The verb is \"व्यापक उपयोग उल्लेखनीय है\" meaning \"the widespread use is notable\". So",
+            "is between the coastal Karnataka food and the items used in it. The items mentioned are \"समुद्री भोजन\" (sea food",
+            "here is the three items: sea food"
+          ]
+        },
+        {
+          "model_extraction": [
+            "to the three objects. But the example had two relations (hara and jitaa). So maybe here",
+            "is \"व्यापक उपयोग\" and the object is the list of items. But the user's example had two separate relations. Hmm",
+            ". But the example had two relations"
+          ]
+        },
+        {
+          "model_extraction": [
+            ". Wait",
+            "s. Here",
+            "? But the sentence is about the widespread use of all three items. So perhaps the correct triplet is one"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[तटीय]{b} [कर्नाटक के]{c} भोजन में --> उल्लेखनीय है --> [समुद्री भोजन , नारियल और]{a} नारियल तेल का [व्यापक] उपयोग"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 6,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "55",
+      "text": "कार्ल ने वहां अध्ययन के साथ ही वहां के उपेक्षित जीवविज्ञान उद्यान को भी सुधारा .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "कार्ल",
+            "सुधारा",
+            "वहां के उपेक्षित जीवविज्ञान उद्यान"
+          ]
+        },
+        {
+          "model_extraction": [
+            "कार्ल",
+            "सुधारा",
+            "वहां के उपेक्षित जीवविज्ञान उद्यान"
+          ]
+        },
+        {
+          "model_extraction": [
+            ". The sentence starts with \"कार्ल ने",
+            ". The verb here is \"सुधारा\" which means \"improved\" or \"enhanced\". The structure is \"कार्ल ने ... सुधारा",
+            "is \"वहां के उपेक्षित जीवविज्ञान उद्यान को\" which translates to \"the neglected biology garden there\". The object type here is an organization or a place"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is Carl. So the triplet would be (कार्ल",
+            ". The sentence says \"वहां अध्ययन के साथ ही\" which might be a separate part. However",
+            ". But the object is the garden"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "कार्ल ने --> सुधारा --> [वहां के]{a} उपेक्षित जीवविज्ञान उद्यान को [भी]"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 4,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "56",
+      "text": "सिफियस चतुर्थ की श्रेणी के तारों को सिफीड कहते हैं .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "सिफियस चतुर्थ की श्रेणी के तारों",
+            "कहते हैं",
+            "सिफीड"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[सिफियस चतुर्थ की]{a} [श्रेणी के] तारों को --> [कहते] हैं --> सिफीड"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 1,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "57",
+      "text": "यह ' प्राथमिक विधि अध्यारोप ' के नाम से प्रसिद्ध है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "यह",
+            "प्रसिद्ध है",
+            "प्राथमिक विधि अध्यारोप"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "यह --> प्रसिद्ध है --> [प्राथमिक विधि अध्यारोप के]{a} नाम से"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 1,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "58",
+      "text": "चीन तथा जापान से इस देश का अधिक संपर्क रहा है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "चीन तथा जापान",
+            "संपर्क",
+            "इस देश का"
+          ]
+        },
+        {
+          "model_extraction": [
+            "चीन तथा जापान",
+            "संपर्क",
+            "इस देश का"
+          ]
+        },
+        {
+          "model_extraction": [
+            "चीन तथा जापान",
+            "संपर्क",
+            "इस देश का"
+          ]
+        },
+        {
+          "model_extraction": [
+            "चीन तथा जापान",
+            "संपर्क",
+            "इस देश का"
+          ]
+        },
+        {
+          "model_extraction": [
+            ". The subject here is \"चीन तथा जापान\" which translates to \"China and Japan.\" The subject type is likely an Organization or Country since both are countries. The evidence is \"चीन तथा जापान से.\" Next",
+            ". The verb here is \"अधिक संपर्क रहा है",
+            "is \"इस देश का\" which is \"this country's.\" The object type is a Location (Country) since it's referring to a country. The evidence is \"इस देश का.\" Putting it all together"
+          ]
+        },
+        {
+          "model_extraction": [
+            "China and Japan) and the object (this country",
+            "being \"संपर्क\" (contact). But I need to make sure the relation is correctly identified. The verb is \"अधिक संपर्क रहा है",
+            "is \"इस देश का.\" The subject is \"चीन तथा जापान से"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is China and Japan",
+            "is contact",
+            "is this country. The evidence for the relation is \"अधिक संपर्क रहा है"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "इस देश का --> [अधिक] संपर्क रहा है --> चीन [तथा जापान से]{a}"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 7,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "59",
+      "text": "कश्यप ने तत्काल ज्योतिष गणना करके पता लगाया कि राजा की आयु में कुछ घड़ी शेष हैं .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [
+        {
+          "model_extraction": [
+            "कश्यप ने",
+            "पता लगाया",
+            "राजा की आयु में कुछ घड़ी शेष हैं"
+          ],
+          "matched_golden": "कश्यप ने --> पता लगाया --> [राजा की]{b} आयु में [कुछ घड़ी शेष हैं]{a} |OR| [तत्काल] ज्योतिष गणना करके --> पता लगाया --> [राजा की]{b} आयु में [कुछ घड़ी शेष हैं]{a}",
+          "match_type": "satisfied"
+        }
+      ],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "कश्यप ने",
+            "तत्काल ज्योतिष गणना करके",
+            "राजा की आयु में कुछ घड़ी शेष हैं"
+          ]
+        },
+        {
+          "model_extraction": [
+            "Kashyap",
+            "found out",
+            "result"
+          ]
+        },
+        {
+          "model_extraction": [
+            "Kashyap",
+            "through method",
+            "result"
+          ]
+        },
+        {
+          "model_extraction": [
+            ". So maybe here",
+            "s are \"पता लगाया\" and \"तत्काल ज्योतिष गणना करके\". But the object for the second relation would be the result. Wait",
+            ". The second relation is \"through [method]\" which is a way of doing the action. So the triplet would be (Kashyap"
+          ]
+        },
+        {
+          "model_extraction": [
+            "and the same object. So maybe here",
+            "s are \"found out\" and \"through astrology calculation\". The object for both would be the result. But the example had two different objects. Wait",
+            "Australia"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "कश्यप ने --> पता लगाया --> [तत्काल] ज्योतिष गणना करके"
+        }
+      ],
+      "summary": {
+        "TP": 1,
+        "FP": 5,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "60",
+      "text": "अभ्रक आदि की खानों में मोमबत्तियाँ भी प्रयुक्त होती है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [
+        {
+          "model_extraction": [
+            "मोमबत्तियाँ",
+            "प्रयुक्त होती है",
+            "अभ्रक आदि की खानों में"
+          ],
+          "matched_golden": "[अभ्रक आदि की]{a} खानों में --> प्रयुक्त होती है --> मोमबत्तियाँ [भी] |OR| [अभ्रक की]{a} खानों में --> प्रयुक्त होती है --> मोमबत्तियाँ [भी]",
+          "match_type": "satisfied"
+        }
+      ],
+      "false_positives": [],
+      "false_negatives": [],
+      "summary": {
+        "TP": 1,
+        "FP": 0,
+        "FN": 0
+      }
+    },
+    {
+      "sent_id": "61",
+      "text": "इस शैली में उन्होंने कहानियाँ और उपन्यास लिखे हैं .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [
+        {
+          "model_extraction": [
+            "उन्होंने",
+            "लिखे हैं",
+            "कहानियाँ और उपन्यास"
+          ],
+          "matched_golden": "उन्होंने --> लिखे हैं --> कहानियाँ [और उपन्यास]{a}",
+          "match_type": "satisfied"
+        }
+      ],
+      "false_positives": [],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "उन्होंने --> लिखे हैं --> इस शैली में |OR| कहानियाँ [और उपन्यास]{a} --> लिखे हैं --> इस शैली में"
+        }
+      ],
+      "summary": {
+        "TP": 1,
+        "FP": 0,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "62",
+      "text": "वो पहले दलित और पहले मलयाली मुख्य न्यायाधीश हैं .",
+      "status": "analyzed",
+      "best_cluster": "cluster 2",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "वो",
+            "हैं",
+            "मुख्य न्यायाधीश"
+          ]
+        },
+        {
+          "model_extraction": [
+            "वो",
+            "हैं",
+            "मुख्य न्यायाधीश"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here is \"वो\" which means \"they\" or \"they are\". The sentence is stating that they are the first Dalit and first Malayali Chief Justice. Breaking it down",
+            "is \"हैं\" which is \"are\". The object here is \"मुख्य न्यायाधीश\" (Chief Justice). But there are two descriptors: \"पहले दलित\" (first Dalit) and \"पहले मलयाली\" (first Malayali). So",
+            "is \"मुख्य न्यायाधीश\" (Chief Justice). But the descriptors \"पहले दलित\" and \"पहले मलयाली\" are attributes of the Chief Justice. Wait"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"वो\" and the predicate is \"हैं",
+            "is \"हैं\" and the object is \"मुख्य न्यायाधीश",
+            "s properties. However"
+          ]
+        },
+        {
+          "model_extraction": [
+            "वो) is [first Dalit and first Malayali Chief Justice]\". So the relation is \"हैं\" (are",
+            "was \"हराकर\" and \"जीता",
+            "is \"मुख्य न्यायाधीश\". The descriptors are part of the object's attributes. So the triplet would be (वो"
+          ]
+        },
+        {
+          "model_extraction": [
+            ". In this case",
+            "here. Alternatively",
+            "is \"मुख्य न्यायाधीश"
+          ]
+        },
+        {
+          "model_extraction": [
+            ". But in this case",
+            "is \"हैं",
+            "is \"मुख्य न्यायाधीश"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "वो --> हैं --> [पहले दलित]{a} [और] पहले मलयाली मुख्य न्यायाधीश"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 7,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "63",
+      "text": "6 जुलाई 2009 को उन्होंने सरकार का वार्षिक बजट पेश किया .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [
+        {
+          "model_extraction": [
+            "उन्होंने",
+            "पेश किया",
+            "सरकार का वार्षिक बजट"
+          ],
+          "matched_golden": "[6 जुलाई 2009 को]{a} उन्होंने --> पेश किया --> [सरकार का]{b} [वार्षिक]{c} बजट",
+          "match_type": "satisfied but with a"
+        }
+      ],
+      "false_positives": [],
+      "false_negatives": [
+        {
+          "type": "essential_with_unmatched_compensatory",
+          "extraction": "[6 जुलाई 2009 को]{a} उन्होंने --> पेश किया --> [सरकार का]{b} [वार्षिक]{c} बजट",
+          "needs": [
+            "a"
+          ]
+        }
+      ],
+      "summary": {
+        "TP": 1,
+        "FP": 0,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "64",
+      "text": "स्थानीय आबादी लगभग पूरी तरह से चाय के व्यापार पर निर्भर रहती है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "स्थानीय आबादी --> निर्भर रहती है --> [लगभग] [पूरी तरह से]{a} [चाय के]{b} व्यापार पर"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "65",
+      "text": "इसे साथ ही आधारभूत प्रोफ़ाइल में भी लागू किया जाता है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [
+        {
+          "model_extraction": [
+            "इसे",
+            "लागू किया जाता है",
+            "आधारभूत प्रोफ़ाइल में"
+          ],
+          "matched_golden": "इसे [साथ ही] --> लागू किया जाता है --> आधारभूत प्रोफ़ाइल में [भी]",
+          "match_type": "satisfied"
+        }
+      ],
+      "false_positives": [],
+      "false_negatives": [],
+      "summary": {
+        "TP": 1,
+        "FP": 0,
+        "FN": 0
+      }
+    },
+    {
+      "sent_id": "66",
+      "text": "उन्हें उत्कल मणि के नाम से जाना जाता है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [
+        {
+          "model_extraction": [
+            "उत्कल मणि के नाम से",
+            "जाना जाता है",
+            "उन्हें"
+          ],
+          "matched_golden": "उन्हें --> जाना जाता है --> [उत्कल मणि के]{a} नाम से",
+          "match_type": "satisfied"
+        }
+      ],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "उन्हें\" – this is the object of the verb \"जाना जाता है",
+            "here is that \"उन्हें\" is known as \"उत्कल मणि के नाम से\". But the user's example had the subject as the one performing the action. Wait",
+            "is \"उन्हें\". But that's not correct because \"जाना जाता है\" is the verb"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the one being known",
+            "is \"जाना जाता है",
+            "is \"उन्हें\". But that seems reversed. Alternatively"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"उत्कल मणि के नाम से",
+            "is \"जाना जाता है",
+            "is \"उन्हें\". But that would mean \"Utkal Mani is known"
+          ]
+        }
+      ],
+      "false_negatives": [],
+      "summary": {
+        "TP": 1,
+        "FP": 3,
+        "FN": 0
+      }
+    },
+    {
+      "sent_id": "67",
+      "text": "अधिक जानकारी के लिए , कृपया फ्रेंच फ्लेमिश को देखें .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "would be \"कृपया\" (please",
+            "would be \"देखें\" (see). The subject is \"कृपया\" (please",
+            "is \"फ्रेंच फ्लेमिश\". But the example had \"भारतीय टीम ने\" as the subject"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"कृपया\" but that's not a noun. Alternatively",
+            "is \"कृपया देखें\" (please see",
+            "फ्रेंच फ्लेमिश\". But I'm not sure. The sentence is a bit ambiguous. Let me check again. The structure is \"For more information"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "फ्रेंच फ्लेमिश को --> देखें --> अधिक जानकारी के लिए"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 2,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "68",
+      "text": "इस नदी का ज्यादातर अंश पाकिस्तान में प्रवाहित होता है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [
+        {
+          "model_extraction": [
+            "इस नदी का ज्यादातर अंश",
+            "प्रवाहित होता है",
+            "पाकिस्तान में"
+          ],
+          "matched_golden": "[इस नदी का]{a} ज्यादातर अंश --> प्रवाहित होता है --> पाकिस्तान में",
+          "match_type": "satisfied"
+        }
+      ],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "इस नदी का ज्यादातर अंश",
+            "प्रवाहित होता है",
+            "पाकिस्तान"
+          ]
+        },
+        {
+          "model_extraction": [
+            "इस नदी का ज्यादातर अंश",
+            "प्रवाहित होता है",
+            "पाकिस्तान"
+          ]
+        },
+        {
+          "model_extraction": [
+            "Subject",
+            "Relation",
+            "Object"
+          ]
+        },
+        {
+          "model_extraction": [
+            "इस नदी का ज्यादातर अंश",
+            "प्रवाहित होता है",
+            "पाकिस्तान"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here is \"इस नदी का ज्यादातर अंश\" which translates to \"the majority of this river's portion.\" The verb is \"प्रवाहित होता है\" meaning \"flows.\" The object is \"पाकिस्तान में\" which is \"in Pakistan.\" So",
+            "here is \"प्रवाहित होता है\" (flows). The subject is the river's portion",
+            "is Pakistan"
+          ]
+        }
+      ],
+      "false_negatives": [],
+      "summary": {
+        "TP": 1,
+        "FP": 5,
+        "FN": 0
+      }
+    },
+    {
+      "sent_id": "69",
+      "text": "मत्रूह मुहाफ़ज़ाह का अंदरूनी भाग लीबियाई रेगिस्तान का हिस्सा है , जिसमें सीवा नख़लिस्तान ( ओएसिस ) भी स्थित है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "मत्रूह मुहाफ़ज़ाह का अंदरूनी भाग",
+            "हिस्सा है",
+            "लीबियाई रेगिस्तान"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the inner part of Mauritius",
+            "here is \"स्थित है\" meaning \"is located\". The subject is \"सीवा नख़लिस्तान (ओएसिस",
+            "is \"लीबियाई रेगिस्तान\" (Libyan desert"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[मत्रूह मुहाफ़ज़ाह का]{a} अंदरूनी भाग --> हिस्सा है --> लीबियाई रेगिस्तान का"
+        },
+        {
+          "type": "essential",
+          "extraction": "जिसमें --> स्थित है --> सीवा नख़लिस्तान [( ओएसिस )]{b}"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 2,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "70",
+      "text": "राज्य की राजधानी बंगलुरु शहर है , जो भारत में हो रही त्वरित आर्थिक एवं प्रौद्योगिकी का अग्रणी योगदानकर्त्ता है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "here is \"राज्य की राजधानी बंगलुरु शहर\" which is the capital city of the state. The relation is \"है\" (is) connecting it to the state. Wait",
+            "might be \"राजधानी है\" or \"है\" as the verb. The object here is \"राज्य\" (state",
+            "is \"राज्य की राजधानी\" (capital of the state). Wait"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"बंगलुरु शहर\" (Bengaluru city",
+            "is \"राजधानी है\" (is the capital",
+            "is \"राज्य\" (state). But the sentence structure is \"राज्य की राजधानी बंगलुरु शहर है"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"राज्य की राजधानी\" (capital of the state",
+            "is \"है\" (is",
+            "is \"राज्य\" (state). But that might not be right. Alternatively"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"बंगलुरु शहर\" (Bengaluru city",
+            "is \"राजधानी है\" (is the capital",
+            "is \"राज्य\" (state). That seems more accurate. Then the second part: \"जो भारत में हो रही त्वरित आर्थिक एवं प्रौद्योगिकी का अग्रणी योगदानकर्त्ता है.\" Here"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[राज्य की]{a} राजधानी --> है --> बंगलुरु शहर"
+        },
+        {
+          "type": "essential",
+          "extraction": "[जो भारत में हो रही]{b} [त्वरित] आर्थिक एवं प्रौद्योगिकी का --> है --> [अग्रणी] योगदानकर्त्ता |OR| बंगलुरु शहर --> है --> [त्वरित] आर्थिक एवं प्रौद्योगिकी का अग्रणी योगदानकर्त्ता |OR| बंगलुरु शहर --> [अग्रणी] योगदानकर्त्ता है --> [त्वरित] आर्थिक एवं प्रौद्योगिकी का"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 4,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "71",
+      "text": "ये अपनी रहस्यमयी और भयावह कहानियों के लिए प्रसिद्ध हैं .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [
+        {
+          "model_extraction": [
+            "ये",
+            "प्रसिद्ध हैं",
+            "अपनी रहस्यमयी और भयावह कहानियों के लिए"
+          ],
+          "matched_golden": "ये --> प्रसिद्ध हैं --> [अपनी] [रहस्यमयी और भयावह]{a} कहानियों के लिए",
+          "match_type": "satisfied"
+        }
+      ],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "ये",
+            "प्रसिद्ध हैं",
+            "अपनी रहस्यमयी और भयावह कहानियों के लिए"
+          ]
+        },
+        {
+          "model_extraction": [
+            "ये",
+            "प्रसिद्ध हैं",
+            "अपनी रहस्यमयी और भयावह कहानियों के लिए"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here is \"ये\" which refers to some entities",
+            "is \"प्रसिद्ध हैं\" (are famous). The subject is \"ये\" which is a pronoun",
+            "is the reason for their fame"
+          ]
+        },
+        {
+          "model_extraction": [
+            "ये\" is likely a collection of stories",
+            "is \"प्रसिद्ध हैं\" which is a predicate indicating fame. Wait",
+            "is \"अपनी रहस्यमयी और भयावह कहानियों के लिए\". But the relation is \"प्रसिद्ध हैं\". So the triplet would be (ये"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"ये",
+            "is \"प्रसिद्ध हैं",
+            "is \"अपनी रहस्यमयी और भयावह कहानियों के लिए\" which is the reason for their fame. But I need to check if \"ये\" is a person"
+          ]
+        }
+      ],
+      "false_negatives": [],
+      "summary": {
+        "TP": 1,
+        "FP": 5,
+        "FN": 0
+      }
+    },
+    {
+      "sent_id": "72",
+      "text": "उनका एक कहानी संग्रह और दो निबंध संग्रह प्रकाशित हुए हैं .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "is \"उनका एक कहानी संग्रह और दो निबंध संग्रह.\" So the subject is a collection of stories and two collections of essays. Now",
+            "here is \"प्रकाशित हुए हैं\" which is the action of being published. So the object would be the collections themselves. But wait",
+            "is the collections that were published. The subject is the collections"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the collections (one story and two essay collections",
+            "is \"प्रकाशित हुए हैं",
+            "is the action of being published. Wait"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the collections",
+            "is the action of being published. Wait",
+            "would be the collections. However"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the collections",
+            "is the action (publication",
+            "is the action itself? That doesn't make sense. Wait"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"उनका एक कहानी संग्रह और दो निबंध संग्रह",
+            "is \"प्रकाशित हुए हैं",
+            "is the action (but that's not a noun). Hmm"
+          ]
+        },
+        {
+          "model_extraction": [
+            ". Wait",
+            "was \"हराकर\" (defeated",
+            "was \"ऑस्ट्रेलिया को.\" So in that case"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the actor",
+            "is the action",
+            "is the target. In this sentence"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the collections (the thing that was published",
+            "is \"प्रकाशित हुए हैं\" (published",
+            "is the action? No"
+          ]
+        },
+        {
+          "model_extraction": [
+            ". That can't be right. Alternatively",
+            "is \"प्रकाशित हुए हैं\" (published",
+            "is the action"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "उनका --> प्रकाशित हुए हैं --> एक कहानी संग्रह [और दो निबंध संग्रह]{a}"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 9,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "73",
+      "text": "पद्मनाभ दत्त ने ( 15 वीं शताब्दी ) सुपद्य व्याकरण लिखा है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 2",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "Padminath Datt",
+            "wrote",
+            "Supady Vyakaran"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here is \"पद्मनाभ दत्त ने",
+            "s. The first relation is between the subject (Padminath Datt) and the object (Supady Vyakaran",
+            ". Wait"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is Padminath Datt",
+            "is \"written in",
+            "is the 15th century. But the sentence doesn't explicitly say that. It's more like the time is a parenthetical note"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "पद्मनाभ दत्त ने [( 15 वीं शताब्दी )]{a} --> लिखा है --> सुपद्य व्याकरण"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 3,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "74",
+      "text": "इसके पश्चिम में अलबामा और दक्षिण में फ्लोरिडा राज्य स्थित हैं .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "अलबामा और फ्लोरिडा राज्य",
+            "स्थित हैं",
+            "पश्चिम में"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"अलबामा और फ्लोरिडा राज्य\" (Alabama and Florida states). The sentence is saying that these states are located to the west and south of \"इसके\" (this",
+            "here is \"स्थित हैं\" which is \"are located.\" The object would be the direction: \"पश्चिम में\" (west) and \"दक्षिण में\" (south). Wait",
+            "here is the direction"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is both states",
+            ". But the sentence is a bit ambiguous. Alternatively",
+            "is \"इसके पश्चिम में\" and \"दक्षिण में.\" Wait"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "इसके पश्चिम में --> स्थित हैं --> अलबामा"
+        },
+        {
+          "type": "essential",
+          "extraction": "[इसके] दक्षिण में --> स्थित हैं --> फ्लोरिडा [राज्य]{a}"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 3,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "75",
+      "text": "यह क्रिकेट मैदान ऑस्ट्रेलिया के होबार्ट शहर में स्थित है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "यह क्रिकेट मैदान",
+            "स्थित है",
+            "होबार्ट शहर"
+          ]
+        },
+        {
+          "model_extraction": [
+            "यह क्रिकेट मैदान",
+            "स्थित है",
+            "होबार्ट शहर"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here is \"यह क्रिकेट मैदान\" which translates to \"this cricket field.\" The verb is \"है\" meaning \"is.\" The object part is \"ऑस्ट्रेलिया के होबार्ट शहर में स्थित है",
+            "here is \"स्थित है\" which means \"is located.\" So the subject is the cricket field",
+            "is the location"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"यह क्रिकेट मैदान",
+            "is \"स्थित है",
+            "is \"होबार्ट शहर\" (Hobart city). But the sentence says \"ऑस्ट्रेलिया के होबार्ट शहर में"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "यह क्रिकेट मैदान --> स्थित है --> [ऑस्ट्रेलिया के]{a} होबार्ट शहर में"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 4,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "76",
+      "text": "निम्नलिखित सूचना नियम का एक सरलीकृत सारांश है , पूरी प्रतिलिपि नहीं है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "निम्नलिखित सूचना नियम",
+            "",
+            "एक सरलीकृत सारांश"
+          ]
+        },
+        {
+          "model_extraction": [
+            "निम्नलिखित सूचना नियम",
+            "",
+            "एक सरलीकृत सारांश"
+          ]
+        },
+        {
+          "model_extraction": [
+            "निम्नलिखित सूचना नियम",
+            "नहीं है",
+            "पूरी प्रतिलिपि"
+          ]
+        },
+        {
+          "model_extraction": [
+            "s",
+            "s",
+            "s. Let's break it down. The first part is \"निम्नलिखित सूचना नियम का एक सरलीकृत सारांश है\". Here"
+          ]
+        },
+        {
+          "model_extraction": [
+            ". \"निम्नलिखित\" means \"following",
+            "here is \"है\" (is",
+            "is \"एक सरलीकृत सारांश\" (a simplified summary). But wait"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here is \"निम्नलिखित सूचना नियम\" again",
+            "is \"नहीं है\" (is not",
+            "is \"पूरी प्रतिलिपि\" (full copy). Wait"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the same in both parts. So the two relations are \"है\" and \"नहीं है\". So the two triplets would be: 1. (निम्नलिखित सूचना नियम",
+            "is \"एक सरलीकृत सारांश\" which is a summary",
+            "is \"पूरी प्रतिलिपि\" which is a full copy"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "निम्नलिखित सूचना --> [एक] [सरलीकृत]{a} सारांश है --> नियम का"
+        },
+        {
+          "type": "essential",
+          "extraction": "निम्नलिखित सूचना --> नहीं है --> पूरी प्रतिलिपि"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 7,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "77",
+      "text": "आत्यन्तिक प्रलय योगीजनों के ज्ञान के द्वारा ब्रह्म में लीन हो जाने को कहते हैं .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [
+        {
+          "model_extraction": [
+            "आत्यन्तिक प्रलय",
+            "कहते हैं",
+            "योगीजनों के ज्ञान के द्वारा ब्रह्म में लीन हो जाने को"
+          ],
+          "matched_golden": "आत्यन्तिक प्रलय --> [कहते] हैं --> [योगीजनों के ज्ञान के द्वारा]{a} ब्रह्म में लीन हो जाने को",
+          "match_type": "satisfied"
+        }
+      ],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "is \"आत्यन्तिक प्रलय",
+            "is \"कहते हैं",
+            "is the description. The subject type is an event or concept (Event/Concept"
+          ]
+        }
+      ],
+      "false_negatives": [],
+      "summary": {
+        "TP": 1,
+        "FP": 1,
+        "FN": 0
+      }
+    },
+    {
+      "sent_id": "78",
+      "text": "जंगलों की विशेषता की दृष्टि से कुछ लोगों ने इसे इंडोचायनीज़ और इंडोमलायन उपक्षेत्रों में विभाजित किया है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "कुछ लोगों ने",
+            "विभाजित किया है",
+            "इंडोचायनीज़ और इंडोमलायन उपक्षेत्रों में"
+          ]
+        },
+        {
+          "model_extraction": [
+            "कुछ लोगों ने",
+            "विभाजित किया है",
+            "जंगलों की विशेषता"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here seems to be \"कुछ लोगों ने\" which translates to \"some people\". The action is \"विभाजित किया है\" meaning \"divided it\". The object of the action is \"इसे\" which refers to \"it",
+            "is between \"कुछ लोगों ने\" (some people) and \"विभाजित किया है\" (divided). The object here is \"इसे\" (it",
+            "is \"it\" (the characteristic of forests). The relation here is \"divided into\" which is \"विभाजित किया है\". So the first triplet would be (कुछ लोगों ने"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"कुछ लोगों ने",
+            "is \"विभाजित किया है",
+            "is \"जंगलों की विशेषता\" (the characteristic of forests"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "इसे --> विभाजित किया है --> इंडोचायनीज़ [और इंडोमलायन उपक्षेत्रों में]{a} |OR| इसे --> विभाजित किया है --> [इंडोचायनीज़]{b} [और] इंडोमलायन उपक्षेत्रों में"
+        },
+        {
+          "type": "essential",
+          "extraction": "इसे --> विभाजित किया है --> जंगलों की विशेषता की दृष्टि से"
+        },
+        {
+          "type": "essential",
+          "extraction": "इसे --> विभाजित किया है --> कुछ लोगों ने"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 4,
+        "FN": 3
+      }
+    },
+    {
+      "sent_id": "79",
+      "text": "पर , प्रयोगशील प्रवृत्तियाँ उनको प्रश्रय देने लगी होंगी !",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "prayogshil pravrittiyan",
+            "prashray dene",
+            "unko"
+          ]
+        },
+        {
+          "model_extraction": [
+            "प्रयोगशील प्रवृत्तियाँ",
+            "प्रश्रय देने",
+            "उनको"
+          ]
+        },
+        {
+          "model_extraction": [
+            "pravrittiyan",
+            "giving shelter",
+            "them"
+          ]
+        },
+        {
+          "model_extraction": [
+            ". The sentence starts with \"पर",
+            ". The verb here is \"प्रश्रय देने लगी होंगी\" – \"prashray dene lagii hongi.\" \"Prashray\" means \"shelter\" or \"protection",
+            "here is \"उनको\" – \"unko"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"prayogshil pravrittiyan",
+            ". The sentence says \"प्रश्रय देने लगी होंगी",
+            "is \"उनको\" (them). So the final triplet would be (प्रयोगशील प्रवृत्तियाँ"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[पर ,] उनको --> प्रश्रय देने लगी होंगी --> प्रयोगशील प्रवृत्तियाँ"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 5,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "80",
+      "text": "5364 ईसा पूर्व ईसा मसीह के जन्म से पूर्व के वर्षों को दर्शाता है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "5364 BCE",
+            "shows",
+            "years before Christ's birth"
+          ]
+        },
+        {
+          "model_extraction": [
+            "5364 BCE",
+            "shows",
+            "years before Christ's birth"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"5364 ईसा पूर्व",
+            "is \"दर्शाता है",
+            "is \"ईसा मसीह के जन्म से पूर्व के वर्षों\". So the triplet would be (5364 BCE"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "5364 ईसा पूर्व --> दर्शाता है --> [ईसा मसीह के जन्म से पूर्व के]{a} वर्षों को"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 3,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "81",
+      "text": "विश्वामित्र द्वारा वैदिक मन्त्रों के स्वरघोष के मध्य सीता राम को जयमाल पहनाती हैं .",
+      "status": "analyzed",
+      "best_cluster": "cluster 2",
+      "true_positives": [
+        {
+          "model_extraction": [
+            "सीता",
+            "पहनाती हैं",
+            "जयमाल"
+          ],
+          "matched_golden": "सीता --> पहनाती हैं --> जयमाल",
+          "match_type": "satisfied"
+        },
+        {
+          "model_extraction": [
+            "सीता",
+            "पहनाती हैं",
+            "राम को"
+          ],
+          "matched_golden": "सीता --> पहनाती हैं --> राम को",
+          "match_type": "satisfied"
+        }
+      ],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "here is \"सीता",
+            "here is \"पहनाती हैं\" (wearing). But the sentence also mentions \"वैदिक मन्त्रों के स्वरघोष के मध्य",
+            "is \"जयमाल\". The relation here is \"पहनाती हैं\". But there's also a prepositional phrase \"विश्वामित्र द्वारा\" which is \"by Vishwamitra"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[विश्वामित्र द्वारा]{a} वैदिक मन्त्रों [के स्वरघोष] के मध्य --> पहनाती हैं --> जयमाल |OR| [विश्वामित्र द्वारा]{a} वैदिक मन्त्रों [के स्वरघोष] के मध्य --> पहनाती हैं --> सीता"
+        }
+      ],
+      "summary": {
+        "TP": 2,
+        "FP": 1,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "82",
+      "text": "विभिन्न स्रोत इस तथ्य पर बटे हुए हैं कि आखिर किस वर्ष में स्थान का नाम एजिंकोर्ट स्क्वायर पड़ा .",
+      "status": "analyzed",
+      "best_cluster": "cluster 2",
+      "true_positives": [],
+      "false_positives": [],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "विभिन्न स्रोत --> बटे हुए हैं --> [कि] [आखिर] किस वर्ष में [स्थान का नाम एजिंकोर्ट स्क्वायर पड़ा]{a}"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "83",
+      "text": "प्रत्येक भाग के अंतर्गत विभिन्न विभाग होते हैं जिनके अलगअलग अध्यक्ष होते हैं .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [
+        {
+          "model_extraction": [
+            "विभिन्न विभाग",
+            "होते हैं",
+            "प्रत्येक भाग के अंतर्गत"
+          ],
+          "matched_golden": "प्रत्येक भाग के अंतर्गत --> [होते] हैं --> [विभिन्न] विभाग",
+          "match_type": "satisfied"
+        }
+      ],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "विभिन्न विभाग",
+            "अध्यक्ष होते हैं",
+            "अलगअलग"
+          ]
+        },
+        {
+          "model_extraction": [
+            "विभिन्न विभाग",
+            "अध्यक्ष होते हैं",
+            "अलगअलग अध्यक्ष"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here is \"विभिन्न विभाग\" (various departments). The relation is \"होते हैं\" (exist). The object would be \"प्रत्येक भाग के अंतर्गत\" (under each part). But wait",
+            "is \"होते हैं",
+            "is \"प्रत्येक भाग के अंतर्गत.\" But I need to check if \"प्रत्येक भाग के अंतर्गत\" is the object. Alternatively"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"विभिन्न विभाग",
+            "is \"अध्यक्ष होते हैं\" (have chairpersons",
+            "is \"अलगअलग\" (different). But \"अलगअलग\" is an adjective modifying \"अध्यक्ष.\" So the triplet would be (विभिन्न विभाग"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "विभिन्न विभाग --> जिनके होते हैं --> [अलगअलग] अध्यक्ष |OR| जिनके --> [होते] हैं --> [अलगअलग] अध्यक्ष"
+        }
+      ],
+      "summary": {
+        "TP": 1,
+        "FP": 4,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "84",
+      "text": "एकलों के बीच एक लंबे अंतराल के बाद , एल्बम से तीसरा कट 2006 के मध्य में जारी किया गया .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "is the album? Or is the subject the third single? Wait",
+            "is \"जारी किया गया",
+            "is the time (2006 के मध्य में). But the example given in the instructions had the subject as the team"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the third single",
+            "is \"जारी किया गया",
+            "is the time. But the example had the object as the prize"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the album",
+            "is \"तीसरा कट\" (third single",
+            "is the time (middle of 2006). But the example had the object as the prize"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[एल्बम से]{a} तीसरा कट --> जारी किया गया --> 2006 के मध्य में"
+        },
+        {
+          "type": "essential",
+          "extraction": "[एल्बम से]{a} तीसरा कट --> जारी किया गया --> एकलों के बीच"
+        },
+        {
+          "type": "essential",
+          "extraction": "[एल्बम से]{a} तीसरा कट --> जारी किया गया --> एक लंबे अंतराल के बाद |OR| एकलों के बीच --> जारी किया गया --> एक लंबे अंतराल के बाद"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 3,
+        "FN": 3
+      }
+    },
+    {
+      "sent_id": "85",
+      "text": "चूंकि उस दौर में उनके सामने कोई और मानक नहीं थे , अतः सब कामचलाऊ व्यवस्था उन्हें स्वयं करनी पड़ी .",
+      "status": "analyzed",
+      "best_cluster": "cluster 2",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "Subject",
+            "Relation",
+            "Object"
+          ]
+        },
+        {
+          "model_extraction": [
+            "Subject",
+            "चूंकि",
+            "Object"
+          ]
+        },
+        {
+          "model_extraction": [
+            "Subject",
+            "अतः",
+            "Object"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"उनके सामने कोई और मानक नहीं थे",
+            "here is \"चूंकि...अतः...\" which is a causal relation. So the first triplet would be (Subject",
+            "). The subject is the reason part"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "उन्हें --> [स्वयं] करनी पड़ी --> [अतः] [सब] कामचलाऊ व्यवस्था"
+        },
+        {
+          "type": "essential",
+          "extraction": "उनके सामने --> [कोई] [और] मानक नहीं थे --> [चूंकि] उस दौर में"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 4,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "86",
+      "text": "1900 के आसपास बहुत से विकासों ने निमोनिया से पीड़ित लोगों के लिये परिणामों को बेहतर कर दिया था .",
+      "status": "analyzed",
+      "best_cluster": "cluster 2",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "बहुत से विकासों",
+            "बेहतर कर दिया",
+            "निमोनिया से पीड़ित लोगों के लिये"
+          ]
+        },
+        {
+          "model_extraction": [
+            "बहुत से विकासों",
+            "बेहतर कर दिया था",
+            "निमोनिया से पीड़ित लोगों के लिये"
+          ]
+        },
+        {
+          "model_extraction": [
+            "बहुत से विकासों",
+            "बेहतर कर दिया था",
+            "निमोनिया से पीड़ित लोगों के लिये"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[निमोनिया से]{a} [पीड़ित] लोगों के लिये --> परिणामों को बेहतर कर दिया था --> [1900 के आसपास]{b} [बहुत से] विकासों ने"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 3,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "87",
+      "text": "सांप्रदायिक सिद्धांतों के प्रचार और प्रसार में अपने पिता के समान आपका भी बहुत योगदान है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "आपका भी बहुत योगदान",
+            "",
+            "सांप्रदायिक सिद्धांतों के प्रचार और प्रसार"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here is \"आपका भी बहुत योगदान\" (your contribution). The verb is \"है\" (is",
+            "here is about the contribution being in the context of spreading religious principles. Looking at the structure",
+            "the dissemination of religious principles). Wait"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "आपका [भी] --> [बहुत] योगदान है --> [सांप्रदायिक सिद्धांतों के]{a} प्रचार और प्रसार में"
+        },
+        {
+          "type": "essential",
+          "extraction": "[अपने] पिता के समान --> [बहुत] योगदान है --> आपका [भी] |OR| [अपने] पिता के समान --> [बहुत] योगदान है --> [सांप्रदायिक सिद्धांतों के]{a} प्रचार और प्रसार में"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 2,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "88",
+      "text": "उदाहरणार्थ , केवल 1 -- 3 माह के संपर्क में भी मेसोथेलियोमा उत्पन्न होने के मामले लेखबद्ध किये गये हैं .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "मेसोथेलियोमा उत्पन्न होने के मामले",
+            "लेखबद्ध किये गये हैं",
+            "केवल 1 -- 3 माह के संपर्क में भी"
+          ]
+        },
+        {
+          "model_extraction": [
+            "Subject: मेसोथेलियोमा उत्पन्न होने के मामले",
+            "Relation: लेखबद्ध किये गये हैं",
+            "Object: केवल 1 -- 3 माह के संपर्क में भी"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"cases of mesothelioma occurring",
+            "is \"have been recorded",
+            "is \"cases of contact for 1-3 months"
+          ]
+        },
+        {
+          "model_extraction": [
+            "मेसोथेलियोमा उत्पन्न होने के मामले",
+            "लेखबद्ध किये गये हैं",
+            "केवल 1 -- 3 माह के संपर्क में भी). I think that's the main relation here. There might be another relation if there's a connection between the contact duration and the cases"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "केवल 1 -- 3 माह के संपर्क में [भी] --> लेखबद्ध किये गये हैं --> [मेसोथेलियोमा उत्पन्न होने के]{a} मामले"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 4,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "89",
+      "text": "जहां इश -- डू में दो प्राणियों का सामना होता है , इश -- एस में प्राणी वास्तव में मिलते नहीं है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "इश -- डू में --> सामना होता है --> दो प्राणियों का"
+        },
+        {
+          "type": "essential",
+          "extraction": "इश -- एस में --> [वास्तव में] मिलते नहीं है --> प्राणी |OR| इश -- एस में --> प्राणी मिलते नहीं है --> पवास्तव में"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "90",
+      "text": "ये तीनों अक्ष उस तल में एकबिन्दुगामी भी होने चाहिये .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "तीनों अक्ष",
+            "एकबिन्दुगामी भी होने चाहिये",
+            "उस तल में"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "ये तीनों अक्ष --> एकबिन्दुगामी [भी] होने चाहिये --> उस तल में"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 1,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "91",
+      "text": "विकासशील देशों में , अपने ही पड़ोस में किसानों के दूध विपणन के पुराने तरीके तेजी से बदल रहे हैं .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "पुराने तरीके",
+            "बदल रहे हैं",
+            "दूध विपणन"
+          ]
+        },
+        {
+          "model_extraction": [
+            "पुराने तरीके",
+            "बदल रहे हैं",
+            "दूध विपणन"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here is \"पुराने तरीके\" (old methods). The relation is \"बदल रहे हैं\" (are changing). The object would be \"दूध विपणन के\" (dairy sales). Wait",
+            "is \"बदल रहे हैं\" (are changing). The object is \"दूध विपणन के\" (dairy sales). But \"दूध विपणन के\" is part of the noun phrase. Wait",
+            "is \"दूध विपणन\" (dairy sales"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"पुराने तरीके\" (old methods",
+            "is \"बदल रहे हैं\" (changing",
+            "is \"दूध विपणन के\" (dairy sales). But \"दूध विपणन के\" is a genitive phrase"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"पुराने तरीके\" (old methods). The object would be the thing that is being changed",
+            "is \"बदल रहे हैं\" (changing",
+            "is \"दूध विपणन\" (dairy sales). So the triplet would be (पुराने तरीके"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[किसानों के]{a} [दूध विपणन के]{b} [पुराने] तरीके --> [तेजी से] बदल रहे हैं --> विकासशील देशों में"
+        },
+        {
+          "type": "essential",
+          "extraction": "[किसानों के]{a} [दूध विपणन के]{b} [पुराने] तरीके --> [तेजी से] बदल रहे हैं --> अपने ही पड़ोस में"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 5,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "92",
+      "text": "उन्होंने अपने बोलीवुड करियर की शुरुआत एक दीवाना था से की जिसे 17 फ़रवरी 2012 को रिलीज़ किया गया .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [
+        {
+          "model_extraction": [
+            "एक दीवाना था",
+            "रिलीज़ किया गया",
+            "17 फ़रवरी 2012 को"
+          ],
+          "matched_golden": "जिसे --> रिलीज़ किया गया --> 17 फ़रवरी 2012 को |OR| एक दीवाना था [से] --> रिलीज़ किया गया --> 17 फ़रवरी 2012 को",
+          "match_type": "satisfied"
+        }
+      ],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "They",
+            "started with",
+            "Divaana Tha"
+          ]
+        },
+        {
+          "model_extraction": [
+            "Divaana Tha",
+            "released on",
+            "17 February 2012"
+          ]
+        },
+        {
+          "model_extraction": [
+            "उन्होंने",
+            "शुरुआत की",
+            "एक दीवाना था"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"उन्होंने\" which is \"they\" (third person plural). But in the example",
+            "here is \"started with\". Another part is \"which was released on February 17",
+            "of the release"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"उन्होंने\" (they",
+            "is \"शुरुआत की\" (started",
+            "is \"एक दीवाना था\" (the movie). Then the relation is \"रिलीज़ किया गया\" (was released"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "उन्होंने --> [अपने] बोलीवुड करियर की शुरुआत की --> एक दीवाना था से"
+        }
+      ],
+      "summary": {
+        "TP": 1,
+        "FP": 5,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "93",
+      "text": "इस रोग के प्रतिषेधात्मक उपचार में भी मक्खियों से खाद्य एवं पेय पदार्थो को बचाना अत्यंत आवश्यक है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "here is \"मक्खियों से खाद्य एवं पेय पदार्थो को बचाना",
+            "here is \"आवश्यक है\" which translates to \"is necessary.\" The object would be the thing that needs to be saved",
+            "is \"खाद्य एवं पेय पदार्थो को\" (food and drink). But the sentence says that saving these is necessary. So the relation is \"आवश्यक है\" (is necessary). Wait"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"मक्खियों से खाद्य एवं पेय पदार्थो को बचाना",
+            "is \"आवश्यक है",
+            "is the action itself. Wait"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"इस रोग के प्रतिषेधात्मक उपचार में भी",
+            "is \"बचाना",
+            "is \"खाद्य एवं पेय पदार्थो को.\" Then the second relation is \"आवश्यक है"
+          ]
+        },
+        {
+          "model_extraction": [
+            "being \"मक्खियों से खाद्य एवं पेय पदार्थो को\" and the object being \"आवश्यक है.\" No",
+            "is \"बचाना",
+            "is \"खाद्य एवं पेय पदार्थो को.\" Then the relation \"आवश्यक है\" is part of the sentence"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[इस रोग के]{a} [प्रतिषेधात्मक] उपचार में [भी] --> [अत्यंत] आवश्यक है --> [मक्खियों से]{b} [खाद्य एवं] पेय पदार्थो को बचाना"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 4,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "94",
+      "text": "यह , प्रतिस्पर्धी टीम की राष्ट्रीयता को संदर्भित करता है , न कि गाड़ी निर्माता या चालक की राष्ट्रीयता को .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "maybe a person",
+            "but in Hindi",
+            "pronouns can be neutral"
+          ]
+        },
+        {
+          "model_extraction": [
+            "यह",
+            "संदर्भित करता है",
+            "प्रतिस्पर्धी टीम की राष्ट्रीयता"
+          ]
+        },
+        {
+          "model_extraction": [
+            "यह",
+            "संदर्भित करता है",
+            "प्रतिस्पर्धी टीम की राष्ट्रीयता"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"यह",
+            "is \"संदर्भित करता है\" (refers to",
+            "is \"प्रतिस्पर्धी टीम की राष्ट्रीयता\". Wait"
+          ]
+        },
+        {
+          "model_extraction": [
+            ") refers to the nationality of the competitive team. The relation word is \"संदर्भित करता है\" (refers to). The object is \"प्रतिस्पर्धी टीम की राष्ट्रीयता\". Now",
+            "s. However",
+            "is \"प्रतिस्पर्धी टीम की राष्ट्रीयता\". That seems correct. I need to make sure that the evidence is correctly quoted. The exact words for the relation are \"संदर्भित करता है"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "यह --> संदर्भित करता है --> [प्रतिस्पर्धी] [टीम की]{a} राष्ट्रीयता को"
+        },
+        {
+          "type": "essential",
+          "extraction": "यह --> संदर्भित करता है --> न कि [गाड़ी निर्माता या] चालक की राष्ट्रीयता को |OR| यह --> संदर्भित करता है --> न कि गाड़ी निर्माता [या चालक] की राष्ट्रीयता को"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 5,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "95",
+      "text": "सड़क मार्ग रत्नागिरी के लिए मुंबई से सीधी बस सेवा है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "मुंबई",
+            "सीधी बस सेवा",
+            "रत्नागिरी"
+          ]
+        },
+        {
+          "model_extraction": [
+            "मुंबई",
+            "सीधी बस सेवा",
+            "रत्नागिरी"
+          ]
+        },
+        {
+          "model_extraction": [
+            "मुंबई",
+            "सीधी बस सेवा",
+            "रत्नागिरी"
+          ]
+        },
+        {
+          "model_extraction": [
+            "मुंबई",
+            "सीधी बस सेवा",
+            "रत्नागिरी"
+          ]
+        },
+        {
+          "model_extraction": [
+            "seems to be \"सीधी बस सेवा\" (direct bus service). The sentence is saying that there is a direct bus service from Mumbai to Ratnagiri via road. So",
+            "here is \"सीधी बस सेवा है\" which indicates the existence of the service. But the relation should be between the subject and the object. Looking at the sentence",
+            "here would be the destination"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the service",
+            "is correctly identified. The exact words for the relation are \"सीधी बस सेवा है",
+            "is the destination. So the triplet would be (मुंबई"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"सीधी बस सेवा",
+            "is \"सीधी बस सेवा\" which is the service. Hmm",
+            ". The subject is \"सीधी बस सेवा"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "सड़क मार्ग --> [सीधी] बस सेवा है --> मुंबई से"
+        },
+        {
+          "type": "essential",
+          "extraction": "सड़क मार्ग --> [सीधी] बस सेवा है --> रत्नागिरी के लिए |OR| रत्नागिरी के लिए --> [सीधी] बस सेवा है --> मुंबई से"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 7,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "96",
+      "text": "छपाई में लकड़ी के ब्लाकों का प्रयोग होता था , जिसका निर्माण शिल्पी -- सुथार करते थे .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "लकड़ी के ब्लाकों",
+            "निर्माण",
+            "शिल्पी -- सुथार"
+          ]
+        },
+        {
+          "model_extraction": [
+            "लकड़ी के ब्लाकों",
+            "निर्माण",
+            "शिल्पी -- सुथार"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "छपाई में --> प्रयोग होता था --> [लकड़ी के]{a} ब्लाकों का"
+        },
+        {
+          "type": "essential",
+          "extraction": "जिसका --> निर्माण करते थे --> शिल्पी -- सुथार |OR| [लकड़ी के]{a} ब्लाकों का --> निर्माण करते थे --> शिल्पी -- सुथार"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 2,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "97",
+      "text": "यह शब्द विधि बनाने वाली सरकारी इकाई के लिये प्रयोग में आता है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "यह शब्द",
+            "प्रयोग में आता है",
+            "विधि बनाने वाली सरकारी इकाई"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "यह [शब्द]{b} --> प्रयोग में आता है --> [विधि बनाने वाली]{a} सरकारी इकाई के लिये"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 1,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "98",
+      "text": "यह उत्तर प्रदेश के बलिया जिले में स्थित है और बलिया शहर से थोड़ी दूर पश्चिम में स्थित है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [
+        {
+          "model_extraction": [
+            "यह",
+            "स्थित है",
+            "उत्तर प्रदेश के बलिया जिले में"
+          ],
+          "matched_golden": "यह --> स्थित है --> [उत्तर प्रदेश के]{a} बलिया जिले में",
+          "match_type": "satisfied"
+        },
+        {
+          "model_extraction": [
+            "यह",
+            "स्थित है",
+            "बलिया शहर से थोड़ी दूर पश्चिम में"
+          ],
+          "matched_golden": "यह --> स्थित है --> बलिया शहर से थोड़ी दूर [पश्चिम में]{b} |OR| यह --> स्थित है --> बलिया शहर से [थोड़ी दूर] पश्चिम में",
+          "match_type": "satisfied"
+        }
+      ],
+      "false_positives": [],
+      "false_negatives": [],
+      "summary": {
+        "TP": 2,
+        "FP": 0,
+        "FN": 0
+      }
+    },
+    {
+      "sent_id": "99",
+      "text": "उसेक बाद उन्होने पिता की हत्या नहीं करवाई जैसाकि अन्य सम्राट किया करते थे .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "उन्होने",
+            "नहीं करवाई",
+            "पिता की हत्या"
+          ]
+        },
+        {
+          "model_extraction": [
+            "अन्य सम्राट",
+            "किया",
+            "पिता की हत्या"
+          ]
+        },
+        {
+          "model_extraction": [
+            "अन्य सम्राट",
+            "किया",
+            "पिता की हत्या"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"उन्होने\" (they",
+            "is \"नहीं करवाई\" (did not have",
+            "is \"पिता की हत्या\" (father's death). Then"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "उन्होने --> हत्या नहीं करवाई --> पिता की"
+        },
+        {
+          "type": "essential",
+          "extraction": "उन्होने --> हत्या नहीं करवाई --> उसेक बाद"
+        },
+        {
+          "type": "essential",
+          "extraction": "अन्य सम्राट --> [किया] करते थे --> [पिता की]{a} हत्या"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 4,
+        "FN": 3
+      }
+    },
+    {
+      "sent_id": "100",
+      "text": "सर्वप्रथम प्रत्येक खिलाड़ी के लिये हवाओं की स्थिति का निर्धारण पासा फेंककर किया जाता है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "is \"सर्वप्रथम प्रत्येक खिलाड़ी के लिये हवाओं की स्थिति का निर्धारण",
+            "is between the subject (determination of wind condition for each player) and the action (throwing a dice). The subject here is an action (determination",
+            "is \"पासा फेंककर\" (by throwing a dice). But the object here is the method"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the determination",
+            "is \"किया जाता है\" (is done",
+            "is \"पासा फेंककर.\" Wait"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "हवाओं की स्थिति का --> निर्धारण किया जाता है --> पासा फेंककर"
+        },
+        {
+          "type": "essential",
+          "extraction": "प्रत्येक खिलाड़ी के लिये --> निर्धारण किया जाता है --> हवाओं की स्थिति का"
+        },
+        {
+          "type": "essential",
+          "extraction": "सर्वप्रथम --> निर्धारण किया जाता है --> प्रत्येक खिलाड़ी के लिये |OR| सर्वप्रथम --> निर्धारण किया जाता है --> हवाओं की स्थिति का"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 2,
+        "FN": 3
+      }
+    },
+    {
+      "sent_id": "101",
+      "text": "हाइपरयूरीसेमिया , वात रोग का मूल कारण होता है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "हाइपरयूरीसेमिया",
+            "मूल कारण होता है",
+            "वात रोग"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "हाइपरयूरीसेमिया --> मूल कारण होता है --> वात रोग का |OR| हाइपरयूरीसेमिया --> होता है --> वात रोग का मूल कारण"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 1,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "102",
+      "text": "यही कारण है कि विश्व भर में केरल अपनी आयुर्वेदिक चिकित्सा शैली के कारण प्रसिद्ध है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "केरल",
+            "प्रसिद्ध है",
+            "आयुर्वेदिक चिकित्सा शैल"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "केरल --> प्रसिद्ध है --> [अपनी] आयुर्वेदिक चिकित्सा शैली के कारण"
+        },
+        {
+          "type": "essential",
+          "extraction": "केरल --> प्रसिद्ध है --> विश्व भर में"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 1,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "103",
+      "text": "इसका उदगम स्थान सिरमोर राज्य के अंतगर्त हिमालय पर्वत के नीचे का ढलुवा भाग है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "इसका उदगम स्थान",
+            "",
+            "स"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "इसका --> उदगम स्थान है --> [सिरमोर राज्य के अंतगर्त]{a} हिमालय पर्वत [के नीचे का ढलुवा भाग]{b}"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 1,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "104",
+      "text": "दक्षिण भारत में उन दिनों परम्परागत चित्रकला का ही प्राधान्य था .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "दक्षिण भारत",
+            "प्राधान्य था",
+            "परम्परागत चित्रकला"
+          ]
+        },
+        {
+          "model_extraction": [
+            "दक्षिण भारत",
+            "प्राधान्य था",
+            "परम्परागत चित्रकला"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"दक्षिण भारत में",
+            "is \"ही प्राधान्य था\" (had priority). But the exact words for the relation would be \"प्राधान्य था\". Alternatively",
+            "is \"परम्परागत चित्रकला\". But the sentence is \"दक्षिण भारत में उन दिनों परम्परागत चित्रकला का ही प्राधान्य था.\" So the main subject is \"दक्षिण भारत में"
+          ]
+        },
+        {
+          "model_extraction": [
+            "of the sentence is \"दक्षिण भारत",
+            "is \"प्राधान्य था\" (had priority). The object is \"परम्परागत चित्रकला\". So the triplet would be (दक्षिण भारत",
+            "is \"परम्परागत चित्रकला\". I think that's the main relation here. Let me check again. The sentence is structured as \"In southern India"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"दक्षिण भारत",
+            "is \"had priority",
+            "is \"traditional art\". So the triplet would be (दक्षिण भारत"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[उन दिनों] दक्षिण भारत में --> प्राधान्य था --> परम्परागत चित्रकला का [ही]"
+        },
+        {
+          "type": "essential",
+          "extraction": "उन दिनों --> प्राधान्य था --> परम्परागत चित्रकला का [ही] |OR| उन दिनों --> प्राधान्य था --> दक्षिण भारत में"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 5,
+        "FN": 2
+      }
+    },
+    {
+      "sent_id": "105",
+      "text": "ये कहानियाँ किसी देश या समय की हो सकती हैं .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "ये कहानियाँ",
+            "की हो सकती हैं",
+            "किसी देश"
+          ]
+        },
+        {
+          "model_extraction": [
+            "ये कहानियाँ",
+            "की हो सकती हैं",
+            "समय"
+          ]
+        },
+        {
+          "model_extraction": [
+            "ये कहानियाँ",
+            "की हो सकती हैं",
+            "किसी देश"
+          ]
+        },
+        {
+          "model_extraction": [
+            "ये कहानियाँ",
+            "की हो सकती हैं",
+            "समय"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here is \"ये कहानियाँ\" which means \"these stories.\" The relation here is \"की हो सकती हैं\" which translates to \"could be of.\" The objects are \"किसी देश\" (any country) and \"समय\" (time). Now",
+            "is \"की हो सकती हैं\" which is a possible relation indicating possibility. The objects are \"किसी देश\" (any country) and \"समय\" (time). Wait",
+            "s are \"किसी देश\" and \"समय.\" But the structure is \"could be of any country or time"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"ये कहानियाँ",
+            "is \"की हो सकती हैं",
+            "s are \"किसी देश\" and \"समय.\" But the relation is a single one"
+          ]
+        },
+        {
+          "model_extraction": [
+            ". Hmm",
+            "s. So the first triplet is (ये कहानियाँ",
+            "s are \"किसी देश\" and \"समय.\" So the two objects are connected by \"या"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "ये [कहानियाँ]{a} --> हो सकती हैं --> किसी [देश या] समय की |OR| ये [कहानियाँ]{a} --> हो सकती हैं --> किसी देश [या समय] की"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 7,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "106",
+      "text": "और भी कुछ निम्नलिखित कारण हैं जोकि प्रकृति आधारित निर्माण को प्रोत्साहित करते हैं .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "निम्नलिखित कारण हैं",
+            "प्रोत्साहित करते हैं",
+            "प्रकृति आधारित निर्माण"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"निम्मलिखित कारण हैं\" which is a plural noun",
+            "is \"प्रोत्साहित करते हैं\" (encourage",
+            "is \"प्रकृति आधारित निर्माण\" (nature-based construction"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "[और भी] [कुछ] निम्नलिखित कारण --> प्रोत्साहित करते हैं --> प्रकृति आधारित निर्माण को"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 2,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "107",
+      "text": "2010 को ' ' दर्शन -- परिषद् ' ' के नाम से सम्पन्न हुआ .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "here is likely \"दर्शन -- परिषद्\" which is the name of the event. The relation would be \"सम्पन्न हुआ\" meaning \"was held\". The object would be \"2010 को\" which is the time. Wait",
+            "is \"held under the name",
+            "is the name. But the sentence says \"2010 को... के नाम से सम्पन्न हुआ\". So the event (Darsan Parishad) was held in 2010. Alternatively"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"2010 को",
+            "is \"held under the name",
+            "is the name. But the sentence is a bit confusing. Let me break it down again. The sentence is: \"2010 को ' ' दर्शन -- परिषद् ' ' के नाम से सम्पन्न हुआ .\" Breaking it down: \"In 2010"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the event",
+            "is \"held under the name",
+            "is the name. But the sentence says \"2010 को... के नाम से सम्पन्न हुआ\". So the event was held in 2010 under the name Darsan Parishad. Therefore"
+          ]
+        },
+        {
+          "model_extraction": [
+            ". Let me check the example again. In the example",
+            "s were \"हराकर\" (defeated) and \"जीता\" (won). So the subject was the same for both relations. In this case",
+            "is \"2010 को\" (in 2010). But the sentence also mentions the name \"दर्शन -- परिषद्\" as the name under which it was held. Wait"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the event",
+            "is \"held under the name",
+            "is the name. But the time is 2010. So maybe there are two relations: one between the event and the time (held in 2010"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "2010 को --> सम्पन्न हुआ --> दर्शन -- परिषद् [के नाम से]"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 5,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "108",
+      "text": "यहीं पर सन 1533 में 47 वर्ष की अल्पायु में रथयात्रा के दिन उनका देहांत हो गया .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "उन",
+            "देहांत हो गया",
+            "रथयात्रा के दिन"
+          ]
+        },
+        {
+          "model_extraction": [
+            "उन",
+            "देहांत हो गया",
+            "रथयात्रा के दिन"
+          ]
+        },
+        {
+          "model_extraction": [
+            "उन",
+            "देहांत हो गया",
+            "1533 में"
+          ]
+        },
+        {
+          "model_extraction": [
+            "उन",
+            "देहांत हो गया",
+            "1533 में"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"उनका\" which refers to \"they\" or \"them",
+            "here is \"देहांत हो गया\" which is \"died\". The object would be the event of death",
+            "here is the event"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"उन\" (they",
+            "s. Let me check the example again. In the example",
+            "is the event of the chariot journey day. But the time and age are part of the context. However"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "यहीं पर --> देहांत हो गया --> उनका"
+        },
+        {
+          "type": "essential",
+          "extraction": "सन 1533 में --> देहांत हो गया --> उनका"
+        },
+        {
+          "type": "essential",
+          "extraction": "47 वर्ष की [अल्पायु में]{a} --> देहांत हो गया --> उनका"
+        },
+        {
+          "type": "essential",
+          "extraction": "रथयात्रा के दिन --> देहांत हो गया --> उनका"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 6,
+        "FN": 4
+      }
+    },
+    {
+      "sent_id": "109",
+      "text": "इसे पाण्सिल्क भी कहा जाता है क्योंकि यह तालाब में अक्सर देखा जाता है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [
+        {
+          "model_extraction": [
+            "इसे",
+            "कहा जाता है",
+            "पाण्सिल्क"
+          ],
+          "matched_golden": "इसे --> कहा जाता है --> पाण्सिल्क [भी]",
+          "match_type": "satisfied"
+        }
+      ],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "यह",
+            "देखा जाता है",
+            "तालाब"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here is \"इसे\" which refers to something",
+            "is \"कहा जाता है\" which is a verb phrase indicating a name or alternative name. Next",
+            "is \"तालाब\" (lake"
+          ]
+        },
+        {
+          "model_extraction": [
+            "type would be a thing or entity. The object is \"पाण्सिल्क",
+            "is \"कहा जाता है.\" Then the second triplet is (यह",
+            "is \"तालाब"
+          ]
+        },
+        {
+          "model_extraction": [
+            "and object types are correctly identified. For the first triplet",
+            "is \"कहा जाता है\" (is called). For the second triplet",
+            "is \"तालाब\" (a location). I think that's all. The sentence has two relations: one about being called Pansilka and another about being seen in the lake. Each with their respective subjects"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "यह --> [अक्सर] देखा जाता है --> तालाब में [अक्सर]"
+        }
+      ],
+      "summary": {
+        "TP": 1,
+        "FP": 4,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "110",
+      "text": "2008 में वे तीसरे ब्रिटिश प्रबंधक बने जिन्होंने एकाधिक अवसर पर यूरोपियन कप जीता .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [
+        {
+          "model_extraction": [
+            "वे",
+            "बने",
+            "तीसरे ब्रिटिश प्रबंधक"
+          ],
+          "matched_golden": "वे --> बने --> [तीसरे] ब्रिटिश प्रबंधक",
+          "match_type": "satisfied"
+        }
+      ],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "वे",
+            "जीता",
+            "यूरोपियन कप"
+          ]
+        },
+        {
+          "model_extraction": [
+            "वे",
+            "बने",
+            "तीसरे ब्रिटिश प्रबंधक"
+          ]
+        },
+        {
+          "model_extraction": [
+            "वे",
+            "जीता",
+            "यूरोपियन कप"
+          ]
+        },
+        {
+          "model_extraction": [
+            ". The subject type here is probably a Person or Organization",
+            ". The verb here is \"बने\" (became",
+            "here is \"तीसरे ब्रिटिश प्रबंधक\" which is a Person or Organization. The evidence is \"तीसरे ब्रिटिश प्रबंधक\" from the sentence. Then"
+          ]
+        },
+        {
+          "model_extraction": [
+            "here is still \"वे\" (they",
+            "is \"won\" (जीता). The object is \"यूरोपियन कप\" (European Cup",
+            "is \"यूरोपियन कप\". The \"एकाधिक अवसर पर\" (on multiple occasions) is an adverbial phrase modifying the verb \"जीता\". So the two relations are: (वे"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "जिन्होंने --> जीता --> यूरोपियन कप [एकाधिक अवसर पर] |OR| जिन्होंने --> [एकाधिक अवसर पर] जीता --> यूरोपियन कप"
+        }
+      ],
+      "summary": {
+        "TP": 1,
+        "FP": 5,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "111",
+      "text": "मॉस से मिट्टी में जल रोक रखा जाता है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [
+        {
+          "model_extraction": [
+            "मॉस से",
+            "रोक रखा जाता है",
+            "मिट्टी में जल"
+          ]
+        },
+        {
+          "model_extraction": [
+            "जल",
+            "रोक रखा जाता है",
+            "मिट्टी में"
+          ]
+        },
+        {
+          "model_extraction": [
+            "मॉस से",
+            "रोक रखा जाता है",
+            "मिट्टी में जल"
+          ]
+        },
+        {
+          "model_extraction": [
+            ". The sentence starts with \"मॉस से",
+            "s would be between the source (moss) and the water",
+            "soil). But the source is moss. So perhaps two relations: one where moss is the source of keeping water back in the soil"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"मॉस से",
+            "is \"रोक रखा जाता है",
+            "is \"मिट्टी में जल\". But I'm not sure. Alternatively"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is \"जल",
+            "is \"रोक रखा जाता है",
+            "is \"मिट्टी में\". But the sentence is passive"
+          ]
+        },
+        {
+          "model_extraction": [
+            "is the thing being acted upon. Wait",
+            "is between moss and soil",
+            ". This is a bit tricky. Maybe the correct triplet is (मॉस से"
+          ]
+        }
+      ],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "मॉस से --> जल रोक रखा जाता है --> मिट्टी में"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 7,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "112",
+      "text": "महाभारत का वर्तमान रूप प्राचीन इतिहास कथाओं उपदेशों आदि का भण्डार है .",
+      "status": "analyzed",
+      "best_cluster": "cluster 1",
+      "true_positives": [],
+      "false_positives": [],
+      "false_negatives": [
+        {
+          "type": "essential",
+          "extraction": "महाभारत [का वर्तमान रूप]{a} --> भण्डार है --> प्राचीन [इतिहास] [कथाओं] उपदेशों आदि का |OR| महाभारत [का वर्तमान रूप] --> भण्डार है --> प्राचीन इतिहास [कथाओं] [उपदेशों] आदि का"
+        }
+      ],
+      "summary": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "112",
+      "text": "महाभारत का वर्तमान रूप प्राचीन इतिहास कथाओं उपदेशों आदि का भण्डार है .",
+      "status": "missed_sentence",
+      "summary": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "64",
+      "text": "स्थानीय आबादी लगभग पूरी तरह से चाय के व्यापार पर निर्भर रहती है .",
+      "status": "missed_sentence",
+      "summary": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "82",
+      "text": "विभिन्न स्रोत इस तथ्य पर बटे हुए हैं कि आखिर किस वर्ष में स्थान का नाम एजिंकोर्ट स्क्वायर पड़ा .",
+      "status": "missed_sentence",
+      "summary": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 1
+      }
+    },
+    {
+      "sent_id": "89",
+      "text": "जहां इश -- डू में दो प्राणियों का सामना होता है , इश -- एस में प्राणी वास्तव में मिलते नहीं है .",
+      "status": "missed_sentence",
+      "summary": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 2
+      }
+    }
+  ],
+  "overall_stats": {
+    "total_true_positives": 27,
+    "total_false_positives": 366,
+    "total_false_negatives": 154,
+    "precision": 0.06870229007633588,
+    "recall": 0.14917127071823205,
+    "f1_score": 0.09407665505226481,
+    "note": "5 FNs are from 4 sentences with no model-generated extractions."
+  }
+}
