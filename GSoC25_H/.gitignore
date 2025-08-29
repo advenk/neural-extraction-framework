@@ -8,4 +8,5 @@ __pycache__/
 models/EL_model/fairseq_multilingual_entity_disambiguation/
 models/RE_model/files_indie/
 models/state_dicts/model.pt
+models/ontology/
 *.tar.gz

@@ -15,6 +15,8 @@ from llm_coreference import get_llm_coref
 import pickle
 from genre.fairseq_model import mGENRE
 from genre.trie import Trie, MarisaTrie
+from predicate_linking import link_predicate
+from el_normalize import normalize_to_dbpedia_title_from_genre_text
 
 
 def parse_args():
@@ -23,6 +25,7 @@ def parse_args():
     parser.add_argument("--do_coref", action="store_true", required=False)
     parser.add_argument("--do_rel", action="store_true", required=False)
     parser.add_argument("--do_el", action="store_true", required=False)
+    parser.add_argument("--do_prop_link", action="store_true", required=False)
     parser.add_argument("--verbose", action="store_true", required=False)
     return parser.parse_args()
 
@@ -146,7 +149,13 @@ if __name__ == "__main__":
                             annot = sorted(
                                 annot, key=lambda x: x["score"], reverse=True
                             )
-                            el_maps[surface_l] = annot[0]["text"].split(" >> ")[0]
+                            top_text = annot[0]["text"]
+                            en_title, _dbr = normalize_to_dbpedia_title_from_genre_text(top_text)
+                            # Fallback: keep raw title (pre-split) if normalization fails
+                            if en_title:
+                                el_maps[surface_l] = en_title
+                            else:
+                                el_maps[surface_l] = top_text.split(" >> ")[0]
                         new_exts_rule = []
                         for relation in exts_rule[0]:
                             s, p, o = relation
@@ -159,3 +168,18 @@ if __name__ == "__main__":
                             )
                         exts_rule[0] = new_exts_rule
                     print(exts_rule)
+
+                    if args.do_prop_link:
+                        # use currently available triples - linked if EL ran, else surface strings
+                        triples_for_linking = exts_rule[0]
+                        prop_linked = []
+                        for (s, p, o) in triples_for_linking:
+                            res = link_predicate(p, s, o, lang="hi")
+                            prop_linked.append({
+                                "triple": (s, p, o),
+                                "predicate_linking": res,
+                            })
+                        if args.verbose:
+                            print("Predicate linking results:")
+                            for r in prop_linked:
+                                print(r)

@@ -9,6 +9,8 @@ from indIE import get_triples
 import pickle
 from genre.fairseq_model import mGENRE
 from genre.trie import Trie, MarisaTrie
+from predicate_linking import link_predicates_batch
+from el_normalize import normalize_to_dbpedia_title_from_genre_text
 
 
 @st.cache_resource
@@ -121,7 +123,12 @@ def run_entity_linking(triples):
     el_maps = {}
     for surface_l, annot in zip(el_sents.keys(), ans):
         annot = sorted(annot, key=lambda x: x["score"], reverse=True)
-        el_maps[surface_l] = annot[0]["text"].split(" >> ")[0]
+        top_text = annot[0]["text"]
+        en_title, _dbr = normalize_to_dbpedia_title_from_genre_text(top_text)
+        if en_title:
+            el_maps[surface_l] = en_title
+        else:
+            el_maps[surface_l] = top_text.split(" >> ")[0]
 
     for relation in triples:
         s, p, o = relation
@@ -133,6 +140,22 @@ def run_entity_linking(triples):
             )
         )
     return linked_triples
+
+
+@st.cache_data
+def run_predicate_linking(triples, lang="hi", top_k=20):
+    if not triples:
+        return []
+    batch_in = [(s, p, o) for (s, p, o) in triples]
+    batch_out = link_predicates_batch(batch_in, lang=lang, top_k=top_k)
+    results = [{
+        "triple": r.get("triple"),
+        "property_uri": r.get("property_uri"),
+        "property_label": r.get("property_label"),
+        "score": r.get("score"),
+        "direction": r.get("direction"),
+    } for r in batch_out]
+    return results
 
 
 # Streamlit App
@@ -155,6 +178,7 @@ else:
 coreference = st.checkbox("Coreference")
 relation_extraction = st.checkbox("Relation Extraction")
 entity_linking = st.checkbox("Entity Linking")
+predicate_linking = st.checkbox("Predicate Linking")
 
 if coreference:
     st.subheader("Coreference Resolution")
@@ -164,13 +188,33 @@ if coreference:
 
 if relation_extraction:
     st.subheader("Relation Extraction")
-    num_triples = st.slider("Number of triples to extract:", 1, 30, 5)
+    re_num_to_show = st.slider("Number of triples to extract:", 1, 30, 5, key="re_num_to_show")
     triples = run_relation_extraction(content)
-    st.write(triples[:num_triples])
+    st.write(triples[:re_num_to_show])
 
 if entity_linking:
     linked_triples = run_entity_linking(triples)
     st.subheader("Entity Linking")
-    num_triples = st.slider("Number of triples to show:", 1, 30, 5)
+    el_num_to_show = st.slider("Number of triples to show:", 1, 30, 5, key="el_num_to_show")
     st.write("Extracted triples with entity linking:")
-    st.write(linked_triples[:num_triples])
+    st.write(linked_triples[:el_num_to_show])
+
+if predicate_linking:
+    st.subheader("Predicate Linking")
+    if 'linked_triples' in locals() and linked_triples:
+        # only the subset currently displayed in the Entity Linking section
+        num_to_process = el_num_to_show if 'el_num_to_show' in locals() else len(linked_triples)
+        pl_triples = linked_triples[:num_to_process]
+    elif triples:
+        # if entity linking not enabled, respect RE slider if available, else default to 5
+        num_to_process = re_num_to_show if 're_num_to_show' in locals() else min(5, len(triples))
+        pl_triples = triples[:num_to_process]
+    else:
+        pl_triples = []
+
+    if not pl_triples:
+        st.info("No triples available. Enable Relation Extraction (and optionally Entity Linking).")
+    else:
+        # Use cached predicate linking helper for the subset on screen
+        results = run_predicate_linking(pl_triples, lang="hi", top_k=20)
+        st.write(results)
