@@ -1,11 +1,11 @@
 # Hindi-BenchIE LLM Evaluation Framework
 
-This repository contains a **plug-and-play evaluation framework** for measuring how well large-language-models (LLMs) extract `(subject, relation, object)` triplets from Hindi text using the official [*Hindi-BenchIE*](https://github.com/ritwikmishra/hindi-benchie) benchmark.
+This module contains a **plug-and-play evaluation framework** for measuring how well small-language-models (LLMs) extract `(subject, relation, object)` triplets from Hindi text using the official [*Hindi-BenchIE*](https://github.com/ritwikmishra/hindi-benchie) benchmark.
 
 
-* 📥  **Clone → Install → Run** in three commands.
-* 🛠️  Swap in **any Ollama model** or **any prompt strategy** with just a name change in `config.py` – no code edits required.
-* 📊  Obtain **precision / recall / F1** + detailed TP / FP / FN breakdowns **per sentence**.
+* **Clone → Install → Run** in three commands.
+* Swap in **any Ollama model** or **any prompt strategy** with just a name change in `config.py` – no code edits required.
+* Obtain **precision / recall / F1** + detailed TP / FP / FN breakdowns **per sentence**.
 
 ---
 

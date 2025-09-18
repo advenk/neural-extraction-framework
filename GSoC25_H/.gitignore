@@ -10,3 +10,5 @@ models/RE_model/files_indie/
 models/state_dicts/model.pt
 models/ontology/
 *.tar.gz
+llm_IE/finetuning/synthetic_data/
+llm_IE/full_dataset_results/
