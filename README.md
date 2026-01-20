@@ -1,25 +1,12 @@
 # Neural Extraction Framework
-
 <p align="center">
-  <a href="https://github.com/DBpedia">
-    <img src="https://wiki.dbpedia.org/logo.png" alt="DBpedia Logo" width="200"/>
-  </a>
+  <img src="https://avatars.githubusercontent.com/u/107086?v=4" width="120" />
 </p>
 
-<p align="center">
-  <strong>A Neural-based Information Extraction Framework for DBpedia</strong>
-</p>
+<h2 align="center">DBpedia Neural Extraction Framework</h2>
 
 <p align="center">
-  <a href="https://github.com/dbpedia/neural-extraction-framework/stargazers">
-    <img src="https://img.shields.io/github/stars/dbpedia/neural-extraction-framework?style=social" alt="Stars">
-  </a>
-  <a href="https://github.com/dbpedia/neural-extraction-framework/network/members">
-    <img src="https://img.shields.io/github/forks/dbpedia/neural-extraction-framework?style=social" alt="Forks">
-  </a>
-  <a href="https://github.com/dbpedia/neural-extraction-framework/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/dbpedia/neural-extraction-framework" alt="License">
-  </a>
+A research framework for multilingual information extraction over DBpedia, developed and extended through multiple Google Summer of Code (GSoC) projects.
 </p>
 
 ---
