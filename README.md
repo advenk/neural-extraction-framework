@@ -1,6 +1,7 @@
 # Neural Extraction Framework
+
 <p align="center">
-  <img src="[https://avatars.githubusercontent.com/u/107086?v=4](https://avatars.githubusercontent.com/u/2864602?s=200&v=4)" width="120" />
+  <img src="https://avatars.githubusercontent.com/u/2864602?s=200&v=4" width="120" />
 </p>
 
 <h2 align="center">DBpedia Neural Extraction Framework</h2>
@@ -8,6 +9,7 @@
 <p align="center">
 A research framework for multilingual information extraction over DBpedia, developed and extended through multiple Google Summer of Code (GSoC) projects.
 </p>
+
 
 ---
 
