@@ -57,22 +57,10 @@ neural-extraction-framework/
 
 <p align="left">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"/>
-  <img src="https://img.shields.io/badge/Scala-DC322F?style=for-the-badge&logo=scala&logoColor=white" alt="Scala"/>
 </p>
 
-**Core Technologies:**
-- **Languages**: Python, JavaScript, Java, Scala
-- **Semantic Web**: RDF, SPARQL, Linked Data
-- **Machine Learning**: Large Language Models (LLMs), Neural Networks
-- **Knowledge Graphs**: DBpedia, Wikidata integration
-
-**Key Libraries & Tools:**
-- PyTorch, Transformers, spaCy
-- Gemma, Llama, MuRIL, BERT
-- Virtuoso, Ollama
-- RDFLib, SPARQLWrapper
+**Implementation Language**
+- **Python**
 
 ---
 
@@ -81,7 +69,6 @@ neural-extraction-framework/
 ### Prerequisites
 
 - Python 3.8+
-- Java 8+ (for some components)
 - Git
 
 ### Quick Start
