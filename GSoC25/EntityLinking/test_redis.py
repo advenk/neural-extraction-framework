@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import os
 import redis
 import pandas as pd
 import time
